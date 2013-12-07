@@ -11,75 +11,111 @@
 
 function SpriteAnimation(img_url, json_obj, fps_num) {"use strict";
 
-    var context = this, interval, ready_bool = false, refreshSpeed_num = 1000 / fps_num;
-    this.tag_$ = $('<div></div>');
-    this.currentFrame = 0;
-    this.frames_json = json_obj;
+	var _context = this, interval, _ready_bool = false, _refreshSpeed_num = 1000 / fps_num, _framesToPlay_num = -1;
 
-    this.onReady = function() {
-    };
+	this.tag_$ = $('<div></div>');
+	this.currentFrame = 0;
+	this.frames_json = json_obj;
 
-    this.stop = function() {
-        clearInterval(interval);
-    };
+	this.onReady = function() {
 
-    this.loop = function() {
-        clearInterval(interval);
-        interval = setInterval(_nextFrameLoop, refreshSpeed_num);
-    };
-    this.play = function() {
-        clearInterval(interval);
-        interval = setInterval(this.nextFrame, refreshSpeed_num);
+		//Event placeholder;
+	};
 
-    };
+	this.onClick = function() {
 
-    this.nextFrame = function() {
-        var nextFrame = context.currentFrame + 1;
-        if (nextFrame <= context.totalFrames) {
-            context.gotoFrame(context.currentFrame + 1);
-        } else {
-            context.stop();
-        }
-    };
-    this.lastFrame = function() {
+		//Event placeholder;
 
-        context.gotoFrame(context.totalFrames - 1);
+	};
 
-    };
+	this.stop = function() {
+		clearInterval(interval);
+	};
 
-    this.gotoAndStop = function(frame_num) {
+	this.loop = function() {
+		clearInterval(interval);
+		interval = setInterval(_nextFrameLoop, _refreshSpeed_num);
+	};
+	this.play = function(framesToPlay_num) {
+		if (framesToPlay_num !== undefined) {
 
-        this.stop();
-        this.gotoFrame(frame_num);
+			_framesToPlay_num = framesToPlay_num;
 
-    }; 
+		} else {
 
-    this.gotoFrame = function(frame_num) {
-        if (ready_bool && frame_num > 0 && frame_num <= context.totalFrames) {
-            context.currentFrame = frame_num;
-            var img_pos = context.frames_json.frames[frame_num - 1].frame;
-            context.tag_$.css('background-position', -img_pos.x + 'px ' + -img_pos.y + 'px ');
-        }
+			_framesToPlay_num = -1;
 
-    };
-    var _init = function() {
-        trace("context.frames_json : " + context.frames_json);
+		}
 
-        context.firstFrame_json = context.frames_json.frames[0].frame;
-        context.tag_$.width(context.firstFrame_json.w);
-        context.tag_$.height(context.firstFrame_json.h);
-        context.tag_$.css('background-image', "url(" + img_url + ")");
-        context.totalFrames = context.frames_json.frames.length;
+		clearInterval(interval);
+		interval = setInterval(this.nextFrame, _refreshSpeed_num);
 
-        ready_bool = true;
+	};
 
-    };
-    var _nextFrameLoop = function() {
-        var nextFrame = (context.currentFrame + 1) % context.totalFrames;
-        context.gotoFrame(nextFrame);
+	this.nextFrame = function() {
+		var stop_bool = false;
+		if (_framesToPlay_num !== -1) {
 
-    };
+			_framesToPlay_num--;
+			if (_framesToPlay_num === 0) {
+				stop_bool = true;
 
-    _init();
+			}
+
+		}
+
+		var nextFrame = _context.currentFrame + 1;
+		stop_bool = stop_bool || (nextFrame > _context.totalFrames);
+
+		if (!stop_bool) {
+			_context.gotoFrame(_context.currentFrame + 1);
+		} else {
+			_context.stop();
+		}
+	};
+	this.lastFrame = function() {
+
+		_context.gotoFrame(_context.totalFrames - 1);
+
+	};
+
+	this.gotoAndStop = function(frame_num) {
+
+		this.stop();
+		this.gotoFrame(frame_num);
+
+	};
+
+	this.gotoFrame = function(frame_num) {
+		if (_ready_bool && frame_num > 0 && frame_num <= _context.totalFrames) {
+			_context.currentFrame = frame_num;
+			var img_pos = _context.frames_json.frames[frame_num - 1].frame;
+			_context.tag_$.css('background-position', -img_pos.x + 'px ' + -img_pos.y + 'px ');
+		}
+
+	};
+	var _init = function() {
+
+		_context.firstFrame_json = _context.frames_json.frames[0].frame;
+		_context.tag_$.width(_context.firstFrame_json.w);
+		_context.tag_$.height(_context.firstFrame_json.h);
+		_context.tag_$.css('background-image', "url(" + img_url + ")");
+		_context.totalFrames = _context.frames_json.frames.length;
+
+		_ready_bool = true;
+		_context.tag_$.on("click", function() {
+
+			_context.onClick();
+
+		});
+
+	};
+	var _nextFrameLoop = function() {
+		var nextFrame = (_context.currentFrame + 1) % _context.totalFrames;
+		_context.gotoFrame(nextFrame);
+
+	};
+
+	_init();
 
 }
