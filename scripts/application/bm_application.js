@@ -4,7 +4,7 @@
 $(document).ready(function() {"use strict";
 
 	$.ajax({
-		url : "graphic/game/animation/icebreak.json",
+		url : "graphic/game/animation/icebreak.txt",
 		dataType : "json"
 	}).done(function(data) {
 
