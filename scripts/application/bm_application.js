@@ -5,7 +5,7 @@ $(document).ready(function() {"use strict";
 
 	$.ajax({
 		url : "graphic/game/animation/icebreak.txt",
-		dataType : "json"
+		dataType : "json" 
 	}).done(function(data) {
 
 		var GRID_SIZE_NUM = 300;
