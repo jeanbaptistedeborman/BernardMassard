@@ -4,7 +4,7 @@
 $(document).ready(function() {"use strict";
 
 	$.ajax({
-		url : "graphic/game/animation/animation_break.json",
+		url : "graphic/game/animation/icebreak.json",
 		dataType : "json"
 	}).done(function(data) {
 
@@ -42,7 +42,7 @@ $(document).ready(function() {"use strict";
 
 			var position_array = positions_array.slice(random_num, random_num+1)[0];
 			trace(position_array);
-			iceAnimation = new SpriteAnimation("graphic/game/animation/animation_break.png", data, 36);
+			iceAnimation = new SpriteAnimation("graphic/game/animation/icebreak.png", data, 36);
 			iceAnimationTag_$ = iceAnimation.tag_$;
 			iceAnimationTag_$.addClass("iceAnimation");
 
