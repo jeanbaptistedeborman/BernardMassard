@@ -2,9 +2,10 @@
 /*global $,PopupManager, SpriteAnimation */
 
 var BMGame = {
+	gameOver_bool:true, 
 
 	init : function() {"use strict";
-		alert("init");
+		//alert("init");
 
 		$.ajax({
 			url : "graphic/game/animation/icebreak.txt",
@@ -22,7 +23,7 @@ var BMGame = {
 
 			stage_$.addClass("stage");
 
-			alert("hello");
+			//alert("hello");
 
 			for ( row = 0; row < ROWS_NUM; row++) {
 
@@ -58,7 +59,7 @@ var BMGame = {
 
 		});
 
-	},
+	},  
 
 	displayResult : function() {"use strict";
 
