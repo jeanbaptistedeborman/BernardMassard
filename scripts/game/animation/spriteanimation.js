@@ -1,6 +1,6 @@
 /**
- * @author jb@noloading.com
- *@class This class replicates the animation functions of MovieClip API of Adobe Flash. It is meant to be used with the "generate spritesheet" option of Adobe Flash CS6 but it uses CSS instead of Canvas.
+ @author jb@noloading.com
+ @class This class replicates the animation functions of MovieClip API of Adobe Flash. It is meant to be used with the "generate spritesheet" option of Adobe Flash CS6 but it uses CSS instead of Canvas.
  @param {String} img_url The url of the spritesheet image generated with the Generate spritesheet tool of FLash CS6.
  @param {Object} json_obj The corresponding json-data generated with the JSON-Array option of the spritesheet tool.
  @param {Number} fps_num The number of images/seconds, indicating the speed of the animation.
@@ -24,6 +24,11 @@ function SpriteAnimation(img_url, json_obj, fps_num) {"use strict";
 
 	this.onClick = function() {
 
+		//Event placeholder;
+
+	};
+
+	this.onFinish = function() {
 		//Event placeholder;
 
 	};
@@ -54,6 +59,8 @@ function SpriteAnimation(img_url, json_obj, fps_num) {"use strict";
 
 	this.nextFrame = function() {
 		var stop_bool = false;
+		var finish_bool = false;
+		var nextFrame = null;
 		if (_framesToPlay_num !== -1) {
 
 			_framesToPlay_num--;
@@ -64,13 +71,19 @@ function SpriteAnimation(img_url, json_obj, fps_num) {"use strict";
 
 		}
 
-		var nextFrame = _context.currentFrame + 1;
-		stop_bool = stop_bool || (nextFrame > _context.totalFrames);
+		nextFrame = _context.currentFrame + 1;
+
+		finish_bool = nextFrame > _context.totalFrames;
+
+		stop_bool = stop_bool || finish_bool;
 
 		if (!stop_bool) {
 			_context.gotoFrame(_context.currentFrame + 1);
 		} else {
 			_context.stop();
+		}
+		if (finish_bool) {
+			_context.onFinish();
 		}
 	};
 	this.lastFrame = function() {

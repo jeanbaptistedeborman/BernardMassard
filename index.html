@@ -12,19 +12,47 @@
 		<meta name="author" content="Jean-Baptiste de Borman" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
+
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+		<script src="scripts/application/bmgame.js"></script>
 		<script src="scripts/dev/utils.js"></script>
 		<script src="scripts/game/animation/spriteanimation.js" ></script>
-		<script src="scripts/application/bm_application.js"></script>
-		
-		
-	   <link rel="stylesheet" href="css/game.css"/> 
-	   
-	   <link rel="shortcut icon" href="/favicon.ico" />
+		<script src="scripts/ui/popupmanager.js"></script>
+		<script src="scripts/application/bmapplication.js"></script>
+
+		<link rel="stylesheet" href="css/game.css"/>
+		<link rel="stylesheet" href="css/ui.css"/>
+
+		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 	</head>
 
 	<body>
+		<div id="stage"></div>
+		<div id="ui">
+			<div id = "popups">
+				<div class="popup" id="intro">
+					Gagnez un Magnum et un diamant!
+					<div class="button">
+						Continuer
+					</div>
+				</div>
+				<div class="popup" id="negativeResult">
+					Pas de chance, ce cadeau est vide ! Inscrivez-vous malgré tout pour avoir une chance de remporter un diamant.
+					<div class="button">
+						Continuer
+					</div>
+				</div>
+				<div class="popup" id="positiveResult">
+					Vous avez gagné une bouteille de Magnum. Inscrivez-vous et vous aurez en plus une chance de gagner le diamant!
+					<div class="button">
+						Continuer
+					</div>
+				</div>
+			</div>
+
+		</div>
+
 	</body>
 </html>
