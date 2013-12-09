@@ -16,12 +16,11 @@ var BMGame = {
 			var COLUMNS_NUM = 6;
 			var ROWS_NUM = 6;
 
-			var stage_$ = $("#stage");
 
 			var n, row, column, iceAnimation, iceAnimationTag_$, random_num;
 			var positions_array = [];
-
-			stage_$.addClass("stage");
+BMGame.stage_$ = $("#stage");
+			BMGame.stage_$.addClass("stage");
 
 			//alert("hello");
 
@@ -34,7 +33,7 @@ var BMGame = {
 
 			}
 			var playAnim = function() {
-				this.play(10);
+				this.play(15);
 
 			};
 			var finishAnim = function() {
@@ -51,7 +50,7 @@ var BMGame = {
 				iceAnimationTag_$.addClass("iceAnimation");
 
 				iceAnimationTag_$.css("top", position_array[0]).css("left", position_array[1]);
-				stage_$.append(iceAnimation.tag_$);
+				BMGame.stage_$.append(iceAnimation.tag_$);
 				iceAnimation.onClick = playAnim;
 				iceAnimation.onFinish = finishAnim;
 
@@ -63,9 +62,8 @@ var BMGame = {
 
 	displayResult : function() {"use strict";
 
-		//alert("result ");
-
 		var result_bool = Math.random() > 0.5;
+		BMGame.stage_$.children ().unbind (); 
 
 		if (result_bool) {
 			PopupManager.display("positiveResult");

@@ -1,6 +1,10 @@
 .stage {
 	position: absolute; 
-	
+	Xbackground-color:#0000FF; 
+	background:url(../graphic/game/bg.jpg); 
+	background-repeat:repeat; 
+	width:2000px; 
+	height:2000px; 
 
 }
 .stage div{

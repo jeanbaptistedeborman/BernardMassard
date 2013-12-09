@@ -12,7 +12,20 @@ $(document).ready(function() {"use strict";
 	PopupManager.display("intro");
 
 	PopupManager.onClosePopup = function() {
+	    switch (PopupManager.lastIdName) {
+	        case "intro": 
+	         
+	        
 		BMGame.init();
+		break; 
+		
+		case "negativeResult":
+		case "positiveResult":
+		      PopupManager.display ('form'); 
+		
+		
+		}; 
+		
 
 	};
 

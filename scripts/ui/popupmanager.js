@@ -13,7 +13,7 @@ PopupManager = {
 		this.lastIdName = idName;
 		if (popup_$.length === 0) {
 
-			throw (new Error("PopupManager : no selection found matching this idName."));
+			throw (new Error("PopupManager : no selection found matching idName : " + idName));
 		}
 
 		if (this.container_$) {
@@ -28,7 +28,6 @@ PopupManager = {
 
 	},
 	close : function() {"use strict";
-		//alert(this);
 		var this_$ = $(this);
 		this_$.parent().detach();
 		PopupManager.onClosePopup();
