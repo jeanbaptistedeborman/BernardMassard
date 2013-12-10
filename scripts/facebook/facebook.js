@@ -9,7 +9,7 @@ Facebook  =  {
 
                 FB.Event.subscribe('auth.authResponseChange', function(response) {
                 
-                	alert ("response reveived"); 
+                	//alert ("response reveived"); 
 
                     if (response.status === 'connected') {
 
@@ -24,7 +24,7 @@ Facebook  =  {
             },
             
             checkLike:function  () {
-            alert ("checklike"); 
+            //alert ("checklike"); 
             
             FB.api({
                     method : "pages.isFan",

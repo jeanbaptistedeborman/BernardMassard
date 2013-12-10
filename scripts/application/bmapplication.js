@@ -3,11 +3,9 @@
 
 $(document).ready(function() {"use strict";
 
+    //alert (Facebook);
 
-
-alert (Facebook); 
-
-( function(d) {
+    ( function(d) {
 
             var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
             if (d.getElementById(id)) {
@@ -40,12 +38,11 @@ alert (Facebook);
     PopupManager.display("intro");
 
     Facebook.onLike = function() {
-        alert("onlike");
+        //alert("onlike");
         PopupManager.close($('#intro'));
         BMGame.init();
 
     }
-
 
     PopupManager.onClosePopup = function() {
         switch (PopupManager.lastIdName) {

@@ -29,7 +29,7 @@ PopupManager = {
 	},
 	_closeMe:function () {"use strict";
 	    var this_$ = $(this);
-	    close (this_$.parent()); 
+	    PopupManager.close (this_$.parent()); 
 	    
 	    
 	}, 
