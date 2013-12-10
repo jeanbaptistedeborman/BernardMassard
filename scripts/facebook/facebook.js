@@ -34,7 +34,7 @@ Facebook   =  {
                     if (response) {
                        Facebook.onLike
                     } else {
-                          Facebook.onDoesNotLike
+                       Facebook.onDoesNotLike
                     }
                 });
             
@@ -51,6 +51,7 @@ Facebook   =  {
             }, 
             onLike:function (){
             //Event Placeholder; 
+            trace ("empty event"")
             
             }, 
             onDoesNotLike:function (){
