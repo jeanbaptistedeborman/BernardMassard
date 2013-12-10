@@ -38,13 +38,14 @@ alert (Facebook);
     PopupManager.container_$ = ui_$;
     PopupManager.popups_$ = popups_$;
     PopupManager.display("intro");
-
+/*
     Facebook.onLike = function() {
         alert("onlike");
         PopupManager.close($('#intro'));
         BMGame.init();
 
     }
+    */
 
     PopupManager.onClosePopup = function() {
         switch (PopupManager.lastIdName) {
