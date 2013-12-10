@@ -32,9 +32,9 @@ Facebook  =  {
                 }, function(response) {
                     console.log(response);
                     if (response) {
-                       Facebook.onLike
+                       Facebook.onLike (); 
                     } else {
-                       Facebook.onDoesNotLike
+                       Facebook.onDoesNotLike (); 
                     }
                 });
             
