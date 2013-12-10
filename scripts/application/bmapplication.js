@@ -41,6 +41,7 @@ $(document).ready(function() {"use strict";( function(d) {
     PopupManager.display("intro");
 
     Facebook.onLike = function() {
+        alert ("onlike"); 
         PopupManager.close($('#intro'));
         BMGame.init();
 

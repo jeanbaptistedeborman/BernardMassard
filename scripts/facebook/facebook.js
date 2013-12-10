@@ -22,6 +22,7 @@ Facebook   =  {
             },
             
             checkLike:function  () {
+            alert ("checklike"); 
             
             FB.api({
                     method : "pages.isFan",
