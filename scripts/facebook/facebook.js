@@ -8,6 +8,8 @@ Facebook   =  {
                 });
 
                 FB.Event.subscribe('auth.authResponseChange', function(response) {
+                
+                	alert ("response reveived"); 
 
                     if (response.status === 'connected') {
 

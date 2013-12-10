@@ -2,7 +2,7 @@
 /*global SpriteAnimation, BMGame, PopupManager */
 
 $(document).ready(function() {"use strict";( function(d) {
-            
+
             var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
             if (d.getElementById(id)) {
                 return;
@@ -13,26 +13,19 @@ $(document).ready(function() {"use strict";( function(d) {
             js.src = "http://connect.facebook.net/en_US/all.js";
             ref.parentNode.insertBefore(js, ref);
         }(document));
-        
-         window.fbAsyncInit = function () {
-             
-              Facebook.launchInitSequence();
-              
-              
-    $(".js_checkLike").bind ("click", function() {
-        
-        
-        Facebook.launchInitSequence(Facebook.checkLike);
 
-    })
-             
-         }
-        
-        
+    window.fbAsyncInit = function() {
 
+        Facebook.launchInitSequence();
+
+        $(".js_checkLike").bind("click", function() {
+
+            Facebook.launchInitSequence(Facebook.checkLike);
+
+        })
+    }
     var ui_$ = $("#ui");
     var popups_$ = ui_$.find('#popups');
-
 
     //alert (popups_$.length);
     popups_$.detach();
@@ -41,7 +34,7 @@ $(document).ready(function() {"use strict";( function(d) {
     PopupManager.display("intro");
 
     Facebook.onLike = function() {
-        alert ("onlike"); 
+        alert("onlike");
         PopupManager.close($('#intro'));
         BMGame.init();
 
