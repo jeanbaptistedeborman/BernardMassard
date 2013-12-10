@@ -1,4 +1,4 @@
-Facebook   =  {
+Facebook  =  {
  launchInitSequence:function(callback) {
                 FB.init({
                     appId : '669311946433468',
@@ -51,7 +51,7 @@ Facebook   =  {
             }, 
             onLike:function (){
             //Event Placeholder; 
-            trace ("empty event"")
+            trace ("empty event"); 
             
             }, 
             onDoesNotLike:function (){

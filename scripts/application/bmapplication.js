@@ -1,7 +1,13 @@
 /*jslint vars:true, white:true, nomen:true, plusplus:true */
 /*global SpriteAnimation, BMGame, PopupManager */
 
-$(document).ready(function() {"use strict";( function(d) {
+$(document).ready(function() {"use strict";
+
+
+
+alert (Facebook); 
+
+( function(d) {
 
             var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
             if (d.getElementById(id)) {
