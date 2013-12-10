@@ -19,17 +19,24 @@ PopupManager = {
 		if (this.container_$) {
 			this.container_$.append(popup_$);
 
-			popup_$.find(".button").bind("click touch", PopupManager.close);
+			popup_$.find(".js_close").bind("click touch", PopupManager._closeMe);
 
 		} else {
-			throw (new Error("Please set property container_$ of PopupManager"));
+			throw (new Error("Please set property  container_$ of PopupManager"));
 
 		}
 
 	},
-	close : function() {"use strict";
-		var this_$ = $(this);
-		this_$.parent().detach();
+	_closeMe:function () {"use strict";
+	    var this_$ = $(this);
+	    close (this_$.parent()); 
+	    
+	    
+	}, 
+	
+	close : function(popup_$) {"use strict";
+	
+		popup_$.detach();
 		PopupManager.onClosePopup();
 
 	},
