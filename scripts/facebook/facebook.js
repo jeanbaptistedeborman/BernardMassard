@@ -25,11 +25,11 @@ Facebook = {
                     Facebook.initCallbackFunction();
                     //callback();
                 } else if (response.status === 'not_authorized') {
-                    Facebook.onAbort (); 
+                    
 
                     FB.login();
                 } else {
-                    Facebook.onAbort (); 
+           
                     FB.login();
                 }
             });
@@ -57,12 +57,6 @@ Facebook = {
         });
 
     },
-     onAbort: function () {"use strict"; 
-     
-        alert (" connection  aborted");
-  
-        
-    }, 
     onLike : function() {"use strict";
         //Event Placeholder;
 

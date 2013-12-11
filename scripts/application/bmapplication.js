@@ -26,7 +26,7 @@ $(document).ready(function() {"use strict";
         Facebook.launchInitSequence();
 
         $(".js_checkLike").bind("click", function() {
-            alert ("Facebook.userInfo.id : "+  Facebook.userInfo.id ); 
+            //alert ("Facebook.userInfo.id : "+  Facebook.userInfo.id ); 
             if ( Facebook.userInfo.id === undefined) {
                 
                 $("#warning").addClass("blink");
@@ -45,7 +45,7 @@ $(document).ready(function() {"use strict";
     PopupManager.container_$ = ui_$;
     PopupManager.popups_$ = popups_$;
     PopupManager.display("intro");
-    Facebook.onAbort = Facebook.onDoesNotLike = function() {
+  Facebook.onDoesNotLike = function() {
         $("#warning").addClass("blink");
 
     };
