@@ -2,7 +2,6 @@
 
 Facebook = {
     userInfo : {},
-    authEventSubscribed_bool:false, 
     launchInitSequence : function(callback) {"use strict"; 
 
         FB.init({
@@ -11,8 +10,6 @@ Facebook = {
             cookie : true, // enable cookies to allow the server to access the session
             xfbml : true // parse XFBML
         });
-        if (!this.authEventSubscribed_bool) {
-            this.authEventSubscribed_bool = true; 
 
         FB.Event.subscribe('auth.authResponseChange', function(response) {
 
@@ -29,7 +26,6 @@ Facebook = {
                 FB.login();
             }
         });
-        }
     },
 
     checkLike : function() {"use strict"; 
