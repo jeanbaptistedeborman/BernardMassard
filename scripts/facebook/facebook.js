@@ -1,5 +1,7 @@
 Facebook  =  {
+userInfo:{}, 
  launchInitSequence:function(callback) {
+ 				
                 FB.init({
                     appId : '669311946433468',
                     status : true, // check login status
@@ -12,6 +14,7 @@ Facebook  =  {
                 	//alert ("response reveived"); 
 
                     if (response.status === 'connected') {
+                     getUserInfo (); 
 
                         callback ();
                     } else if (response.status === 'not_authorized') {
@@ -24,7 +27,6 @@ Facebook  =  {
             },
             
             checkLike:function  () {
-            //alert ("checklike"); 
             
             FB.api({
                     method : "pages.isFan",
@@ -40,10 +42,10 @@ Facebook  =  {
             
             
             }, 
-            useAPI:function () {
-                //console.log('Welcome!  Fetching your information.... ');
+            getUserInfo:function () {
+           
                 FB.api('/me', function(response) {
-                    //console.log('Good to see you, ' + response.name + '.');
+                   userInfo = response; 
                 });
    
                 

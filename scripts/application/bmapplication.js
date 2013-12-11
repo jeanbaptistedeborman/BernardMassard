@@ -24,21 +24,20 @@ $(document).ready(function() {"use strict";
 
         $(".js_checkLike").bind("click", function() {
 
-            Facebook.launchInitSequence(Facebook.checkLike);
+            Facebook.checkLike();
 
         })
     }
     var ui_$ = $("#ui");
     var popups_$ = ui_$.find('#popups');
-
-    //alert (popups_$.length);
     popups_$.detach();
     PopupManager.container_$ = ui_$;
     PopupManager.popups_$ = popups_$;
     PopupManager.display("intro");
 
     Facebook.onLike = function() {
-        //alert("onlike");
+        trace ("ID ? :" + Facebook.userInfo.id);
+        trace ("info? :" + Facebook.userInfo);  
         PopupManager.close($('#intro'));
         BMGame.init();
 
