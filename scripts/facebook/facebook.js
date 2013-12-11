@@ -14,7 +14,7 @@ Facebook = {
             //alert ("response reveived");
 
             if (response.status === 'connected') {
-                getUserInfo();
+                  Facebook.getUserInfo();
 
                 callback();
             } else if (response.status === 'not_authorized') {
