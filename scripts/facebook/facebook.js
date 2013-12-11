@@ -5,6 +5,8 @@ Facebook = {
     authEventSubscribed_bool : false,
     initCallbackFunction : "",
     launchInitSequence : function(callbackFunction) {"use strict";
+    
+        alert ("init"); 
         this.initCallbackFunction = callbackFunction;
 
         FB.init({
@@ -56,6 +58,8 @@ Facebook = {
 
     },
      onAbort: function () {"use strict"; 
+     
+        alert (" connection  aborted");
   
         
     }, 
