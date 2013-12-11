@@ -19,7 +19,7 @@ Facebook = {
             if (response.status === 'connected') {
                   Facebook.getUserInfo();
 
-                callback();
+                  //callback();
             } else if (response.status === 'not_authorized') {
 
                 FB.login();
