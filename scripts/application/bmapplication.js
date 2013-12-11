@@ -26,8 +26,17 @@ $(document).ready(function() {"use strict";
         Facebook.launchInitSequence();
 
         $(".js_checkLike").bind("click", function() {
+            alert ("Facebook.userInfo.id : "+  Facebook.userInfo.id ); 
+            if ( Facebook.userInfo.id === undefined) {
+                
+                $("#warning").addClass("blink");
+                
+            } else {
+                
+                     Facebook.launchInitSequence(Facebook.checkLike);
+            }
 
-            Facebook.launchInitSequence(Facebook.checkLike);
+       
 
         });
     };
