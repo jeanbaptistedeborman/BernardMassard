@@ -7,7 +7,6 @@ to {
     top: 100px;
 }
 }
-
 @-webkit-keyframes
 wipeDown/* Safari and Chrome */ {from {
     top: -500px;
@@ -16,7 +15,22 @@ to {
     top: 100px;
 }
 }
+@-webkit-keyframes
+blink/* Safari and Chrome */ {from {
+    color: white;
+}
+to {
+   color: red;
+}
+}
 
+.blink {
+    color:white; 
+     -webkit-animation: blink .5s linear 0s 3 alternate; 
+    
+    
+    
+}
 .popup {
 
     -webkit-animation: wipeDown .5s;
@@ -53,6 +67,7 @@ to {
 .button:hover {
     background: blue
 }
+
 input {
     width 100%;
     display:block;

@@ -2,10 +2,10 @@
 
 Facebook = {
     userInfo : {},
-    authEventSubscribed_bool:false,
-    initCallbackFunction:"",  
+    authEventSubscribed_bool : false,
+    initCallbackFunction : "",
     launchInitSequence : function(callbackFunction) {"use strict";
-      this.initCallbackFunction = callbackFunction; 
+        this.initCallbackFunction = callbackFunction;
 
         FB.init({
             appId : '669311946433468',
@@ -14,25 +14,27 @@ Facebook = {
             xfbml : true // parse XFBML
         });
         if (!this.authEventSubscribed_bool) {
-            this.authEventSubscribed_bool = true; 
+            this.authEventSubscribed_bool = true;
 
-        FB.Event.subscribe('auth.authResponseChange', function(response) {
+            FB.Event.subscribe('auth.authResponseChange', function(response) {
 
-            if (response.status === 'connected') {
-                  Facebook.getUserInfo();
-Facebook.initCallbackFunction (); 
-                  //callback();
-            } else if (response.status === 'not_authorized') {
+                if (response.status === 'connected') {
+                    Facebook.getUserInfo();
+                    Facebook.initCallbackFunction();
+                    //callback();
+                } else if (response.status === 'not_authorized') {
+                    Facebook.onAbort (); 
 
-                FB.login();
-            } else {
-                FB.login();
-            }
-        });
+                    FB.login();
+                } else {
+                    Facebook.onAbort (); 
+                    FB.login();
+                }
+            });
         }
     },
 
-    checkLike : function() {"use strict"; 
+    checkLike : function() {"use strict";
 
         FB.api({
             method : "pages.isFan",
@@ -46,18 +48,22 @@ Facebook.initCallbackFunction ();
         });
 
     },
-    getUserInfo : function() {"use strict"; 
+    getUserInfo : function() {"use strict";
 
         FB.api('/me', function(response) {
             Facebook.userInfo = response;
         });
 
     },
-    onLike : function() {"use strict"; 
+     onAbort: function () {"use strict"; 
+  
+        
+    }, 
+    onLike : function() {"use strict";
         //Event Placeholder;
 
     },
-    onDoesNotLike : function() {"use strict"; 
+    onDoesNotLike : function() {"use strict";
         //Event Placeholder;
 
     }

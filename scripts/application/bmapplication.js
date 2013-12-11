@@ -4,9 +4,11 @@
 $(document).ready(function() {"use strict";
 
     //alert (Facebook);
+    $("#warning").addClass("blink");
 
     var ui_$ = $("#ui");
-    var popups_$ = ui_$.find('#popups'); ( function(d) {
+    var popups_$ = ui_$.find('#popups');
+    ( function(d) {
 
             var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
             if (d.getElementById(id)) {
@@ -34,10 +36,13 @@ $(document).ready(function() {"use strict";
     PopupManager.container_$ = ui_$;
     PopupManager.popups_$ = popups_$;
     PopupManager.display("intro");
+    Facebook.onAbort = Facebook.onDoesNotLike = function() {
+        $("#warning").addClass("blink");
+
+    };
 
     Facebook.onLike = function() {
-        trace("ID ? :" + Facebook.userInfo.id);
-        trace("info? :" + Facebook.userInfo);
+        //trace("ID ? :" + Facebook.userInfo.id);
         PopupManager.close($('#intro'));
         BMGame.init();
 
@@ -58,4 +63,4 @@ $(document).ready(function() {"use strict";
 
     };
 
-});
+}); 
