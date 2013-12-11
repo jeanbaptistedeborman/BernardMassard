@@ -2,8 +2,10 @@
 
 Facebook = {
     userInfo : {},
-    authEventSubscribed_bool:false, 
-    launchInitSequence : function(callback) {"use strict"; 
+    authEventSubscribed_bool:false,
+    initCallbackFunction:"",  
+    launchInitSequence : function(callbackFunction) {"use strict";
+      this.initCallbackFunction = callbackFunction; 
 
         FB.init({
             appId : '669311946433468',
@@ -18,7 +20,7 @@ Facebook = {
 
             if (response.status === 'connected') {
                   Facebook.getUserInfo();
-
+Facebook.initCallbackFunction (); 
                   //callback();
             } else if (response.status === 'not_authorized') {
 
