@@ -4,7 +4,7 @@
 $(document).ready(function() {"use strict";
 
     //alert (Facebook);
-    $("#warning").addClass("blink");
+    //$("#warning").addClass("blink");
 
     var ui_$ = $("#ui");
     var popups_$ = ui_$.find('#popups');
