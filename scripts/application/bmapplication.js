@@ -24,7 +24,7 @@ $(document).ready(function() {"use strict";
 
         $(".js_checkLike").bind("click", function() {
 
-            Facebook.checkLike();
+          Facebook.launchInitSequence(Facebook.checkLike);
 
         })
     }
