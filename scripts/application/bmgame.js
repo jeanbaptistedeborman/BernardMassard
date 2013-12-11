@@ -3,9 +3,36 @@
 
 var BMGame = {
     gameOver_bool : true,
-
+    impactAnimation : {},
+  cursorPos:[], 
     init : function() {"use strict";
+
+  
+        document.onmousemove = function(e) {
+            
+            BMGame.cursorPos[0] =e.pageX;    
+            BMGame.cursorPos[1] = e.pageY;
+        };
         //alert("init");
+
+        $.ajax({
+
+            url : "graphic/game/animation/impact.txt",
+            dataType : "json"
+
+        }).done(function(data) {    
+            BMGame.impactAnimation = new SpriteAnimation("graphic/game/animation/impact.png", data, 24);
+            BMGame.impactAnimation.tag_$.addClass ('impact');
+            BMGame.impactAnimation.onFinish = function (){
+                
+                BMGame.impactAnimation.tag_$.detach (); 
+                
+            };   
+            //impactAnimation.play ();
+
+            //
+
+        });
 
         $.ajax({
             url : "graphic/game/animation/icebreak.txt",
@@ -32,7 +59,17 @@ var BMGame = {
 
             }
             var playAnim = function() {
-                this.play(15);
+                
+                var impactTag_$ = BMGame.impactAnimation.tag_$; 
+                this.play(10);
+                
+                
+             BMGame.stage_$.append(BMGame.impactAnimation.tag_$);
+                impactTag_$.css ("top", BMGame.cursorPos[1] -  impactTag_$.height ());
+                impactTag_$.css ("left", BMGame.cursorPos[0]  - impactTag_$.width ()/2);   
+                 
+                
+                BMGame.impactAnimation.gotoAndPlay(1);
 
             };
             var finishAnim = function() {

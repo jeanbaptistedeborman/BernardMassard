@@ -5,10 +5,10 @@ $(document).ready(function() {"use strict";
 
     //alert (Facebook);
     //$("#warning").addClass("blink");
+   
 
     var ui_$ = $("#ui");
-    var popups_$ = ui_$.find('#popups');
-    ( function(d) {
+    var popups_$ = ui_$.find('#popups'); ( function(d) {
 
             var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
             if (d.getElementById(id)) {
@@ -26,17 +26,19 @@ $(document).ready(function() {"use strict";
         Facebook.launchInitSequence();
 
         $(".js_checkLike").bind("click", function() {
-            //alert ("Facebook.userInfo.id : "+  Facebook.userInfo.id ); 
-            if ( Facebook.userInfo.id === undefined) {
-                
-                $("#warning").addClass("blink");
-                
-            } else {
-                
-                     Facebook.launchInitSequence(Facebook.checkLike);
-            }
+            //alert ("Facebook.userInfo.id : "+  Facebook.userInfo.id );
+            if (Facebook.userInfo.id === undefined) {
 
-       
+                $("#warning").addClass("blink");
+                /* REMOVE THIS  */
+
+                PopupManager.close($('#intro'));
+                BMGame.init();
+
+            } else {
+
+                Facebook.launchInitSequence(Facebook.checkLike);
+            }
 
         });
     };
@@ -45,7 +47,7 @@ $(document).ready(function() {"use strict";
     PopupManager.container_$ = ui_$;
     PopupManager.popups_$ = popups_$;
     PopupManager.display("intro");
-  Facebook.onDoesNotLike = function() {
+    Facebook.onDoesNotLike = function() {
         $("#warning").addClass("blink");
 
     };
@@ -72,4 +74,4 @@ $(document).ready(function() {"use strict";
 
     };
 
-}); 
+});

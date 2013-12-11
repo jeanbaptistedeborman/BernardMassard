@@ -20,19 +20,15 @@ blink/* Safari and Chrome */ {from {
     color: white;
 }
 to {
-   color: red;
+    color: red;
 }
 }
 
 .blink {
-    color:white; 
-     -webkit-animation: blink .5s linear 0s 3 alternate; 
-    
-    
-    
+    color: white;
+    -webkit-animation: blink .5s linear 0s 3 alternate;
 }
 .popup {
-
     -webkit-animation: wipeDown .5s;
     animation: wipeDown .5s;
     position: relative;
@@ -68,10 +64,9 @@ to {
     background: blue
 }
 
-input {
-    width 100%;
-    display:block;
-    width:300px;
-    margin:10px;    
-    }
+input {width 100%;
+    display: block;
+    width: 300px;
+    margin: 10px;
+}
 
