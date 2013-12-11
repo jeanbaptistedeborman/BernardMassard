@@ -1,11 +1,12 @@
-/*jslint vars:true, white:true, nomen:true, plusplus:true */
-/*global SpriteAnimation, BMGame, PopupManager */
+/*jslint vars:true, white:true, nomen: true, plusplus:true */
+/*global SpriteAnimation, BMGame, Facebook,  PopupManager */
 
 $(document).ready(function() {"use strict";
 
     //alert (Facebook);
 
-    ( function(d) {
+    var ui_$ = $("#ui");
+    var popups_$ = ui_$.find('#popups'); ( function(d) {
 
             var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
             if (d.getElementById(id)) {
@@ -24,24 +25,23 @@ $(document).ready(function() {"use strict";
 
         $(".js_checkLike").bind("click", function() {
 
-          Facebook.launchInitSequence(Facebook.checkLike);
+            Facebook.launchInitSequence(Facebook.checkLike);
 
-        })
-    }
-    var ui_$ = $("#ui");
-    var popups_$ = ui_$.find('#popups');
+        });
+    };
+
     popups_$.detach();
     PopupManager.container_$ = ui_$;
     PopupManager.popups_$ = popups_$;
     PopupManager.display("intro");
 
     Facebook.onLike = function() {
-        trace ("ID ? :" + Facebook.userInfo.id);
-        trace ("info? :" + Facebook.userInfo);  
+        trace("ID ? :" + Facebook.userInfo.id);
+        trace("info? :" + Facebook.userInfo);
         PopupManager.close($('#intro'));
         BMGame.init();
 
-    }
+    };
 
     PopupManager.onClosePopup = function() {
         switch (PopupManager.lastIdName) {
@@ -52,10 +52,10 @@ $(document).ready(function() {"use strict";
             case "negativeResult":
             case "positiveResult":
                 PopupManager.display('form');
+                break;
 
-        };
+        }
 
     };
 
 });
-

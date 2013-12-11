@@ -1,4 +1,4 @@
-/*JSLint  */
+/*jslint vars:true, white:true, nomen: true, plusplus:true */
 /*global $*/
 
 PopupManager = {

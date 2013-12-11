@@ -1,6 +1,8 @@
+/*global FB*/
+
 Facebook = {
     userInfo : {},
-    launchInitSequence : function(callback) {
+    launchInitSequence : function(callback) {"use strict"; 
 
         FB.init({
             appId : '669311946433468',
@@ -26,13 +28,12 @@ Facebook = {
         });
     },
 
-    checkLike : function() {
+    checkLike : function() {"use strict"; 
 
         FB.api({
             method : "pages.isFan",
-            page_id : "607595305979967",
+            page_id : "607595305979967"
         }, function(response) {
-            console.log(response);
             if (response) {
                 Facebook.onLike();
             } else {
@@ -41,19 +42,19 @@ Facebook = {
         });
 
     },
-    getUserInfo : function() {
+    getUserInfo : function() {"use strict"; 
 
         FB.api('/me', function(response) {
             alert("GOT RESPONSE" + response);
-            userInfo = response;
+            Facebook.userInfo = response;
         });
 
     },
-    onLike : function() {
+    onLike : function() {"use strict"; 
         //Event Placeholder;
 
     },
-    onDoesNotLike : function() {
+    onDoesNotLike : function() {"use strict"; 
         //Event Placeholder;
 
     }
