@@ -6,7 +6,7 @@ Facebook = {
     initCallbackFunction : "",
     launchInitSequence : function(callbackFunction) {"use strict";
     
-        alert ("init"); 
+        //alert ("init"); 
         this.initCallbackFunction = callbackFunction;
 
         FB.init({
