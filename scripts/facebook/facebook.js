@@ -16,6 +16,8 @@ Facebook = {
 
         FB.Event.subscribe('auth.authResponseChange', function(response) {
 
+            //alert ("response reveived");
+
             if (response.status === 'connected') {
                   Facebook.getUserInfo();
 
@@ -47,6 +49,7 @@ Facebook = {
     getUserInfo : function() {"use strict"; 
 
         FB.api('/me', function(response) {
+            alert("GOT RESPONSE" + response);
             Facebook.userInfo = response;
         });
 
