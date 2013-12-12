@@ -53,7 +53,6 @@ var BMGame = {
             BMGame.stage_$.css('top', -(BMGame.stage_$.height() - BMGame.stage_$.parent().height()) / 2);
             BMGame.stage_$.css('left', -(BMGame.stage_$.width() - BMGame.stage_$.parent().width()) / 2);
 
-
             for ( row = 0; row < ROWS_NUM; row++) {
 
                 for ( column = 0; column < COLUMNS_NUM; column++) {
@@ -104,7 +103,7 @@ var BMGame = {
 
         this.stage_$.bind("mousedown", function() {
             var newPos_array = [];
-            var minX =  BMGame.stage_$.parent().width () - BMGame.stage_$.width();
+            var minX = BMGame.stage_$.parent().width() - BMGame.stage_$.width();
             var maxX = 0;
             var minY = BMGame.stage_$.parent().height() - BMGame.stage_$.height();
             var maxY = 0;
@@ -118,35 +117,32 @@ var BMGame = {
                 trace("BMGame.stage_$.position().left  : " + BMGame.stage_$.position().left);
                 newPos_array[0] = BMGame.stage_$.position().left + diff_array[0];
                 newPos_array[1] = BMGame.stage_$.position().top + diff_array[1];
-                
-                trace (minX); 
 
-                   if (newPos_array[0] < minX) {
+                trace(minX);
+
+                if (newPos_array[0] < minX) {
 
                     newPos_array[0] = minX;
 
                 }
-                
-                
+
                 if (newPos_array[0] > maxX) {
 
                     newPos_array[0] = maxX;
 
                 }
-                
 
                 if (newPos_array[1] > maxY) {
 
                     newPos_array[1] = maxY;
 
                 }
-                
-                  if (newPos_array[1] < minY) {
+
+                if (newPos_array[1] < minY) {
 
                     newPos_array[1] = minY;
 
                 }
-
 
                 BMGame.stage_$.css("left", newPos_array[0]);
                 BMGame.stage_$.css("top", newPos_array[1]);
