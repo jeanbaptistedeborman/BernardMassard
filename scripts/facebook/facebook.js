@@ -5,8 +5,8 @@ Facebook = {
     authEventSubscribed_bool : false,
     initCallbackFunction : "",
     launchInitSequence : function(callbackFunction) {"use strict";
-    
-        //alert ("init"); 
+
+        //alert ("init");
         this.initCallbackFunction = callbackFunction;
 
         FB.init({
@@ -18,6 +18,10 @@ Facebook = {
         if (!this.authEventSubscribed_bool) {
             this.authEventSubscribed_bool = true;
 
+            FB.Event.subscribe('edge.create', function(href, widget) {
+                alert('You liked the URL: ' + href);
+            });
+
             FB.Event.subscribe('auth.authResponseChange', function(response) {
 
                 if (response.status === 'connected') {
@@ -25,11 +29,10 @@ Facebook = {
                     Facebook.initCallbackFunction();
                     //callback();
                 } else if (response.status === 'not_authorized') {
-                    
 
                     FB.login();
                 } else {
-           
+
                     FB.login();
                 }
             });
