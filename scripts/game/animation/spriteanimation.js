@@ -124,7 +124,7 @@ function SpriteAnimation(img_url, json_obj, fps_num) {"use strict";
         //_context.tag_$.width (data.frames[0].frame.w);
 
         _ready_bool = true;
-        _context.tag_$.on("click", function() {
+        _context.tag_$.on("click tap touch", function() {
 
             _context.onClick();
 
