@@ -1,19 +1,28 @@
-.stage {
-	position: absolute; 
-	Xbackground-color:#0000FF; 
-	background:url(../graphic/game/bg.jpg); 
-	background-repeat:repeat; 
-	width:2000px; 
-	height:2000px; 
-
+#gameContainer {
+	width:500px;
+	height:500px;
+	overflow:hidden; 
+	position:absolute;  
 }
-.stage div{
-	position:absolute; 
-	
+#test {
+    background:#FF0000;
+    width:1000px; 
+    height:1000px;  
+    
+    
+    
+}
+#stage {
+	position:absolute;
+	background-color:#0000FF;
+	background:url(../graphic/game/bg.jpg);
+	background-repeat:repeat;
+	width:3000px;
+	height:3000px;
+}
+#stage div {
+	position:absolute;
 }
 .impact {
-    position:absolute; 
-    
-    
-    
+	position:relative;
 }

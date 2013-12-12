@@ -31,7 +31,6 @@ PopupManager = {
 	    var this_$ = $(this);
 	    PopupManager.close (this_$.parent()); 
 	    
-	    
 	}, 
 	
 	close : function(popup_$) {"use strict";

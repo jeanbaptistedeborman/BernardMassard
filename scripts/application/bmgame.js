@@ -12,8 +12,9 @@ var BMGame = {
             
             BMGame.cursorPos[0] =e.pageX;    
             BMGame.cursorPos[1] = e.pageY;
-        };
-        //alert("init");
+            
+            trace ("movement : " + e.movementX); 
+        }; 
 
         $.ajax({
 
@@ -40,13 +41,16 @@ var BMGame = {
         }).done(function(data) {
 
             var GRID_SIZE_NUM = 150;
-            var COLUMNS_NUM = 6;
-            var ROWS_NUM = 6;
+            var COLUMNS_NUM = 20;
+            var ROWS_NUM = 20;
 
             var n, row, column, iceAnimation, iceAnimationTag_$, random_num;
             var positions_array = [];
             BMGame.stage_$ = $("#stage");
             BMGame.stage_$.addClass("stage");
+            
+            BMGame.stage_$.css ('top',  -(BMGame.stage_$.height ()- BMGame.stage_$.parent ().height ())/2);
+              BMGame.stage_$.css ('left',  -(BMGame.stage_$.width ()- BMGame.stage_$.parent ().width ())/2);  
 
             //alert("hello");
 
@@ -95,6 +99,19 @@ var BMGame = {
         });
 
     },
+    
+    drag:function () {"use strict";
+    this.stage_$.bind ("click", function () {
+        
+        var startPoint= [cursorPos[0], cursorPos[1]]; 
+        
+        
+    });  
+        
+        
+    }
+    
+    , 
 
     displayResult : function() {"use strict";
 
