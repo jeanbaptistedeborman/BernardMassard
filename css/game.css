@@ -1,7 +1,7 @@
 #gameContainer {
 	width:500px;
 	height:500px;
-	overflow:hidden; 
+	overflow:scroll; 
 	position:absolute;  
 }
 #test {
