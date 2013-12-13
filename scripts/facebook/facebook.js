@@ -1,6 +1,7 @@
 /*global FB*/
 
 Facebook = {
+	appId:undefined,  
 	userInfo : {},
 	authEventSubscribed_bool : false,
 	initCallbackFunction : "",
@@ -10,7 +11,7 @@ Facebook = {
 		this.initCallbackFunction = callbackFunction;
 
 		FB.init({
-			appId : '669311946433468',
+			appId : Facebook.appId,
 			status : true, // check login status
 			cookie : true, // enable cookies to allow the server to access the session
 			xfbml : true // parse XFBML

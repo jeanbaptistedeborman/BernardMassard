@@ -8,6 +8,17 @@ $(document).ready(function() {"use strict";
 
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
+	
+	trace ("window.location.href : " + window.location.href); 
+	if (String (window.location.href).indexOf ("azurewebsites") !== -1) {
+	
+		Facebook.appId ='669311946433468';
+	} else {
+		Facebook.appId ='1384449105138296';
+		
+		
+	}
+	
 	( function(d) {
 
 			var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
@@ -39,6 +50,7 @@ $(document).ready(function() {"use strict";
 
 				Facebook.launchInitSequence(Facebook.checkLike);
 			}
+			
 
 		});
 	};
