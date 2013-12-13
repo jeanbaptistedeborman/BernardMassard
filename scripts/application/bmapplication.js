@@ -7,8 +7,7 @@ $(document).ready(function() {"use strict";
 	//$("#warning").addClass("blink");
 
 	var ui_$ = $("#ui");
-	var popups_$ = ui_$.find('#popups');
-	( function(d) {
+	var popups_$ = ui_$.find('#popups'); ( function(d) {
 
 			var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
 			if (d.getElementById(id)) {
@@ -73,18 +72,19 @@ $(document).ready(function() {"use strict";
 			case "form":
 
 				var form_$ = $("form"), data = {
-					fbid : Facebook.id
+
 				};
-				trace (form_$); 
-				
+				data.fbid = Facebook.id;
+				trace(data);
+
 				form_$.children().each(function(index, element) {
-					var element_$ = $(element); 
-					trace (element_$.attr("name") + "/ "+ element_$.attr("value")); 
+					var element_$ = $(element);
+					trace(element_$.attr("name") + "/ " + element_$.attr("value"));
 					data[element_$.attr("name")] = element_$.attr("value");
 
 				});
 
-				trace (data.length);
+				trace(data);
 				$.ajax({
 					url : "http://www.d1009502-4898.luxcloud.net/api/contest.php",
 					type : "GET",
