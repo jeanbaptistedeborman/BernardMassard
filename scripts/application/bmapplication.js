@@ -3,75 +3,101 @@
 
 $(document).ready(function() {"use strict";
 
-    //alert (Facebook);
-    //$("#warning").addClass("blink");
-   
+	//alert (Facebook);
+	//$("#warning").addClass("blink");
 
-    var ui_$ = $("#ui");
-    var popups_$ = ui_$.find('#popups'); ( function(d) {
+	var ui_$ = $("#ui");
+	var popups_$ = ui_$.find('#popups');
+	( function(d) {
 
-            var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement('script');
-            js.id = id;
-            js.async = true;
-            js.src = "http://connect.facebook.net/en_US/all.js";
-            ref.parentNode.insertBefore(js, ref);
-        }(document));
+			var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement('script');
+			js.id = id;
+			js.async = true;
+			js.src = "http://connect.facebook.net/en_US/all.js";
+			ref.parentNode.insertBefore(js, ref);
+		}(document));
 
-    window.fbAsyncInit = function() {
+	window.fbAsyncInit = function() {
 
-        Facebook.launchInitSequence();
+		Facebook.launchInitSequence();
 
-        $(".js_checkLike").bind("click", function() {
-            //alert ("Facebook.userInfo.id : "+  Facebook.userInfo.id );
-            if (Facebook.userInfo.id === undefined) {
+		$(".js_checkLike").bind("click", function() {
+			//alert ("Facebook.userInfo.id : "+  Facebook.userInfo.id );
+			if (Facebook.userInfo.id === undefined) {
 
-                $("#warning").addClass("blink");
-                /* REMOVE THIS  */
+				$("#warning").addClass("blink");
+				/* REMOVE THIS  */
 
-                PopupManager.close($('#intro'));
-                BMGame.init();
+				PopupManager.close($('#intro'));
+				BMGame.init();
 
-            } else {
+			} else {
 
-                Facebook.launchInitSequence(Facebook.checkLike);
-            }
+				Facebook.launchInitSequence(Facebook.checkLike);
+			}
 
-        });
-    };
+		});
+	};
 
-    popups_$.detach();
-    PopupManager.container_$ = ui_$;
-    PopupManager.popups_$ = popups_$;
-    PopupManager.display("intro");
-    Facebook.onDoesNotLike = function() {
-        $("#warning").addClass("blink");
+	popups_$.detach();
+	PopupManager.container_$ = ui_$;
+	PopupManager.popups_$ = popups_$;
+	PopupManager.display("intro");
+	Facebook.onDoesNotLike = function() {
+		$("#warning").addClass("blink");
 
-    };
+	};
 
-    Facebook.onLike = function() {
-        //trace("ID ? :" + Facebook.userInfo.id);
-        PopupManager.close($('#intro'));
-        BMGame.init();
+	Facebook.onLike = function() {
+		//trace("ID ? :" + Facebook.userInfo.id);
+		PopupManager.close($('#intro'));
+		BMGame.init();
 
-    };
+	};
 
-    PopupManager.onClosePopup = function() {
-        switch (PopupManager.lastIdName) {
-            case "intro":
+	PopupManager.onClosePopup = function() {
+		switch (PopupManager.lastIdName) {
+			case "intro":
 
-                break;
+				break;
 
-            case "negativeResult":
-            case "positiveResult":
-                PopupManager.display('form');
-                break;
+			case "negativeResult":
+			case "positiveResult":
+				PopupManager.display('form');
+				break;
 
-        }
+			case "form":
 
-    };
+				var form_$ = $("form"), data = {
+					fbid : Facebook.id
+				};
+				trace (form_$); 
+				
+				form_$.children().each(function(index, element) {
+					var element_$ = $(element); 
+					trace (element_$.attr("name") + "/ "+ element_$.attr("value")); 
+					data[element_$.attr("name")] = element_$.attr("value");
+
+				});
+
+				trace (data.length);
+				$.ajax({
+					url : "http://www.d1009502-4898.luxcloud.net/api/contest.php",
+					type : "GET",
+					data : data
+				}).done(function() {
+
+					//alert("sckfdghjkhg fdkgjkfgkf dkgfkgfk");
+				});
+
+				break;
+
+		}
+
+	};
 
 });

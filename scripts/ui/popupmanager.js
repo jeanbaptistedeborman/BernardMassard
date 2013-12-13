@@ -34,9 +34,9 @@ PopupManager = {
 	}, 
 	
 	close : function(popup_$) {"use strict";
-	
-		popup_$.detach();
 		PopupManager.onClosePopup();
+		popup_$.detach();
+	
 
 	},
 	onClosePopup : function() {"use strict";
