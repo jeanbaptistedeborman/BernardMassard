@@ -76,11 +76,11 @@ $(document).ready(function() {"use strict";
 					fbid : "no-id"
 
 				};
-				trace ("Facebook.id : " + Facebook.id); 
+				trace ("Facebook.id : " + Facebook.userInfo.id); 
 
-				if (Facebook.id !== undefined) {
-					data.fbid = Facebook.id;
-				}
+			
+					data.fbid = Facebook.userInfo.id;
+				
 
 				trace(data);
 
