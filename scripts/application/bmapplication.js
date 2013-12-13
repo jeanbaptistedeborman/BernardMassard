@@ -7,7 +7,8 @@ $(document).ready(function() {"use strict";
 	//$("#warning").addClass("blink");
 
 	var ui_$ = $("#ui");
-	var popups_$ = ui_$.find('#popups'); ( function(d) {
+	var popups_$ = ui_$.find('#popups');
+	( function(d) {
 
 			var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
 			if (d.getElementById(id)) {
@@ -72,9 +73,15 @@ $(document).ready(function() {"use strict";
 			case "form":
 
 				var form_$ = $("form"), data = {
+					fbid : "no-id"
 
 				};
-				data.fbid = Facebook.id;
+				trace ("Facebook.id : " + Facebook.id); 
+
+				if (Facebook.id !== undefined) {
+					data.fbid = Facebook.id;
+				}
+
 				trace(data);
 
 				form_$.children().each(function(index, element) {
