@@ -1,83 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
+	<head>
+		<meta charset="utf-8" />
 
-        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-        Remove this if you use the .htaccess -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        <title>index</title>
-        <meta name="description" content="" />
-        <meta name="author" content="Jean-Baptiste de Borman" />
+		<title>index</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Jean-Baptiste de Borman" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
-         <script src="scripts/dev/utils.js"></script>
-        <script src="scripts/facebook/facebook.js"></script>
-        <script src="scripts/application/bmgame.js"></script>
-       
-        <script src="scripts/game/animation/spriteanimation.js" ></script>
-        <script src="scripts/ui/popupmanager.js"></script>
-        <script src="scripts/application/bmapplication.js"></script>
+		<script src="scripts/dev/utils.js"></script>
+		<script src="scripts/facebook/facebook.js"></script>
+		<script src="scripts/application/bmgame.js"></script>
 
-        <link rel="stylesheet" href="css/game.css"/>
-        <link rel="stylesheet" href="css/ui.css"/>
+		<script src="scripts/game/animation/spriteanimation.js" ></script>
+		<script src="scripts/ui/popupmanager.js"></script>
+		<script src="scripts/application/bmapplication.js"></script>
 
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    </head>
+		<link rel="stylesheet" href="css/game.css"/>
+		<link rel="stylesheet" href="css/ui.css"/>
 
-    <body>
-        <div id="fb-root"></div>
-        <div id="gameContainer">
-        <div id="stage">DOES NOT WORK ON FIREFOX !!!
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	</head>
 
-        </div>
-        </div>
-        <div id="ui">
-            <div id = "popups">
-                <div class="popup" id="intro">
-                    <div class="fb-like" data-href="https://www.facebook.com/pages/Testjbdeborman/607595305979967https://www.facebook.com/pages/Testjbdeborman/607595305979967" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
-                    <p id='warning'>Vous devez Liker Bernard Massart pour participer !<p>
-                    <h1>Gagnez un Magnum et un diamant!</h1>
-                    <div class="button js_checkLike">
-                        Continuer
-                    </div>
-                </div>
-                <div class="popup" id="negativeResult">
-                    Pas de chance, ce cadeau est vide !  Confirmez votre participation pour avoir une chance de gagner un cadeau >
-                    <div class="button js_close">
-                        Continuer
-                    </div>
-                </div>
-                <div class="popup" id="positiveResult">
-                    Félicitation. Vous avez trouvé la bouteille. Confirmez votre participation >
-                    <div class="button js_close">
-                        Continuer
-                    </div>
-                </div>
-                <div class="popup" id="form">
-                    <form>
-                        <input name='first_name' type="text" value = "Votre prénom" />
-                        <input name='last_name' type="text" value = "Votre nom"/>
-                        <input name='email' type="email" value = "E-mail"/>
-                        <input name='birthdate' type="date" value = "Date de naissance"/>
-                        <input name='country' type="text" value = "Pays"/>
-                        <input name='answer' type="text" value = "Réponse à la question"/>
-   
+	<body>
+		<div id="fb-root"></div>
+	<div id="gameContainer">
+			<div id="stage">
+				DOES NOT WORK ON FIREFOX !!!
 
-                    </form>
-                    <div class="button js_close">
-                        Validez
-                    </div>
-                </div>
+			</div>
+		</div>
+		<div id="ui">
+			<div id = "popups">
+				
+				<div class="popup" id="intro">
+			
+					<h1>NE MANQUEZ PAS
+					<br/>
+					L'OCCASION DE BRISER LA GLACE</h1>
+					<p id='warning'>
+						et tentez de gagner un diamant
+						<br>
+						ainsi que de nombreux magnums Bernard Massard!
+					<p>
+						<img id ='diamond' src='graphic/img/diamond.png'>
 
-            </div>
+					<p id="callToAction">
+						Likez Bernard Massard pour participer !
+					</p>
+							<div class="button js_continue">Participer</div>
+					
+					
+					<div class="fb-like" data-href="https://www.facebook.com/pages/Testjbdeborman/607595305979967" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
 
-        </div>
+					
+					
+				</div>
+				<div class="popup" id="negativeResult">
+					Pas de chance, ce cadeau est vide !  Confirmez votre participation pour avoir une chance de gagner un cadeau >
+					<div class="button js_close">
+						Continuer
+					</div>
+				</div>
+				<div class="popup" id="positiveResult">
+					Félicitation. Vous avez trouvé la bouteille. Confirmez votre participation >
+					<div class="button js_close">
+						Continuer
+					</div>
+				</div>
+				<div class="popup" id="form">
+					<form>
+						<input name='first_name' type="text" value = "Votre prénom" />
+						<input name='last_name' type="text" value = "Votre nom"/>
+						<input name='email' type="email" value = "E-mail"/>
+						<input name='birthdate' type="date" value = "Date de naissance"/>
+						<input name='country' type="text" value = "Pays"/>
+						<input name='answer' type="text" value = "Réponse à la question"/>
 
-    </body>
+					</form>
+					<div class="button js_close">
+						Validez
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		
+			
+
+	</body>
 </html>

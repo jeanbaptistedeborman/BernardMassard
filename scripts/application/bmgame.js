@@ -8,6 +8,7 @@ var BMGame = {
 	startDragPoint : [],
 	dragInterval : null,
 	init : function() {"use strict";
+		$('#gameContainer').show (); 
 
 		document.onmousemove = function(e) {
 
@@ -16,27 +17,15 @@ var BMGame = {
 
 			//trace ("movement : " + e.movementX);
 		};
+		alert ("init"); 
 
+	
 		$.ajax({
-
-			url : "graphic/game/animation/impact.txt",
-			dataType : "json"
-
-		}).done(function(data) {
-			BMGame.impactAnimation = new SpriteAnimation("graphic/game/animation/impact.png", data, 24);
-			BMGame.impactAnimation.tag_$.addClass('impact');
-			BMGame.impactAnimation.onFinish = function() {
-
-				BMGame.impactAnimation.tag_$.detach();
-
-			};
-
-		});
-
-		$.ajax({
-			url : "graphic/game/animation/icebreak.txt",
+			url : "gagner.txt",
 			dataType : "json"
 		}).done(function(data) {
+			
+			
 
 			var GRID_SIZE_NUM = 150;
 			var COLUMNS_NUM = 10;
@@ -80,7 +69,7 @@ var BMGame = {
 				var position_array;
 				random_num = Math.floor(Math.random() * positions_array.length);
 				position_array = positions_array.splice(random_num, random_num+1)[0];
-				iceAnimation = new SpriteAnimation("graphic/game/animation/icebreak.png", data, 36);
+				iceAnimation = new SpriteAnimation("graphic/game/animation/gagner.png", data, 36);
 				iceAnimationTag_$ = iceAnimation.tag_$;
 				iceAnimationTag_$.addClass("iceAnimation");
 

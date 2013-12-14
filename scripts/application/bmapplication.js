@@ -8,18 +8,15 @@ $(document).ready(function() {"use strict";
 
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
-	
-	trace ("window.location.href : " + window.location.href); 
-	if (String (window.location.href).indexOf ("azurewebsites") !== -1) {
-	
-		Facebook.appId ='669311946433468';
+
+	trace("window.location.href : " + window.location.href);
+	if (String(window.location.href).indexOf("azurewebsites") !== -1) {
+
+		Facebook.appId = '669311946433468';
 	} else {
-		Facebook.appId ='1384449105138296';
-		
-		
-	}
-	
-	( function(d) {
+		Facebook.appId = '1384449105138296';
+
+	}( function(d) {
 
 			var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
 			if (d.getElementById(id)) {
@@ -34,39 +31,48 @@ $(document).ready(function() {"use strict";
 
 	window.fbAsyncInit = function() {
 
-		Facebook.launchInitSequence();
+		Facebook.launchInitSequence(Facebook.checkLike);
 
-		$(".js_checkLike").bind("click", function() {
-			//alert ("Facebook.userInfo.id : "+  Facebook.userInfo.id );
-			if (Facebook.userInfo.id === undefined) {
+		/*$(".js_checkLike").bind("click", function() {
+		 //alert ("Facebook.userInfo.id : "+  Facebook.userInfo.id );
+		 if (Facebook.userInfo.id === undefined) {
 
-				$("#warning").addClass("blink");
-				/* REMOVE THIS  */
+		 $("#warning").addClass("blink");
+		 REMOVE THIS
 
-				PopupManager.close($('#intro'));
-				BMGame.init();
+		 PopupManager.close($('#intro'));
+		 BMGame.init();
 
-			} else {
+		 } else {
 
-				Facebook.launchInitSequence(Facebook.checkLike);
-			}
-			
+		 Facebook.launchInitSequence(Facebook.checkLike);
+		 }
 
-		});
+		 });
+		 */
 	};
+//$(".js_continue").hide (); 
+$ ("#gameContainer").hide (); 
+	$(".js_continue").bind("click", function() {
+		alert ("continue"); 
+		PopupManager.close($('#intro'));
+		BMGame.init();
+
+	});
 
 	popups_$.detach();
 	PopupManager.container_$ = ui_$;
 	PopupManager.popups_$ = popups_$;
 	PopupManager.display("intro");
 	Facebook.onDoesNotLike = function() {
-		$("#warning").addClass("blink");
+		//$("#warning").addClass("blink");
 
 	};
 
 	Facebook.onLike = function() {
 		//trace("ID ? :" + Facebook.userInfo.id);
 		PopupManager.close($('#intro'));
+		$(".jscheckLike").css("display", block);
 		BMGame.init();
 
 	};
@@ -88,11 +94,9 @@ $(document).ready(function() {"use strict";
 					fbid : "no-id"
 
 				};
-				trace ("Facebook.id : " + Facebook.userInfo.id); 
+				trace("Facebook.id : " + Facebook.userInfo.id);
 
-			
-					data.fbid = Facebook.userInfo.id;
-				
+				data.fbid = Facebook.userInfo.id;
 
 				trace(data);
 

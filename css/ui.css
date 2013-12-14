@@ -1,72 +1,104 @@
+@import url('http://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
 @keyframes wipeDown
 {
 from {
-    top: -500px;
+	top: -500px;
+	opacity: 0;
 }
 to {
-    top: 100px;
+	top: 0px;
+	opacity: 1;
 }
 }
 @-webkit-keyframes
 wipeDown/* Safari and Chrome */ {from {
-    top: -500px;
+	top: -500px;
 }
 to {
-    top: 100px;
+	top: 100px;
 }
 }
 @-webkit-keyframes
 blink/* Safari and Chrome */ {from {
-    color: white;
+	color: white;
 }
 to {
-    color: red;
+	color: red;
 }
+}
+
+body {
+	width: 800px;
+	background: url('../graphic/ui/bg1.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin: 0px auto 0px auto;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+#stage {
+
+	Xdisplay: none;
 }
 
 .blink {
-    color: white;
-    -webkit-animation: blink .5s linear 0s 3 alternate;
+	color: white;
+	-webkit-animation: blink .5s linear 0s 3 alternate;
 }
 .popup {
-    -webkit-animation: wipeDown .5s;
-    animation: wipeDown .5s;
-    position: relative;
-    top: 100px;
-    margin: 0px auto 0px auto;
-    padding: 50px;
-    width: 400px;
-    height: 250px;
-    background: red;
-    text-align: center;
+	-webkit-animation: wipeDown .5s;
+	animation: wipeDown .5s;
+	margin: 0px auto 0px auto;
+	padding: 50px;
+	height: 250px;
+	text-align: center;
+}
+.popup h1 {
+	color: white;
+	font-size: 50px;
+	font-weight: 200;
+	line-height: 1.1em;
+	text-transform: uppercase;
+	margin: 115px 0px 15px 0px;
+	padding: 0;
+	text-shadow: 3px 5px 5px #000;
+}
+
+#diamond {
+	margin: 40px 0px 40px 0px;
+}
+.popup p {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
 }
 .popup .button {
-
-    position: absolute;
-    background: yellow;
-    right: 50px;
-    bottom: 50px;
-}
-.popup .button {
-
-    position: absolute;
-    bottom: 50px;
+	background: url('../graphic/ui/btn_bg.png');
+	display: inline-block;
+	width: 192px;
+	height: 55px;
+	font-size: 26px;
+	line-height: 55px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .button {
-    -webkit-transition: background 0.2s;
-    transition: background 0.2s;
-    cursor: pointer;
-    background: yellow;
-    padding: 10px;
+
+	cursor: pointer;
 }
 .button:hover {
-    background: blue
+	color: white;
+	cursor: pointer;
+}
+#callToAction {
+	margin: 0px 0px 20px 0px;
 }
 
-input {width 100%;
-    display: block;
-    width: 300px;
-    margin: 10px;
+input {
+	
+	display: block;
+	width: 300px;
+	margin: 10px;
 }
 
