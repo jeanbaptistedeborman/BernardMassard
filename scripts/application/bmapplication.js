@@ -9,7 +9,7 @@ $(document).ready(function() {"use strict";
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
 
- $(".fb-like").css ("display", "none"); 
+ //$(".fb-like").css ("display", "none"); 
 	//trace("window.location.href : " + window.location.href);
 	if (String(window.location.href).indexOf("azurewebsites") !== -1) {
 
