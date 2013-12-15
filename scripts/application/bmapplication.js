@@ -15,12 +15,12 @@ $(document).ready(function() {"use strict";
 	preloadImage("graphic/game/animation/icebreak.png");
 
 	if (UserAgent.anyMobile() || true) {
-		testLikeInterval = setInterval(1000, function() {
+		testLikeInterval = setInterval(function() {
 			
 			trace ("testLikeInterval : " + testLikeInterval); 
 			Facebook.checkLike();
 
-		});
+		}, 1000);
 
 	}
 
