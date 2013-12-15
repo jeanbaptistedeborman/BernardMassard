@@ -2,7 +2,7 @@
 /*global SpriteAnimation, BMGame, Facebook,  PopupManager */
 
 $(document).ready(function() {"use strict";
- alert ('viewport no scalable'); 
+ alert ('touch is scrollable'); 
 
 	$('.js_continue').css('display', 'none');
 	var ui_$ = $("#ui");

@@ -4,7 +4,10 @@
 	overflow:hidden; 
 	position:absolute;  
 }
-
+.touch #gameContainer {
+	overflow:scroll; 
+	
+}
 
 #stage {
 	position:absolute;
