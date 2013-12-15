@@ -2,7 +2,7 @@
 /*global SpriteAnimation, BMGame, Facebook,  PopupManager */
 
 $(document).ready(function() {"use strict";
-
+ alert ('viewport 1/1'); 
 
 	$('.js_continue').css('display', 'none');
 	var ui_$ = $("#ui");
