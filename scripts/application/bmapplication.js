@@ -2,14 +2,21 @@
 /*global SpriteAnimation, BMGame, Facebook,  PopupManager */
 
 $(document).ready(function() {"use strict";
- alert ('touch is scrollable'); 
+ alert ("with preload"); 
+	function preloadImage(url) {
+		try {
+			var _img = new Image();
+			_img.src = url;
+		} catch (e) {
+		}
+	}
+
 
 	$('.js_continue').css('display', 'none');
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
+	preloadImage("graphic/game/animation/icebreak.png");
 
-	//$(".fb-like").css ("display", "none");
-	//trace("window.location.href : " + window.location.href);
 	if (String(window.location.href).indexOf("azurewebsites") !== -1) {
 
 		Facebook.appId = '669311946433468';
@@ -33,25 +40,8 @@ $(document).ready(function() {"use strict";
 
 		Facebook.launchInitSequence(Facebook.checkLike);
 
-		/*$(".js_checkLike").bind("click", function() {
-		 //alert ("Facebook.userInfo.id : "+  Facebook.userInfo.id );
-		 if (Facebook.userInfo.id === undefined) {
-
-		 $("#warning").addClass("blink");
-		 REMOVE THIS
-
-		 PopupManager.close($('#intro'));
-		 BMGame.init();
-
-		 } else {
-
-		 Facebook.launchInitSequence(Facebook.checkLike);
-		 }
-
-		 });
-		 */
 	};
-	//$(".js_continue").hide ();
+
 	$("#gameContainer").hide();
 	$(".js_continue").bind("click", function() {
 
@@ -72,8 +62,6 @@ $(document).ready(function() {"use strict";
 
 		$('.fb-like').css('display', 'none');
 		$('.js_continue').css('display', 'inline-block');
-
-		//PopupManager.close($('#intro'));
 
 	};
 
