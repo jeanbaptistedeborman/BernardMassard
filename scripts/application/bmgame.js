@@ -78,7 +78,7 @@ var BMGame = {
 				iceAnimation.onFinish = finishAnim;
 
 			}
-			if (isTouch()) {
+			if (!isTouch()) {
 				BMGame.manageDrag();
 
 			}
