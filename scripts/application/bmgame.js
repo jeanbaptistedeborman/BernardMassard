@@ -1,5 +1,5 @@
 /*jslint vars:true, white:true, nomen:true, plusplus:true */
-/*global $,PopupManager,Facebook, SpriteAnimation */
+/*global $,PopupManager,Facebook,isTouch, SpriteAnimation */
 
 var BMGame = {
 	gameOver_bool : true,
@@ -51,10 +51,10 @@ var BMGame = {
 				//var impactTag_$ = BMGame.impactAnimation.tag_$;
 				this.play(10);
 				/* KEEP KEEP KEEP
-				 //BMGame.stage_$.append(BMGame.impactAnimation.tag_$);
-				 //impactTag_$.css ("top", BMGame.cursorPos[1] -  impactTag_$.height ());
-				 //impactTag_$.css ("left", BMGame.cursorPos[0]  - impactTag_$.width ()/2);
-				 */
+				//BMGame.stage_$.append(BMGame.impactAnimation.tag_$);
+				//impactTag_$.css ("top", BMGame.cursorPos[1] -  impactTag_$.height ());
+				//impactTag_$.css ("left", BMGame.cursorPos[0]  - impactTag_$.width ()/2);
+				*/
 
 				//BMGame.impactAnimation.gotoAndPlay(1);
 
@@ -78,7 +78,10 @@ var BMGame = {
 				iceAnimation.onFinish = finishAnim;
 
 			}
-			BMGame.manageDrag();
+			if (isTouch()) {
+				BMGame.manageDrag();
+
+			}
 
 		});
 
