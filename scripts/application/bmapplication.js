@@ -72,7 +72,7 @@ $(document).ready(function() {"use strict";
 	Facebook.onLike = function() {
 
 		$('.fb-like').css('display', 'none');
-		$('.js_continue').css('display', 'block');
+		$('.js_continue').css('display', 'inline-block');
 
 		//PopupManager.close($('#intro'));
 

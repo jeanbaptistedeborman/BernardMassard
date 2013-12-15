@@ -7,7 +7,7 @@ Facebook = {
 	initCallbackFunction : "",
 	launchInitSequence : function(callbackFunction) {"use strict";
 
-	alert ("init , scope changed");
+	//alert ("init , scope changed");
 		this.initCallbackFunction = callbackFunction;
 
 		FB.init({
@@ -44,12 +44,12 @@ Facebook = {
 	},
 
 	checkLike : function() {"use strict";
-		alert("checkLike");
+		//alert("checkLike");
 
 		FB.api('/me/likes/65692241192', function(response) {
-			trace(response.data);
+			trace("Like : " + response.data);
 			if (response.data.length == 1) {
-				alert('Likes page');
+				//alert('Likes page');
 				Facebook.onLike();
 			} else {
 				Facebook.onDoesNotLike();
