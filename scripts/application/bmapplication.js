@@ -2,7 +2,7 @@
 /*global SpriteAnimation, BMGame, UserAgent, Facebook,  PopupManager */
 
 $(document).ready(function() {"use strict";
-	alert("with test like interval for mobile");
+	alert("with test like interval for mobile v2");
 	var testLikeInterval; 
 	function preloadImage(url) {
 		try {
@@ -18,7 +18,7 @@ $(document).ready(function() {"use strict";
 		testLikeInterval = setInterval(function() {
 			
 			trace ("testLikeInterval : " + testLikeInterval); 
-			Facebook.checkLike();
+					Facebook.launchInitSequence(Facebook.checkLike);
 
 		}, 1000);
 
