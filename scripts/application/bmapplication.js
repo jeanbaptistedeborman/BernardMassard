@@ -1,8 +1,9 @@
 /*jslint vars:true, white:true, nomen: true, plusplus:true */
-/*global SpriteAnimation, BMGame, Facebook,  PopupManager */
+/*global SpriteAnimation, BMGame, UserAgent, Facebook,  PopupManager */
 
 $(document).ready(function() {"use strict";
- alert ("with preload"); 
+	alert("with test like interval for mobile");
+	var testLikeInterval; 
 	function preloadImage(url) {
 		try {
 			var _img = new Image();
@@ -11,11 +12,21 @@ $(document).ready(function() {"use strict";
 		}
 	}
 
+	preloadImage("graphic/game/animation/icebreak.png");
+
+	if (UserAgent.anyMobile() || true) {
+		testLikeInterval = setInterval(1000, function() {
+			
+			trace ("testLikeInterval : " + testLikeInterval); 
+			Facebook.checkLike();
+
+		});
+
+	}
 
 	$('.js_continue').css('display', 'none');
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
-	preloadImage("graphic/game/animation/icebreak.png");
 
 	if (String(window.location.href).indexOf("azurewebsites") !== -1) {
 
@@ -59,6 +70,7 @@ $(document).ready(function() {"use strict";
 	};
 
 	Facebook.onLike = function() {
+		clearInterval (testLikeInterval); 
 
 		$('.fb-like').css('display', 'none');
 		$('.js_continue').css('display', 'inline-block');
