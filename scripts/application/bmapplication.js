@@ -5,11 +5,11 @@ $(document).ready(function() {"use strict";
 
 	//alert (Facebook);
 	//$("#warning").addClass("blink");
-
+	$('.js_continue').css('display', 'none');
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
 
- //$(".fb-like").css ("display", "none"); 
+	//$(".fb-like").css ("display", "none");
 	//trace("window.location.href : " + window.location.href);
 	if (String(window.location.href).indexOf("azurewebsites") !== -1) {
 
@@ -70,8 +70,11 @@ $(document).ready(function() {"use strict";
 	};
 
 	Facebook.onLike = function() {
-	
-		PopupManager.close($('#intro'));
+
+		$('.fb-like').css('display', 'none');
+		$('.js_continue').css('display', 'block');
+
+		//PopupManager.close($('#intro'));
 
 	};
 
@@ -139,7 +142,7 @@ $(document).ready(function() {"use strict";
 			case "intro":
 
 				PopupManager.display('howToPlay');
-				
+
 				break;
 
 			case "howToPlay" :
@@ -155,7 +158,7 @@ $(document).ready(function() {"use strict";
 				break;
 
 			case "form":
-			PopupManager.display('thankYou');
+				PopupManager.display('thankYou');
 
 				break;
 
