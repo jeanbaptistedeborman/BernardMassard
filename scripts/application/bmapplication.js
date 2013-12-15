@@ -9,7 +9,8 @@ $(document).ready(function() {"use strict";
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
 
-	trace("window.location.href : " + window.location.href);
+ $(".fb-like").css ("display", "none"); 
+	//trace("window.location.href : " + window.location.href);
 	if (String(window.location.href).indexOf("azurewebsites") !== -1) {
 
 		Facebook.appId = '669311946433468';
@@ -69,13 +70,14 @@ $(document).ready(function() {"use strict";
 	};
 
 	Facebook.onLike = function() {
+	
 		PopupManager.close($('#intro'));
 
 	};
 
 	function manageForm() {
 
-		alert("manageForm");
+		//alert("manageForm");
 
 		$("#form").find(".button").bind("click tap touch", function() {
 
@@ -90,7 +92,7 @@ $(document).ready(function() {"use strict";
 				var value = element_$.val();
 				if (value === "on") {
 					value = element_$.prop('checked');
-					alert(value);
+					//alert(value);
 
 				}
 
@@ -99,16 +101,16 @@ $(document).ready(function() {"use strict";
 			});
 			data.answer = form_$.find("input[type='radio']:checked").val();
 
-			trace(data);
+			//trace(data);
 
 			for (n in data) {
 				var value = data[n];
 				if (value === undefined || value === null || value === "" || value == false) {
-					alert("value is null, false,  or undefined");
+					//alert("value is null, false,  or undefined");
 					send_bool = false;
 				}
 
-			};
+			}
 			data.fbid = Facebook.userInfo.id;
 
 			if (send_bool) {
@@ -118,7 +120,7 @@ $(document).ready(function() {"use strict";
 					type : "GET",
 					data : data
 				}).done(function() {
-					PopupManager.close(PopupManager.lastIdName);
+					PopupManager.close($("#form"));
 
 				});
 
@@ -133,14 +135,11 @@ $(document).ready(function() {"use strict";
 
 
 	PopupManager.onClosePopup = function() {
-		alert("PopupManager.lastIdName : " + PopupManager.lastIdName);
 		switch (PopupManager.lastIdName) {
 			case "intro":
 
-				PopupManager.display('form');
-				manageForm();
-				//PopupManager.display('howToPlay');
-
+				PopupManager.display('howToPlay');
+				
 				break;
 
 			case "howToPlay" :
@@ -156,6 +155,7 @@ $(document).ready(function() {"use strict";
 				break;
 
 			case "form":
+			PopupManager.display('thankYou');
 
 				break;
 

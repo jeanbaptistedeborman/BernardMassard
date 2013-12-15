@@ -1,7 +1,7 @@
 /*global FB*/
 
 Facebook = {
-	appId:undefined,  
+	appId : undefined,
 	userInfo : {},
 	authEventSubscribed_bool : false,
 	initCallbackFunction : "",
@@ -13,16 +13,19 @@ Facebook = {
 		FB.init({
 			appId : Facebook.appId,
 			status : true, // check login status
-			cookie : true, // enable cookies to allow the server to access the session
+			cookie : true,
+			opts : {
+				scope : "user_likes"
+			},
+
 			xfbml : true // parse XFBML
 		});
 		if (!this.authEventSubscribed_bool) {
 			this.authEventSubscribed_bool = true;
 
-		FB.Event.subscribe('edge.create', function(href, widget) {
-				Facebook.onLike (); 
-			
-				
+			FB.Event.subscribe('edge.create', function(href, widget) {
+				Facebook.onLike();
+
 			});
 
 			FB.Event.subscribe('auth.authResponseChange', function(response) {
@@ -43,16 +46,24 @@ Facebook = {
 	},
 
 	checkLike : function() {"use strict";
+	alert ("checkLike"); 
+
+		FB.api('/me/likes/65692241192', function(response) {
+			trace (response.data); 
+			if (response.data.length == 1) {
+				alert('Likes page');
+						Facebook.onLike();
+			} else {
+					Facebook.onDoesNotLike();
+				
+			}
+		});
 
 		FB.api({
 			method : "pages.isFan",
-			page_id : "607595305979967"
+			page_id : "65692241192"
 		}, function(response) {
-			if (response) {
-				Facebook.onLike();
-			} else {
-				Facebook.onDoesNotLike();
-			}
+			
 		});
 
 	},
