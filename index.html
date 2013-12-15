@@ -32,7 +32,7 @@
 
 	<body>
 		<div id="fb-root"></div>
-	<div id="gameContainer">
+		<div id="gameContainer">
 			<div id="stage">
 				DOES NOT WORK ON FIREFOX !!!
 
@@ -40,9 +40,9 @@
 		</div>
 		<div id="ui">
 			<div id = "popups">
-				
+
 				<div class="popup" id="intro">
-			
+
 					<h1>NE MANQUEZ PAS
 					<br/>
 					L'OCCASION DE BRISER LA GLACE</h1>
@@ -56,16 +56,34 @@
 					<p id="callToAction">
 						Likez Bernard Massard pour participer !
 					</p>
-							<div class="button js_continue">Participer</div>
-					
-					
+					<div class="button js_continue">
+						Participer
+					</div>
+
 					<div class="fb-like" data-href="https://www.facebook.com/pages/Testjbdeborman/607595305979967" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
 
-					
-					
 				</div>
-				<div class="popup" id="negativeResult">
-					Pas de chance, ce cadeau est vide !  Confirmez votre participation pour avoir une chance de gagner un cadeau >
+
+				<div class="popup info" id="howToPlay">
+
+					<img id='howToImg' src='graphic/img/howTo.png'/>
+					<br/>
+					<div class="button js_close">
+						Continuer
+					</div>
+				</div>
+
+				<div class="popup info" id="negativeResult">
+					<p>
+						Dommage, vous n'avez pas gagné cette fois-ci. Mais tentez une
+					</p>
+					<div class="highlight">
+						deuxième chance
+					</div>
+					<p>
+						en participant au tirage au sort pour gagner le diamant!
+					</p>
+
 					<div class="button js_close">
 						Continuer
 					</div>
@@ -76,17 +94,40 @@
 						Continuer
 					</div>
 				</div>
-				<div class="popup" id="form">
+				<div class="popup form" id="form">
+					<b>Inscrivez vos coordonnées pour participer au tirage au sort pour gagner le diamant. Bonne chance à vous tous!</b>
 					<form>
-						<input name='first_name' type="text" value = "Votre prénom" />
-						<input name='last_name' type="text" value = "Votre nom"/>
-						<input name='email' type="email" value = "E-mail"/>
-						<input name='birthdate' type="date" value = "Date de naissance"/>
-						<input name='country' type="text" value = "Pays"/>
-						<input name='answer' type="text" value = "Réponse à la question"/>
+						<div class='column' id='leftColumn'>
+							Votre nom*
+							<input name='first_name' type="text"  />
+							Votre prénom*
+							<input name='last_name' type="text"/>
+						</div>
+						<div class='column' id = 'rightColumn'>
+
+							Votre e-mail*
+							<input name='email' type="email"/>
+
+							Votre date de naissance*
+							<input name='birthdate' type="date"/>
+						</div>
+						<b>Question*:</b>En quelle année les caves Bernard-Massard fêteront-elles leur 100<sup>e</sup> anniversaire?<br>
+						<input type="radio" name="answer" value="2016">2016
+						<br>
+						<input type="radio" name="answer" value="2021">
+						2021
+						<br>
+						<input type="radio" name="answer" value="2026">
+						2026
+						<br>&nbsp;</br>
+						
+						
+						<input type="checkbox" checked='true' name="conditions"> J'accepte le règlement*<br>
+						*champs obligatoires
+						
 
 					</form>
-					<div class="button js_close">
+					<div class="button">
 						Validez
 					</div>
 				</div>
@@ -94,8 +135,6 @@
 			</div>
 
 		</div>
-		
-			
 
 	</body>
 </html>

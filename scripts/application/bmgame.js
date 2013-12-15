@@ -3,12 +3,12 @@
 
 var BMGame = {
 	gameOver_bool : true,
-	impactAnimation : {},
+	//impactAnimation : {},
 	cursorPos : [],
 	startDragPoint : [],
 	dragInterval : null,
 	init : function() {"use strict";
-		$('#gameContainer').show (); 
+		$('#gameContainer').show();
 
 		document.onmousemove = function(e) {
 
@@ -17,15 +17,14 @@ var BMGame = {
 
 			//trace ("movement : " + e.movementX);
 		};
-		alert ("init"); 
+		alert("init");
 
-	
 		$.ajax({
-			url : "gagner.txt",
+			url : "graphic/game/animation/icebreak.txt",
 			dataType : "json"
 		}).done(function(data) {
-			
-			
+
+			alert("ajax loaded");
 
 			var GRID_SIZE_NUM = 150;
 			var COLUMNS_NUM = 10;
@@ -57,7 +56,7 @@ var BMGame = {
 				 //impactTag_$.css ("left", BMGame.cursorPos[0]  - impactTag_$.width ()/2);
 				 */
 
-				BMGame.impactAnimation.gotoAndPlay(1);
+				//BMGame.impactAnimation.gotoAndPlay(1);
 
 			};
 			var finishAnim = function() {
@@ -69,7 +68,7 @@ var BMGame = {
 				var position_array;
 				random_num = Math.floor(Math.random() * positions_array.length);
 				position_array = positions_array.splice(random_num, random_num+1)[0];
-				iceAnimation = new SpriteAnimation("graphic/game/animation/gagner.png", data, 36);
+				iceAnimation = new SpriteAnimation("graphic/game/animation/icebreak.png", data, 36);
 				iceAnimationTag_$ = iceAnimation.tag_$;
 				iceAnimationTag_$.addClass("iceAnimation");
 
@@ -158,8 +157,8 @@ var BMGame = {
 			},
 			type : "GET"
 		}).done(function(data) {
-			alert(data);
 			var result_bool = Boolean(data.winner);
+			var error_bool = Boolean(data.error);
 
 			if (result_bool) {
 				PopupManager.display("positiveResult");

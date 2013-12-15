@@ -8,6 +8,8 @@ PopupManager = {
 	lastIdName : null,
 
 	display : function(idName) {"use strict";
+		alert("popupmanager : " + idName);
+		$('#gameContainer').hide();
 		var popup_$ = this.popups_$.find("#" + idName);
 
 		this.lastIdName = idName;
@@ -18,6 +20,7 @@ PopupManager = {
 
 		if (this.container_$) {
 			this.container_$.append(popup_$);
+			popup_$.fadeIn (1000); 
 
 			popup_$.find(".js_close").bind("click touch", PopupManager._closeMe);
 
@@ -27,16 +30,16 @@ PopupManager = {
 		}
 
 	},
-	_closeMe:function () {"use strict";
-	    var this_$ = $(this);
-	    PopupManager.close (this_$.parent()); 
-	    
-	}, 
-	
+	_closeMe : function() {"use strict";
+		var this_$ = $(this);
+		PopupManager.close(this_$.parent());
+
+	},
+
 	close : function(popup_$) {"use strict";
 		PopupManager.onClosePopup();
-		popup_$.detach();
-	
+		popup_$.fadeOut(1000); 
+		//popup_$.detach();
 
 	},
 	onClosePopup : function() {"use strict";

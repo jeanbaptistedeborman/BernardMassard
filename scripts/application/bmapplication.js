@@ -51,12 +51,11 @@ $(document).ready(function() {"use strict";
 		 });
 		 */
 	};
-//$(".js_continue").hide (); 
-$ ("#gameContainer").hide (); 
+	//$(".js_continue").hide ();
+	$("#gameContainer").hide();
 	$(".js_continue").bind("click", function() {
-		alert ("continue"); 
+
 		PopupManager.close($('#intro'));
-		BMGame.init();
 
 	});
 
@@ -70,52 +69,93 @@ $ ("#gameContainer").hide ();
 	};
 
 	Facebook.onLike = function() {
-		//trace("ID ? :" + Facebook.userInfo.id);
 		PopupManager.close($('#intro'));
-		$(".jscheckLike").css("display", block);
-		BMGame.init();
 
 	};
 
+	function manageForm() {
+
+		alert("manageForm");
+
+		$("#form").find(".button").bind("click tap touch", function() {
+
+			var form_$ = $("form"), data = {
+
+			}, send_bool = true, n;
+
+			form_$.find('input').each(function(index, element) {
+				//alert ("each");
+
+				var element_$ = $(element);
+				var value = element_$.val();
+				if (value === "on") {
+					value = element_$.prop('checked');
+					alert(value);
+
+				}
+
+				data[element_$.attr("name")] = value;
+
+			});
+			data.answer = form_$.find("input[type='radio']:checked").val();
+
+			trace(data);
+
+			for (n in data) {
+				var value = data[n];
+				if (value === undefined || value === null || value === "" || value == false) {
+					alert("value is null, false,  or undefined");
+					send_bool = false;
+				}
+
+			};
+			data.fbid = Facebook.userInfo.id;
+
+			if (send_bool) {
+
+				$.ajax({
+					url : "http://www.d1009502-4898.luxcloud.net/api/contest.php",
+					type : "GET",
+					data : data
+				}).done(function() {
+					PopupManager.close(PopupManager.lastIdName);
+
+				});
+
+			} else {
+				alert("Tous les champs doivent être remplis.");
+
+			}
+
+		});
+
+	}
+
+
 	PopupManager.onClosePopup = function() {
+		alert("PopupManager.lastIdName : " + PopupManager.lastIdName);
 		switch (PopupManager.lastIdName) {
 			case "intro":
+
+				PopupManager.display('form');
+				manageForm();
+				//PopupManager.display('howToPlay');
+
+				break;
+
+			case "howToPlay" :
+
+				BMGame.init();
 
 				break;
 
 			case "negativeResult":
 			case "positiveResult":
 				PopupManager.display('form');
+				manageForm();
 				break;
 
 			case "form":
-
-				var form_$ = $("form"), data = {
-					fbid : "no-id"
-
-				};
-				trace("Facebook.id : " + Facebook.userInfo.id);
-
-				data.fbid = Facebook.userInfo.id;
-
-				trace(data);
-
-				form_$.children().each(function(index, element) {
-					var element_$ = $(element);
-					trace(element_$.attr("name") + "/ " + element_$.attr("value"));
-					data[element_$.attr("name")] = element_$.attr("value");
-
-				});
-
-				trace(data);
-				$.ajax({
-					url : "http://www.d1009502-4898.luxcloud.net/api/contest.php",
-					type : "GET",
-					data : data
-				}).done(function() {
-
-					//alert("sckfdghjkhg fdkgjkfgkf dkgfkgfk");
-				});
 
 				break;
 

@@ -4,11 +4,9 @@
 {
 from {
 	top: -500px;
-	opacity: 0;
 }
 to {
 	top: 0px;
-	opacity: 1;
 }
 }
 @-webkit-keyframes
@@ -16,7 +14,7 @@ wipeDown/* Safari and Chrome */ {from {
 	top: -500px;
 }
 to {
-	top: 100px;
+	top: 0px;
 }
 }
 @-webkit-keyframes
@@ -46,13 +44,64 @@ body {
 	-webkit-animation: blink .5s linear 0s 3 alternate;
 }
 .popup {
-	-webkit-animation: wipeDown .5s;
-	animation: wipeDown .5s;
+	Xanimation: wipeDown 0.5s;
+	-Xwebkit-animation: wipeDown 0.5s;
+	left:0; 
+	right:0; 
+	position:absolute; 
 	margin: 0px auto 0px auto;
 	padding: 50px;
 	height: 250px;
 	text-align: center;
+	
 }
+.info {
+	Xbox-sizing:border-box; 
+	margin-top: 145px;
+	padding:50px 50px 0 50px;  
+	width: 260px;
+	height: 407px;
+	overflow:hidden; 
+	background: url('../graphic/ui/bginfo.jpg');
+	color: white;
+ 
+}
+.info p {
+}
+
+.form {
+	width:510px; 
+	height:457px;
+	background:white;
+	padding:40px 60px 0 50px;
+	text-align:left; 
+	   
+	
+}
+.form b{
+	clear:both;
+	display:block;  
+margin:30px 0 10px 0;      
+	
+	
+}
+.form p{
+	color:#666;   
+	
+	
+}
+.form input {
+	
+	
+}
+
+
+.info .highlight {
+	text-transform: uppercase;
+	font-size:32px;
+	margin:10px 0px 10px 0px;  
+}
+
 .popup h1 {
 	color: white;
 	font-size: 50px;
@@ -64,9 +113,6 @@ body {
 	text-shadow: 3px 5px 5px #000;
 }
 
-#diamond {
-	margin: 40px 0px 40px 0px;
-}
 .popup p {
 	margin: 0;
 	padding: 0;
@@ -74,6 +120,7 @@ body {
 }
 .popup .button {
 	background: url('../graphic/ui/btn_bg.png');
+	margin-top:10px; 
 	display: inline-block;
 	width: 192px;
 	height: 55px;
@@ -84,6 +131,7 @@ body {
 }
 
 .button {
+	color:black; 
 
 	cursor: pointer;
 }
@@ -91,14 +139,53 @@ body {
 	color: white;
 	cursor: pointer;
 }
+.form {
+	margin-top:100px; 
+	color:#666666; 
+	line-height: 1.2em; 
+	
+}
+.form .column {
+	display:inline-block; 
+	width:240px; 
+	margin:0 15px 0 0; 
+	
+}
+.form b {
+	
+	color:black; 
+}
+.form .button {
+	position:absolute; 
+	right:60px; 
+	bottom:50px; 
+	
+}
+#leftColumn {
+	float:left; 
+	
+}
+#diamond {
+	margin: 25px 0px 25px 0px;
+}
+#howToImg {
+	margin: 45px 0 15px 0;
+}
 #callToAction {
 	margin: 0px 0px 20px 0px;
 }
 
-input {
-	
-	display: block;
-	width: 300px;
-	margin: 10px;
+input
+{
+	width: 100%; 
 }
+input[type="radio"]
+{
+	width: auto;  
+}
+input[type="checkbox"]
+{
+	width: auto;  
+}
+
 
