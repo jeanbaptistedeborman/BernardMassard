@@ -3,8 +3,7 @@
 
 $(document).ready(function() {"use strict";
 
-	//alert (Facebook);
-	//$("#warning").addClass("blink");
+
 	$('.js_continue').css('display', 'none');
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
