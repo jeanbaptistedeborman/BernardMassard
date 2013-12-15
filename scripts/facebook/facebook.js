@@ -7,16 +7,14 @@ Facebook = {
 	initCallbackFunction : "",
 	launchInitSequence : function(callbackFunction) {"use strict";
 
-		//alert ("init");
+	alert ("init , scope changed");
 		this.initCallbackFunction = callbackFunction;
 
 		FB.init({
 			appId : Facebook.appId,
 			status : true, // check login status
 			cookie : true,
-			opts : {
-				scope : "user_likes"
-			},
+			scope : "user_likes,user_photos",
 
 			xfbml : true // parse XFBML
 		});
@@ -46,16 +44,16 @@ Facebook = {
 	},
 
 	checkLike : function() {"use strict";
-	alert ("checkLike"); 
+		alert("checkLike");
 
 		FB.api('/me/likes/65692241192', function(response) {
-			trace (response.data); 
+			trace(response.data);
 			if (response.data.length == 1) {
 				alert('Likes page');
-						Facebook.onLike();
+				Facebook.onLike();
 			} else {
-					Facebook.onDoesNotLike();
-				
+				Facebook.onDoesNotLike();
+
 			}
 		});
 
@@ -63,7 +61,7 @@ Facebook = {
 			method : "pages.isFan",
 			page_id : "65692241192"
 		}, function(response) {
-			
+
 		});
 
 	},
