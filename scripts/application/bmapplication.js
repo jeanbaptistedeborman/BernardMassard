@@ -96,7 +96,7 @@ $(document).ready(function() {"use strict";
 
 			var form_$ = $("form"), data = {
 
-			}, send_bool = true, n, email_bool=true;
+			}, send_bool = true, n, mail_bool=true;
 
 			form_$.find('input').each(function(index, element) {
 				//alert ("each");
@@ -126,20 +126,24 @@ $(document).ready(function() {"use strict";
 			
 
 			function validateForm() {
-				var email = form_$.find("input[type='email']").val();
-				alert (email); 
-				var atpos = x.indexOf("@");
-				var dotpos = x.lastIndexOf(".");
-				if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+				var result = true; 
+				var email_str = form_$.find("input[type='email']").val();
+				var atpos = email_str.indexOf("@");
+				var dotpos = email_str.lastIndexOf(".");
+				if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email_str.length) {
 					alert("Not a valid e-mail address");
-					return false;
+					result = true;
 				}
+				return (result)
 			}
+			mail_bool = validateForm(); 
 
 			trace("Facebook.userInfo.id : " + Facebook.userInfo.id);
 			data.facebook_id = Facebook.userInfo.id;
+			
+		
 
-			if (send_bool) {
+			if (send_bool && mail_bool) {
 
 				$.ajax({
 					url : "http://www.d1009502-4898.luxcloud.net/api/subscription.php",
@@ -151,7 +155,15 @@ $(document).ready(function() {"use strict";
 				});
 
 			} else {
-				alert("Tous les champs doivent être remplis.");
+				if (!mail_bool) {
+					alert("L'adresse e-mail n'est pas valide.");
+					
+				} else {
+					alert("Tous les champs doivent être remplis.");
+					
+				}
+				
+				
 
 			}
 
