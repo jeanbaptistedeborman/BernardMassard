@@ -3,6 +3,11 @@
 
 $(document).ready(function() {"use strict";
 	//alert("with login - corrected 2");
+	$('#connect').bind ('click', function (){
+		Facebook.launchInitSequence (); 
+		
+		
+	}); 
 	var testLikeInterval;
 	function preloadImage(url) {
 		try {
