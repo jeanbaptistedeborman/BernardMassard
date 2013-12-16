@@ -3,13 +3,12 @@
 
 $(document).ready(function() {"use strict";
 	//alert("with login - corrected 2");
-	$('#connect').bind ('click', function (){
-		//Facebook.launchInitSequence (); 
-		
-		
-	}); 
+	$('#connect').bind('click', function() {
+		//Facebook.launchInitSequence ();
+
+	});
 	Facebook.initCallbackFunction = Facebook.checkLike;
-	
+
 	var testLikeInterval;
 	function preloadImage(url) {
 		try {
@@ -18,22 +17,21 @@ $(document).ready(function() {"use strict";
 		} catch (e) {
 		}
 	}
-	
 
-		Facebook.onUserInfo = function() {
-				//$('.fb-login-button').hide();
-			$('.fb-like').show();
 
-		};
-	
-$('.fb-like').hide();
+	Facebook.onUserInfo = function() {
+		//$('.fb-login-button').hide();
+		$('.fb-like').show();
+
+	};
+
+	$('.fb-like').hide();
 	preloadImage("graphic/game/animation/icebreak.png");
 	if (UserAgent.anyMobile() && false) {
 		//$('.fb-like').hide();
 
 	} else {
 
-		
 	}
 
 	$('.js_continue').css('display', 'none');
@@ -61,7 +59,7 @@ $('.fb-like').hide();
 
 	window.fbAsyncInit = function() {
 
-		//
+		Facebook.launchInitSequence(Facebook.checkLike());
 
 	};
 
@@ -125,7 +123,7 @@ $('.fb-like').hide();
 				}
 
 			}
-			trace ("Facebook.userInfo.id : " + Facebook.userInfo.id); 
+			trace("Facebook.userInfo.id : " + Facebook.userInfo.id);
 			data.fbid = Facebook.userInfo.id;
 
 			if (send_bool) {
@@ -160,7 +158,7 @@ $('.fb-like').hide();
 			case "howToPlay" :
 
 				BMGame.init();
-				$('body').addClass ('bg2'); 
+				$('body').addClass('bg2');
 
 				break;
 
