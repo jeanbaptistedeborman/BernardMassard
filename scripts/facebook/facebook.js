@@ -27,7 +27,7 @@ Facebook = {
 			});
 
 			FB.Event.subscribe('auth.authResponseChange', function(response) {
-trace ("FACEBOOK AOTH" + response);
+				trace ("FACEBOOK AOTH" + response);
 				if (response.status === 'connected') {
 					Facebook.getUserInfo();
 					Facebook.initCallbackFunction();
@@ -41,6 +41,7 @@ trace ("FACEBOOK AOTH" + response);
 				}
 			});
 		}
+		FB.login();
 	},
 
 	checkLike : function() {"use strict";
