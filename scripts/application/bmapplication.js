@@ -7,7 +7,7 @@ $(document).ready(function() {"use strict";
 		//Facebook.launchInitSequence ();
 
 	});
-$('.fb-like').hide (); 
+	$('.fb-like').hide();
 
 	function preloadImage(url) {
 		try {
@@ -53,7 +53,7 @@ $('.fb-like').hide ();
 			js = d.createElement('script');
 			js.id = id;
 			js.async = true;
-			js.src = "http://connect.facebook.net/en_US/all.js";
+			js.src = "http://connect.facebook.net/fr_FR/all.js";
 			ref.parentNode.insertBefore(js, ref);
 		}(document));
 
@@ -80,7 +80,7 @@ $('.fb-like').hide ();
 	};
 
 	Facebook.onLike = function() {
-		//alert ('onlike'); 
+		//alert ('onlike');
 
 		//$('.fb-like').css('display', 'none');
 		$('.fb-like').hide();
@@ -96,7 +96,7 @@ $('.fb-like').hide ();
 
 			var form_$ = $("form"), data = {
 
-			}, send_bool = true, n;
+			}, send_bool = true, n, email_bool=true;
 
 			form_$.find('input').each(function(index, element) {
 				//alert ("each");
@@ -105,7 +105,6 @@ $('.fb-like').hide ();
 				var value = element_$.val();
 				if (value === "on") {
 					value = element_$.prop('checked');
-					//alert(value);
 
 				}
 
@@ -124,7 +123,19 @@ $('.fb-like').hide ();
 				}
 
 			}
-			trace (data); 
+			
+
+			function validateForm() {
+				var email = form_$.find("input[type='email']").val();
+				alert (email); 
+				var atpos = x.indexOf("@");
+				var dotpos = x.lastIndexOf(".");
+				if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+					alert("Not a valid e-mail address");
+					return false;
+				}
+			}
+
 			trace("Facebook.userInfo.id : " + Facebook.userInfo.id);
 			data.facebook_id = Facebook.userInfo.id;
 
@@ -140,7 +151,7 @@ $('.fb-like').hide ();
 				});
 
 			} else {
-				//alert("Tous les champs doivent être remplis.");
+				alert("Tous les champs doivent être remplis.");
 
 			}
 
