@@ -2,7 +2,7 @@
 /*global SpriteAnimation, BMGame, UserAgent, Facebook,  PopupManager */
 
 $(document).ready(function() {"use strict";
-	alert("with test like interval for mobile v2");
+	alert("with login");
 	var testLikeInterval;
 	function preloadImage(url) {
 		try {
@@ -14,7 +14,7 @@ $(document).ready(function() {"use strict";
 
 	preloadImage("graphic/game/animation/icebreak.png");
 
-	if (UserAgent.anyMobile()) {
+	if (UserAgent.anyMobile() && false) {
 		testLikeInterval = setInterval(function() {
 
 			trace("testLikeInterval : " + testLikeInterval);
