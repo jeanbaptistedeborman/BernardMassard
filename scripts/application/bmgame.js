@@ -49,7 +49,19 @@ var BMGame = {
 			var playAnim = function() {
 
 				//var impactTag_$ = BMGame.impactAnimation.tag_$;
-				this.play(10);
+				if (isTouch ()) {
+					var speed_num = 30; 
+					
+					
+				} else {
+					
+						speed_num = 10; 
+					
+					
+					
+				}
+				
+				this.play(speed_num);
 				/* KEEP KEEP KEEP
 				//BMGame.stage_$.append(BMGame.impactAnimation.tag_$);
 				//impactTag_$.css ("top", BMGame.cursorPos[1] -  impactTag_$.height ());
