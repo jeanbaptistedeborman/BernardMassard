@@ -7,7 +7,6 @@ $(document).ready(function() {"use strict";
 		//Facebook.launchInitSequence ();
 
 	});
-	Facebook.initCallbackFunction = Facebook.checkLike;
 
 
 	function preloadImage(url) {
