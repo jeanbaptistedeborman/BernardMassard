@@ -48,7 +48,7 @@ Facebook = {
 		FB.api('/me/likes/65692241192', function(response) {
 			trace("Like : " + response.data);
 			if (response.data.length == 1) {
-				alert ('page liked'); 
+				//alert ('page liked'); 
 				Facebook.onLike();
 			} else {
 				Facebook.onDoesNotLike();
@@ -63,7 +63,7 @@ Facebook = {
 	//alert ('connected getting user info'); 
 
 		FB.api('/me', function(response) {
-			alert (response); 
+			//alert (response); 
 			Facebook.checkLike (); 
 			Facebook.userInfo = response;
 			Facebook.onUserInfo (); 

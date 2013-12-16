@@ -130,7 +130,7 @@ $('.fb-like').hide ();
 			if (send_bool) {
 
 				$.ajax({
-					url : "http://www.d1009502-4898.luxcloud.net/api/subscribe.php",
+					url : "http://www.d1009502-4898.luxcloud.net/api/subscription.php",
 					type : "POST",
 					data : data
 				}).done(function() {
