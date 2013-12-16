@@ -28,7 +28,7 @@ Facebook = {
 			});
 
 			FB.Event.subscribe('auth.authResponseChange', function(response) {
-alert ("FACEBOOK AOTH" + response);
+trace ("FACEBOOK AOTH" + response);
 				if (response.status === 'connected') {
 					Facebook.getUserInfo();
 					Facebook.initCallbackFunction();
