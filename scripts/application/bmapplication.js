@@ -7,7 +7,7 @@ $(document).ready(function() {"use strict";
 		//Facebook.launchInitSequence ();
 
 	});
-
+$('.fb-like').hide (); 
 
 	function preloadImage(url) {
 		try {
@@ -80,7 +80,7 @@ $(document).ready(function() {"use strict";
 	};
 
 	Facebook.onLike = function() {
-		alert ('onlike'); 
+		//alert ('onlike'); 
 
 		//$('.fb-like').css('display', 'none');
 		$('.js_continue').css('display', 'inline-block');
