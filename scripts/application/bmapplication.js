@@ -13,7 +13,7 @@ $(document).ready(function() {"use strict";
 	}
 
 	preloadImage("graphic/game/animation/icebreak.png");
-	if (UserAgent.anyMobile() || true) {
+	if (UserAgent.anyMobile()) {
 		//$('.fb-like').hide();
 
 	} else {
@@ -24,15 +24,7 @@ $(document).ready(function() {"use strict";
 
 		};
 	}
-	if (UserAgent.anyMobile() && false) {
-		testLikeInterval = setInterval(function() {
 
-			trace("testLikeInterval : " + testLikeInterval);
-			Facebook.checkLike();
-
-		}, 1000);
-
-	}
 
 	$('.js_continue').css('display', 'none');
 	var ui_$ = $("#ui");
