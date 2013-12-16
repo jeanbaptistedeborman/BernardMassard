@@ -14,7 +14,7 @@ $(document).ready(function() {"use strict";
 
 	preloadImage("graphic/game/animation/icebreak.png");
 	if (UserAgent.anyMobile() || rue) {
-		$('.fb-like').hide();
+		//$('.fb-like').hide();
 
 	} else {
 
