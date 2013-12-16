@@ -2,1042 +2,2410 @@
 
 {
 	"filename": "bris instance 10000",
-	"frame": {"x":0,"y":0,"w":154,"h":153},
+	"frame": {"x":0,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10001",
-	"frame": {"x":154,"y":0,"w":154,"h":153},
+	"frame": {"x":127,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10002",
-	"frame": {"x":308,"y":0,"w":154,"h":153},
+	"frame": {"x":254,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10003",
-	"frame": {"x":462,"y":0,"w":154,"h":153},
+	"frame": {"x":381,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10004",
-	"frame": {"x":616,"y":0,"w":154,"h":153},
+	"frame": {"x":508,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10005",
-	"frame": {"x":770,"y":0,"w":154,"h":153},
+	"frame": {"x":635,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10006",
-	"frame": {"x":924,"y":0,"w":154,"h":153},
+	"frame": {"x":762,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10007",
-	"frame": {"x":1078,"y":0,"w":154,"h":153},
+	"frame": {"x":889,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10008",
-	"frame": {"x":1232,"y":0,"w":154,"h":153},
+	"frame": {"x":1016,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10009",
-	"frame": {"x":1386,"y":0,"w":154,"h":153},
+	"frame": {"x":1143,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10010",
-	"frame": {"x":1540,"y":0,"w":154,"h":153},
+	"frame": {"x":1270,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10011",
-	"frame": {"x":1694,"y":0,"w":154,"h":153},
+	"frame": {"x":1397,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10012",
-	"frame": {"x":1848,"y":0,"w":154,"h":153},
+	"frame": {"x":1524,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10013",
-	"frame": {"x":0,"y":153,"w":154,"h":153},
+	"frame": {"x":1651,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10014",
-	"frame": {"x":154,"y":153,"w":154,"h":153},
+	"frame": {"x":1778,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10015",
-	"frame": {"x":308,"y":153,"w":154,"h":153},
+	"frame": {"x":1905,"y":0,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10016",
-	"frame": {"x":462,"y":153,"w":154,"h":153},
+	"frame": {"x":0,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10017",
-	"frame": {"x":616,"y":153,"w":154,"h":153},
+	"frame": {"x":127,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10018",
-	"frame": {"x":770,"y":153,"w":154,"h":153},
+	"frame": {"x":254,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10019",
-	"frame": {"x":924,"y":153,"w":154,"h":153},
+	"frame": {"x":381,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10020",
-	"frame": {"x":1078,"y":153,"w":154,"h":153},
+	"frame": {"x":508,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10021",
-	"frame": {"x":1232,"y":153,"w":154,"h":153},
+	"frame": {"x":635,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10022",
-	"frame": {"x":1386,"y":153,"w":154,"h":153},
+	"frame": {"x":762,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10023",
-	"frame": {"x":1540,"y":153,"w":154,"h":153},
+	"frame": {"x":889,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10024",
-	"frame": {"x":1694,"y":153,"w":154,"h":153},
+	"frame": {"x":1016,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10025",
-	"frame": {"x":1848,"y":153,"w":154,"h":153},
+	"frame": {"x":1143,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10026",
-	"frame": {"x":0,"y":306,"w":154,"h":153},
+	"frame": {"x":1270,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10027",
-	"frame": {"x":154,"y":306,"w":154,"h":153},
+	"frame": {"x":1397,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10028",
-	"frame": {"x":308,"y":306,"w":154,"h":153},
+	"frame": {"x":1524,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10029",
-	"frame": {"x":462,"y":306,"w":154,"h":153},
+	"frame": {"x":1651,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10030",
-	"frame": {"x":616,"y":306,"w":154,"h":153},
+	"frame": {"x":1778,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10031",
-	"frame": {"x":770,"y":306,"w":154,"h":153},
+	"frame": {"x":1905,"y":152,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10032",
-	"frame": {"x":924,"y":306,"w":154,"h":153},
+	"frame": {"x":0,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10033",
-	"frame": {"x":1078,"y":306,"w":154,"h":153},
+	"frame": {"x":127,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10034",
-	"frame": {"x":1232,"y":306,"w":154,"h":153},
+	"frame": {"x":254,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10035",
-	"frame": {"x":1386,"y":306,"w":154,"h":153},
+	"frame": {"x":381,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10036",
-	"frame": {"x":1540,"y":306,"w":154,"h":153},
+	"frame": {"x":508,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10037",
-	"frame": {"x":1694,"y":306,"w":154,"h":153},
+	"frame": {"x":635,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10038",
-	"frame": {"x":1848,"y":306,"w":154,"h":153},
+	"frame": {"x":762,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10039",
-	"frame": {"x":0,"y":459,"w":154,"h":153},
+	"frame": {"x":889,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10040",
-	"frame": {"x":154,"y":459,"w":154,"h":153},
+	"frame": {"x":1016,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10041",
-	"frame": {"x":308,"y":459,"w":154,"h":153},
+	"frame": {"x":1143,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10042",
-	"frame": {"x":462,"y":459,"w":154,"h":153},
+	"frame": {"x":1270,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10043",
-	"frame": {"x":616,"y":459,"w":154,"h":153},
+	"frame": {"x":1397,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10044",
-	"frame": {"x":770,"y":459,"w":154,"h":153},
+	"frame": {"x":1524,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10045",
-	"frame": {"x":924,"y":459,"w":154,"h":153},
+	"frame": {"x":1651,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10046",
-	"frame": {"x":1078,"y":459,"w":154,"h":153},
+	"frame": {"x":1778,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10047",
-	"frame": {"x":1232,"y":459,"w":154,"h":153},
+	"frame": {"x":1905,"y":304,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10048",
-	"frame": {"x":1386,"y":459,"w":154,"h":153},
+	"frame": {"x":0,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10049",
-	"frame": {"x":1540,"y":459,"w":154,"h":153},
+	"frame": {"x":127,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10050",
-	"frame": {"x":1694,"y":459,"w":154,"h":153},
+	"frame": {"x":254,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10051",
-	"frame": {"x":1848,"y":459,"w":154,"h":153},
+	"frame": {"x":381,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10052",
-	"frame": {"x":0,"y":612,"w":154,"h":153},
+	"frame": {"x":508,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10053",
-	"frame": {"x":154,"y":612,"w":154,"h":153},
+	"frame": {"x":635,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10054",
-	"frame": {"x":308,"y":612,"w":154,"h":153},
+	"frame": {"x":762,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10055",
-	"frame": {"x":462,"y":612,"w":154,"h":153},
+	"frame": {"x":889,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10056",
-	"frame": {"x":616,"y":612,"w":154,"h":153},
+	"frame": {"x":1016,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10057",
-	"frame": {"x":770,"y":612,"w":154,"h":153},
+	"frame": {"x":1143,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10058",
-	"frame": {"x":924,"y":612,"w":154,"h":153},
+	"frame": {"x":1270,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10059",
-	"frame": {"x":1078,"y":612,"w":154,"h":153},
+	"frame": {"x":1397,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10060",
-	"frame": {"x":1232,"y":612,"w":154,"h":153},
+	"frame": {"x":1524,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10061",
-	"frame": {"x":1386,"y":612,"w":154,"h":153},
+	"frame": {"x":1651,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10062",
-	"frame": {"x":1540,"y":612,"w":154,"h":153},
+	"frame": {"x":1778,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10063",
-	"frame": {"x":1694,"y":612,"w":154,"h":153},
+	"frame": {"x":1905,"y":456,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10064",
-	"frame": {"x":1848,"y":612,"w":154,"h":153},
+	"frame": {"x":0,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10065",
-	"frame": {"x":0,"y":765,"w":154,"h":153},
+	"frame": {"x":127,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10066",
-	"frame": {"x":154,"y":765,"w":154,"h":153},
+	"frame": {"x":254,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10067",
-	"frame": {"x":308,"y":765,"w":154,"h":153},
+	"frame": {"x":381,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10068",
-	"frame": {"x":462,"y":765,"w":154,"h":153},
+	"frame": {"x":508,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10069",
-	"frame": {"x":616,"y":765,"w":154,"h":153},
+	"frame": {"x":635,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10070",
-	"frame": {"x":770,"y":765,"w":154,"h":153},
+	"frame": {"x":762,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10071",
-	"frame": {"x":924,"y":765,"w":154,"h":153},
+	"frame": {"x":889,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10072",
-	"frame": {"x":1078,"y":765,"w":154,"h":153},
+	"frame": {"x":1016,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10073",
-	"frame": {"x":1232,"y":765,"w":154,"h":153},
+	"frame": {"x":1143,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10074",
-	"frame": {"x":1386,"y":765,"w":154,"h":153},
+	"frame": {"x":1270,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10075",
-	"frame": {"x":1540,"y":765,"w":154,"h":153},
+	"frame": {"x":1397,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10076",
-	"frame": {"x":1694,"y":765,"w":154,"h":153},
+	"frame": {"x":1524,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10077",
-	"frame": {"x":1848,"y":765,"w":154,"h":153},
+	"frame": {"x":1651,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10078",
-	"frame": {"x":0,"y":918,"w":154,"h":153},
+	"frame": {"x":1778,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10079",
-	"frame": {"x":154,"y":918,"w":154,"h":153},
+	"frame": {"x":1905,"y":608,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10080",
-	"frame": {"x":308,"y":918,"w":154,"h":153},
+	"frame": {"x":0,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10081",
-	"frame": {"x":462,"y":918,"w":154,"h":153},
+	"frame": {"x":127,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10082",
-	"frame": {"x":616,"y":918,"w":154,"h":153},
+	"frame": {"x":254,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10083",
-	"frame": {"x":770,"y":918,"w":154,"h":153},
+	"frame": {"x":381,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10084",
-	"frame": {"x":924,"y":918,"w":154,"h":153},
+	"frame": {"x":508,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10085",
-	"frame": {"x":1078,"y":918,"w":154,"h":153},
+	"frame": {"x":635,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10086",
-	"frame": {"x":1232,"y":918,"w":154,"h":153},
+	"frame": {"x":762,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10087",
-	"frame": {"x":1386,"y":918,"w":154,"h":153},
+	"frame": {"x":889,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10088",
-	"frame": {"x":1540,"y":918,"w":154,"h":153},
+	"frame": {"x":1016,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10089",
-	"frame": {"x":1694,"y":918,"w":154,"h":153},
+	"frame": {"x":1143,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10090",
-	"frame": {"x":1848,"y":918,"w":154,"h":153},
+	"frame": {"x":1270,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10091",
-	"frame": {"x":0,"y":1071,"w":154,"h":153},
+	"frame": {"x":1397,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10092",
-	"frame": {"x":154,"y":1071,"w":154,"h":153},
+	"frame": {"x":1524,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10093",
-	"frame": {"x":308,"y":1071,"w":154,"h":153},
+	"frame": {"x":1651,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10094",
-	"frame": {"x":462,"y":1071,"w":154,"h":153},
+	"frame": {"x":1778,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10095",
-	"frame": {"x":616,"y":1071,"w":154,"h":153},
+	"frame": {"x":1905,"y":760,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10096",
-	"frame": {"x":770,"y":1071,"w":154,"h":153},
+	"frame": {"x":0,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10097",
-	"frame": {"x":924,"y":1071,"w":154,"h":153},
+	"frame": {"x":127,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10098",
-	"frame": {"x":1078,"y":1071,"w":154,"h":153},
+	"frame": {"x":254,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10099",
-	"frame": {"x":1232,"y":1071,"w":154,"h":153},
+	"frame": {"x":381,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10100",
-	"frame": {"x":1386,"y":1071,"w":154,"h":153},
+	"frame": {"x":508,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10101",
-	"frame": {"x":1540,"y":1071,"w":154,"h":153},
+	"frame": {"x":635,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10102",
-	"frame": {"x":1694,"y":1071,"w":154,"h":153},
+	"frame": {"x":762,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10103",
-	"frame": {"x":1848,"y":1071,"w":154,"h":153},
+	"frame": {"x":889,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10104",
-	"frame": {"x":0,"y":1224,"w":154,"h":153},
+	"frame": {"x":1016,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10105",
-	"frame": {"x":154,"y":1224,"w":154,"h":153},
+	"frame": {"x":1143,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10106",
-	"frame": {"x":308,"y":1224,"w":154,"h":153},
+	"frame": {"x":1270,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10107",
-	"frame": {"x":462,"y":1224,"w":154,"h":153},
+	"frame": {"x":1397,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10108",
-	"frame": {"x":616,"y":1224,"w":154,"h":153},
+	"frame": {"x":1524,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10109",
-	"frame": {"x":770,"y":1224,"w":154,"h":153},
+	"frame": {"x":1651,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10110",
-	"frame": {"x":924,"y":1224,"w":154,"h":153},
+	"frame": {"x":1778,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10111",
-	"frame": {"x":1078,"y":1224,"w":154,"h":153},
+	"frame": {"x":1905,"y":912,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10112",
-	"frame": {"x":1232,"y":1224,"w":154,"h":153},
+	"frame": {"x":0,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10113",
-	"frame": {"x":1386,"y":1224,"w":154,"h":153},
+	"frame": {"x":127,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10114",
-	"frame": {"x":1540,"y":1224,"w":154,"h":153},
+	"frame": {"x":254,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10115",
-	"frame": {"x":1694,"y":1224,"w":154,"h":153},
+	"frame": {"x":381,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10116",
-	"frame": {"x":1848,"y":1224,"w":154,"h":153},
+	"frame": {"x":508,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10117",
-	"frame": {"x":0,"y":1377,"w":154,"h":153},
+	"frame": {"x":635,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10118",
-	"frame": {"x":154,"y":1377,"w":154,"h":153},
+	"frame": {"x":762,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10119",
-	"frame": {"x":308,"y":1377,"w":154,"h":153},
+	"frame": {"x":889,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10120",
-	"frame": {"x":462,"y":1377,"w":154,"h":153},
+	"frame": {"x":1016,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10121",
-	"frame": {"x":616,"y":1377,"w":154,"h":153},
+	"frame": {"x":1143,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10122",
-	"frame": {"x":770,"y":1377,"w":154,"h":153},
+	"frame": {"x":1270,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10123",
-	"frame": {"x":924,"y":1377,"w":154,"h":153},
+	"frame": {"x":1397,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10124",
-	"frame": {"x":1078,"y":1377,"w":154,"h":153},
+	"frame": {"x":1524,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10125",
-	"frame": {"x":1232,"y":1377,"w":154,"h":153},
+	"frame": {"x":1651,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10126",
-	"frame": {"x":1386,"y":1377,"w":154,"h":153},
+	"frame": {"x":1778,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10127",
-	"frame": {"x":1540,"y":1377,"w":154,"h":153},
+	"frame": {"x":1905,"y":1064,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }
 ,{
 	"filename": "bris instance 10128",
-	"frame": {"x":1694,"y":1377,"w":154,"h":153},
+	"frame": {"x":0,"y":1216,"w":127,"h":152},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":153},
-	"sourceSize": {"w":154,"h":153}
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10129",
+	"frame": {"x":127,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10130",
+	"frame": {"x":254,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10131",
+	"frame": {"x":381,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10132",
+	"frame": {"x":508,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10133",
+	"frame": {"x":635,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10134",
+	"frame": {"x":762,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10135",
+	"frame": {"x":889,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10136",
+	"frame": {"x":1016,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10137",
+	"frame": {"x":1143,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10138",
+	"frame": {"x":1270,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10139",
+	"frame": {"x":1397,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10140",
+	"frame": {"x":1524,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10141",
+	"frame": {"x":1651,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10142",
+	"frame": {"x":1778,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10143",
+	"frame": {"x":1905,"y":1216,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10144",
+	"frame": {"x":0,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10145",
+	"frame": {"x":127,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10146",
+	"frame": {"x":254,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10147",
+	"frame": {"x":381,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10148",
+	"frame": {"x":508,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10149",
+	"frame": {"x":635,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10150",
+	"frame": {"x":762,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10151",
+	"frame": {"x":889,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10152",
+	"frame": {"x":1016,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10153",
+	"frame": {"x":1143,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10154",
+	"frame": {"x":1270,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10155",
+	"frame": {"x":1397,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10156",
+	"frame": {"x":1524,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10157",
+	"frame": {"x":1651,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10158",
+	"frame": {"x":1778,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10159",
+	"frame": {"x":1905,"y":1368,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10160",
+	"frame": {"x":0,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10161",
+	"frame": {"x":127,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10162",
+	"frame": {"x":254,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10163",
+	"frame": {"x":381,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10164",
+	"frame": {"x":508,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10165",
+	"frame": {"x":635,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10166",
+	"frame": {"x":762,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10167",
+	"frame": {"x":889,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10168",
+	"frame": {"x":1016,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10169",
+	"frame": {"x":1143,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10170",
+	"frame": {"x":1270,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10171",
+	"frame": {"x":1397,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10172",
+	"frame": {"x":1524,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10173",
+	"frame": {"x":1651,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10174",
+	"frame": {"x":1778,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10175",
+	"frame": {"x":1905,"y":1520,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10176",
+	"frame": {"x":0,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10177",
+	"frame": {"x":127,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10178",
+	"frame": {"x":254,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10179",
+	"frame": {"x":381,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10180",
+	"frame": {"x":508,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10181",
+	"frame": {"x":635,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10182",
+	"frame": {"x":762,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10183",
+	"frame": {"x":889,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10184",
+	"frame": {"x":1016,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10185",
+	"frame": {"x":1143,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10186",
+	"frame": {"x":1270,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10187",
+	"frame": {"x":1397,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10188",
+	"frame": {"x":1524,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10189",
+	"frame": {"x":1651,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10190",
+	"frame": {"x":1778,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10191",
+	"frame": {"x":1905,"y":1672,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10192",
+	"frame": {"x":0,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10193",
+	"frame": {"x":127,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10194",
+	"frame": {"x":254,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10195",
+	"frame": {"x":381,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10196",
+	"frame": {"x":508,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10197",
+	"frame": {"x":635,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10198",
+	"frame": {"x":762,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10199",
+	"frame": {"x":889,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10200",
+	"frame": {"x":1016,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10201",
+	"frame": {"x":1143,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10202",
+	"frame": {"x":1270,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10203",
+	"frame": {"x":1397,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10204",
+	"frame": {"x":1524,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10205",
+	"frame": {"x":1651,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10206",
+	"frame": {"x":1778,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10207",
+	"frame": {"x":1905,"y":1824,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10208",
+	"frame": {"x":0,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10209",
+	"frame": {"x":127,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10210",
+	"frame": {"x":254,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10211",
+	"frame": {"x":381,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10212",
+	"frame": {"x":508,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10213",
+	"frame": {"x":635,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10214",
+	"frame": {"x":762,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10215",
+	"frame": {"x":889,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10216",
+	"frame": {"x":1016,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10217",
+	"frame": {"x":1143,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10218",
+	"frame": {"x":1270,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10219",
+	"frame": {"x":1397,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10220",
+	"frame": {"x":1524,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10221",
+	"frame": {"x":1651,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10222",
+	"frame": {"x":1778,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10223",
+	"frame": {"x":1905,"y":1976,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10224",
+	"frame": {"x":0,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10225",
+	"frame": {"x":127,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10226",
+	"frame": {"x":254,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10227",
+	"frame": {"x":381,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10228",
+	"frame": {"x":508,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10229",
+	"frame": {"x":635,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10230",
+	"frame": {"x":762,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10231",
+	"frame": {"x":889,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10232",
+	"frame": {"x":1016,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10233",
+	"frame": {"x":1143,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10234",
+	"frame": {"x":1270,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10235",
+	"frame": {"x":1397,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10236",
+	"frame": {"x":1524,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10237",
+	"frame": {"x":1651,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10238",
+	"frame": {"x":1778,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10239",
+	"frame": {"x":1905,"y":2128,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10240",
+	"frame": {"x":0,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10241",
+	"frame": {"x":127,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10242",
+	"frame": {"x":254,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10243",
+	"frame": {"x":381,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10244",
+	"frame": {"x":508,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10245",
+	"frame": {"x":635,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10246",
+	"frame": {"x":762,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10247",
+	"frame": {"x":889,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10248",
+	"frame": {"x":1016,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10249",
+	"frame": {"x":1143,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10250",
+	"frame": {"x":1270,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10251",
+	"frame": {"x":1397,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10252",
+	"frame": {"x":1524,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10253",
+	"frame": {"x":1651,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10254",
+	"frame": {"x":1778,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10255",
+	"frame": {"x":1905,"y":2280,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10256",
+	"frame": {"x":0,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10257",
+	"frame": {"x":127,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10258",
+	"frame": {"x":254,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10259",
+	"frame": {"x":381,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10260",
+	"frame": {"x":508,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10261",
+	"frame": {"x":635,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10262",
+	"frame": {"x":762,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10263",
+	"frame": {"x":889,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10264",
+	"frame": {"x":1016,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10265",
+	"frame": {"x":1143,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10266",
+	"frame": {"x":1270,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10267",
+	"frame": {"x":1397,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10268",
+	"frame": {"x":1524,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10269",
+	"frame": {"x":1651,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10270",
+	"frame": {"x":1778,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10271",
+	"frame": {"x":1905,"y":2432,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10272",
+	"frame": {"x":0,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10273",
+	"frame": {"x":127,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10274",
+	"frame": {"x":254,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10275",
+	"frame": {"x":381,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10276",
+	"frame": {"x":508,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10277",
+	"frame": {"x":635,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10278",
+	"frame": {"x":762,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10279",
+	"frame": {"x":889,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10280",
+	"frame": {"x":1016,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10281",
+	"frame": {"x":1143,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10282",
+	"frame": {"x":1270,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10283",
+	"frame": {"x":1397,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10284",
+	"frame": {"x":1524,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10285",
+	"frame": {"x":1651,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10286",
+	"frame": {"x":1778,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10287",
+	"frame": {"x":1905,"y":2584,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10288",
+	"frame": {"x":0,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10289",
+	"frame": {"x":127,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10290",
+	"frame": {"x":254,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10291",
+	"frame": {"x":381,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10292",
+	"frame": {"x":508,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10293",
+	"frame": {"x":635,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10294",
+	"frame": {"x":762,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10295",
+	"frame": {"x":889,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10296",
+	"frame": {"x":1016,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10297",
+	"frame": {"x":1143,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10298",
+	"frame": {"x":1270,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
+}
+,{
+	"filename": "bris instance 10299",
+	"frame": {"x":1397,"y":2736,"w":127,"h":152},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":152},
+	"sourceSize": {"w":127,"h":152}
 }],
 "meta": {
 	"app": "Adobe Flash CS6",
 	"version": "12.0.2.529",
-	"image": "icebreak.png",
+	"image": "animation_break_30_gagner.png",
 	"format": "RGBA8888",
-	"size": {"w":2048,"h":2048},
+	"size": {"w":2048,"h":4096},
 	"scale": "1"
 }
 }

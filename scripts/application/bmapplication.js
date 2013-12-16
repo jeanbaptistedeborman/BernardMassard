@@ -34,7 +34,7 @@ $('.fb-like').hide ();
 
 	}
 
-	$('.js_continue').css('display', 'none');
+	//$('.js_continue').css('display', 'none');
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
 
