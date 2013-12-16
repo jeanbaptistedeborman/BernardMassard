@@ -13,12 +13,22 @@ $(document).ready(function() {"use strict";
 	}
 
 	preloadImage("graphic/game/animation/icebreak.png");
+	if (UserAgent.anyMobile() || rue) {
+		$('.fb-like').hide();
 
+	} else {
+
+		$('.fb-login-button').hide();
+		Facebook.onUserInfo = function() {
+			$('.fb-login-button').show();
+
+		};
+	}
 	if (UserAgent.anyMobile() && false) {
 		testLikeInterval = setInterval(function() {
 
 			trace("testLikeInterval : " + testLikeInterval);
-			Facebook.checkLike ();
+			Facebook.checkLike();
 
 		}, 1000);
 
