@@ -34,10 +34,10 @@ var BMGame = {
 			var positions_array = [];
 			BMGame.stage_$ = $("#stage");
 			BMGame.stage_$.addClass("stage");
-
-			BMGame.stage_$.css('top', -(BMGame.stage_$.height() - BMGame.stage_$.parent().height()) / 2);
-			BMGame.stage_$.css('left', -(BMGame.stage_$.width() - BMGame.stage_$.parent().width()) / 2);
-
+			if (!isTouch()) {
+				BMGame.stage_$.css('top', -(BMGame.stage_$.height() - BMGame.stage_$.parent().height()) / 2);
+				BMGame.stage_$.css('left', -(BMGame.stage_$.width() - BMGame.stage_$.parent().width()) / 2);
+			}
 			for ( row = 0; row < ROWS_NUM; row++) {
 
 				for ( column = 0; column < COLUMNS_NUM; column++) {

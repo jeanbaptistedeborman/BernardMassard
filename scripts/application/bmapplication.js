@@ -3,7 +3,7 @@
 
 $(document).ready(function() {"use strict";
 	alert("with test like interval for mobile v2");
-	var testLikeInterval; 
+	var testLikeInterval;
 	function preloadImage(url) {
 		try {
 			var _img = new Image();
@@ -16,9 +16,9 @@ $(document).ready(function() {"use strict";
 
 	if (UserAgent.anyMobile()) {
 		testLikeInterval = setInterval(function() {
-			
-			trace ("testLikeInterval : " + testLikeInterval); 
-					Facebook.launchInitSequence(Facebook.checkLike);
+
+			trace("testLikeInterval : " + testLikeInterval);
+			Facebook.checkLike ();
 
 		}, 1000);
 
@@ -70,7 +70,7 @@ $(document).ready(function() {"use strict";
 	};
 
 	Facebook.onLike = function() {
-		clearInterval (testLikeInterval); 
+		clearInterval(testLikeInterval);
 
 		$('.fb-like').css('display', 'none');
 		$('.js_continue').css('display', 'inline-block');
