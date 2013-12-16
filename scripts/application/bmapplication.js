@@ -9,7 +9,7 @@ $(document).ready(function() {"use strict";
 	});
 	Facebook.initCallbackFunction = Facebook.checkLike;
 
-	var testLikeInterval;
+
 	function preloadImage(url) {
 		try {
 			var _img = new Image();
@@ -20,7 +20,8 @@ $(document).ready(function() {"use strict";
 
 
 	Facebook.onUserInfo = function() {
-		//$('.fb-login-button').hide();
+		alert ('onuserinfo')
+		$('.fb-login-button').hide();
 		$('.fb-like').show();
 
 	};
@@ -80,7 +81,7 @@ $(document).ready(function() {"use strict";
 	};
 
 	Facebook.onLike = function() {
-		clearInterval(testLikeInterval);
+		alert ('onlike'); 
 
 		$('.fb-like').css('display', 'none');
 		$('.js_continue').css('display', 'inline-block');
