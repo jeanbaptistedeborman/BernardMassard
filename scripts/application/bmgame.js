@@ -24,7 +24,7 @@ var BMGame = {
 			dataType : "json"
 		}).done(function(data) {
 
-			alert("ajax loaded");
+			//alert("ajax loaded");
 
 			var GRID_SIZE_NUM = 150;
 			var COLUMNS_NUM = 10;

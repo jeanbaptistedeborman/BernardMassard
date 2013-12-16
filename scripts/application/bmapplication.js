@@ -13,7 +13,7 @@ $(document).ready(function() {"use strict";
 	}
 
 	preloadImage("graphic/game/animation/icebreak.png");
-	if (UserAgent.anyMobile() || true) {
+	if (UserAgent.anyMobile() && false) {
 		//$('.fb-like').hide();
 
 	} else {
