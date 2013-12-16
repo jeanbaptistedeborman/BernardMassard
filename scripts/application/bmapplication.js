@@ -83,6 +83,7 @@ $('.fb-like').hide ();
 		//alert ('onlike'); 
 
 		//$('.fb-like').css('display', 'none');
+		$('.fb-like').hide();
 		$('.js_continue').css('display', 'inline-block');
 
 	};
