@@ -2,7 +2,7 @@
 /*global SpriteAnimation, BMGame, UserAgent, Facebook,  PopupManager */
 
 $(document).ready(function() {"use strict";
-	alert("with login");
+	alert("with login - corrected");
 	var testLikeInterval;
 	function preloadImage(url) {
 		try {
@@ -13,7 +13,7 @@ $(document).ready(function() {"use strict";
 	}
 
 	preloadImage("graphic/game/animation/icebreak.png");
-	if (UserAgent.anyMobile() || rue) {
+	if (UserAgent.anyMobile() || true) {
 		//$('.fb-like').hide();
 
 	} else {
