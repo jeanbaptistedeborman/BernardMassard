@@ -9,8 +9,9 @@ Facebook = {
 
 		alert ("init , scope changed");
 		this.initCallbackFunction = callbackFunction;
-
+	alert ("app id" + Facebook.appId);  
 		FB.init({
+		
 			appId : Facebook.appId,
 			status : true, // check login status
 			cookie : true,
