@@ -25,7 +25,7 @@ $(document).ready(function() {"use strict";
 
 	};
 
-	$('.fb-like').hide();
+	//$('.fb-like').hide();
 	preloadImage("graphic/game/animation/icebreak.png");
 	if (UserAgent.anyMobile() && false) {
 		//$('.fb-like').hide();
@@ -82,7 +82,7 @@ $(document).ready(function() {"use strict";
 	Facebook.onLike = function() {
 		alert ('onlike'); 
 
-		$('.fb-like').css('display', 'none');
+		//$('.fb-like').css('display', 'none');
 		$('.js_continue').css('display', 'inline-block');
 
 	};
