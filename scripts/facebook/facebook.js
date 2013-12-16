@@ -15,7 +15,6 @@ Facebook = {
 			appId : Facebook.appId,
 			status : true, // check login status
 			cookie : true,
-			scope : "user_likes",
 
 			xfbml : true // parse XFBML
 		});
