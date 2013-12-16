@@ -19,7 +19,7 @@ $('.fb-like').hide ();
 
 
 	Facebook.onUserInfo = function() {
-		alert ('onuserinfo')
+		//alert ('onuserinfo')
 		$('.fb-login-button').hide();
 		$('.fb-like').show();
 
@@ -139,7 +139,7 @@ $('.fb-like').hide ();
 				});
 
 			} else {
-				alert("Tous les champs doivent être remplis.");
+				//alert("Tous les champs doivent être remplis.");
 
 			}
 

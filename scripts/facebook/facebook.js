@@ -7,7 +7,7 @@ Facebook = {
 	initCallbackFunction : "",
 	launchInitSequence : function(callbackFunction) {"use strict";
 		this.initCallbackFunction = callbackFunction;
-	alert ("app id" + Facebook.appId);  
+	//alert ("app id" + Facebook.appId);  
 		FB.init({
 		
 			appId : Facebook.appId,
@@ -43,7 +43,7 @@ Facebook = {
 	},
 
 	checkLike : function() {"use strict";
-		alert("checkLike");
+		//alert("checkLike");
 
 		FB.api('/me/likes/65692241192', function(response) {
 			trace("Like : " + response.data);
@@ -60,7 +60,7 @@ Facebook = {
 
 	},
 	getUserInfo : function() {"use strict";
-	alert ('connected getting user info'); 
+	//alert ('connected getting user info'); 
 
 		FB.api('/me', function(response) {
 			alert (response); 
