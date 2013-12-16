@@ -114,6 +114,7 @@ $(document).ready(function() {"use strict";
 				}
 
 			}
+			trace ("Facebook.userInfo.id : " + Facebook.userInfo.id); 
 			data.fbid = Facebook.userInfo.id;
 
 			if (send_bool) {
