@@ -25,7 +25,7 @@ $(document).ready(function() {"use strict";
 		};
 	}
 
-	$('.js_continue').css('display', 'none');
+	//$('.js_continue').css('display', 'none');
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
 
@@ -149,6 +149,7 @@ $(document).ready(function() {"use strict";
 			case "howToPlay" :
 
 				BMGame.init();
+				$('body').addClass ('bg2'); 
 
 				break;
 

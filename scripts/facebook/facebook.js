@@ -7,7 +7,7 @@ Facebook = {
 	initCallbackFunction : "",
 	launchInitSequence : function(callbackFunction) {"use strict";
 
-	//alert ("init , scope changed");
+		alert ("init , scope changed");
 		this.initCallbackFunction = callbackFunction;
 
 		FB.init({
@@ -27,7 +27,7 @@ Facebook = {
 			});
 
 			FB.Event.subscribe('auth.authResponseChange', function(response) {
-
+alert ("FACEBOOK AOTH");
 				if (response.status === 'connected') {
 					Facebook.getUserInfo();
 					Facebook.initCallbackFunction();
@@ -44,7 +44,7 @@ Facebook = {
 	},
 
 	checkLike : function() {"use strict";
-		//alert("checkLike");
+		alert("checkLike");
 
 		FB.api('/me/likes/65692241192', function(response) {
 			trace("Like : " + response.data);
@@ -56,21 +56,22 @@ Facebook = {
 			}
 		});
 
-		FB.api({
-			method : "pages.isFan",
-			page_id : "65692241192"
-		}, function(response) {
-
-		});
+		
 
 	},
 	getUserInfo : function() {"use strict";
+	alert ('connected user info'); 
 
 		FB.api('/me', function(response) {
 			Facebook.userInfo = response;
+			Facebook.onUserInfo (); 
 		});
 
 	},
+	onUserInfo:function  () {"use strict";
+		
+		
+},
 	onLike : function() {"use strict";
 		//Event Placeholder;
 

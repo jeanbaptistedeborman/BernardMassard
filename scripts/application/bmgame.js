@@ -64,7 +64,7 @@ var BMGame = {
 				BMGame.displayResult();
 			};
 
-			for ( n = 0; n < 5; n++) {
+			for ( n = 0; n < 10; n++) {
 				var position_array;
 				random_num = Math.floor(Math.random() * positions_array.length);
 				position_array = positions_array.splice(random_num, random_num+1)[0];
