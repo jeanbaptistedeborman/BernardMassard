@@ -39,7 +39,6 @@ $(document).ready(function() {"use strict";
 		Facebook.appId = '669311946433468';
 	} else {
 		Facebook.appId = '1384449105138296';
-		Facebook.appId = '669311946433468';
 
 	}( function(d) {
 
