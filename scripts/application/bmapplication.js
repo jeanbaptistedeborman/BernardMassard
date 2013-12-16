@@ -2,7 +2,7 @@
 /*global SpriteAnimation, BMGame, UserAgent, Facebook,  PopupManager */
 
 $(document).ready(function() {"use strict";
-	alert("with login - corrected 2");
+	//alert("with login - corrected 2");
 	var testLikeInterval;
 	function preloadImage(url) {
 		try {
@@ -24,7 +24,6 @@ $(document).ready(function() {"use strict";
 
 		};
 	}
-
 
 	$('.js_continue').css('display', 'none');
 	var ui_$ = $("#ui");
