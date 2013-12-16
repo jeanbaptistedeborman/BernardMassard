@@ -21,7 +21,7 @@ $(document).ready(function() {"use strict";
 	
 
 		Facebook.onUserInfo = function() {
-				$('.fb-login-button').hide();
+				//$('.fb-login-button').hide();
 			$('.fb-like').show();
 
 		};
@@ -131,8 +131,8 @@ $('.fb-like').hide();
 			if (send_bool) {
 
 				$.ajax({
-					url : "http://www.d1009502-4898.luxcloud.net/api/contest.php",
-					type : "GET",
+					url : "http://www.d1009502-4898.luxcloud.net/api/subscribe.php",
+					type : "POST",
 					data : data
 				}).done(function() {
 					PopupManager.close($("#form"));
