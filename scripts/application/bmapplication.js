@@ -4,10 +4,12 @@
 $(document).ready(function() {"use strict";
 	//alert("with login - corrected 2");
 	$('#connect').bind ('click', function (){
-		Facebook.launchInitSequence (); 
+		//Facebook.launchInitSequence (); 
 		
 		
 	}); 
+	Facebook.initCallbackFunction = Facebook.checkLike;
+	
 	var testLikeInterval;
 	function preloadImage(url) {
 		try {
@@ -16,6 +18,14 @@ $(document).ready(function() {"use strict";
 		} catch (e) {
 		}
 	}
+	
+
+		Facebook.onUserInfo = function() {
+				$('.fb-login-button').hide();
+			$('.fb-like').show();
+
+		};
+	
 $('.fb-like').hide();
 	preloadImage("graphic/game/animation/icebreak.png");
 	if (UserAgent.anyMobile() && false) {
@@ -23,11 +33,7 @@ $('.fb-like').hide();
 
 	} else {
 
-		$('.fb-login-button').hide();
-		Facebook.onUserInfo = function() {
-			$('.fb-like').show();
-
-		};
+		
 	}
 
 	$('.js_continue').css('display', 'none');
@@ -55,7 +61,7 @@ $('.fb-like').hide();
 
 	window.fbAsyncInit = function() {
 
-		Facebook.launchInitSequence(Facebook.checkLike);
+		//
 
 	};
 
