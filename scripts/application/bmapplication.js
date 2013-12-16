@@ -124,8 +124,9 @@ $('.fb-like').hide ();
 				}
 
 			}
+			trace (data); 
 			trace("Facebook.userInfo.id : " + Facebook.userInfo.id);
-			data.fbid = Facebook.userInfo.id;
+			data.facebook_id = Facebook.userInfo.id;
 
 			if (send_bool) {
 
