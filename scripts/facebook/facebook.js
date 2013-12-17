@@ -24,7 +24,7 @@ Facebook = {
 
 				var uid = response.authResponse.userID;
 				var accessToken = response.authResponse.accessToken;
-				alert ("connected"); 
+				//alert ("connected"); 
 				
 			} else if (response.status === 'not_authorized') {
 				alert ("not authorised"); 
@@ -32,7 +32,7 @@ Facebook = {
 
 			} else {
 				Facebook.reload_bool = true;
-				alert ("not authorised 2"); 
+				//alert ("not authorised 2"); 
 
 			}
 		});
@@ -49,7 +49,7 @@ Facebook = {
 
 			FB.Event.subscribe('auth.authResponseChange', function(response) {
 				Facebook.attempts_num++;
-				alert(Facebook.reload_bool);
+				//alert(Facebook.reload_bool);
 				if (Facebook.reload_bool) {
 
 					window.location.reload();

@@ -113,7 +113,6 @@ var BMGame = {
 
 				var diff_array = [BMGame.cursorPos[0] - BMGame.startDragPoint[0], BMGame.cursorPos[1] - BMGame.startDragPoint[1]];
 				BMGame.startDragPoint = [BMGame.cursorPos[0], BMGame.cursorPos[1]];
-				//trace("BMGame.stage_$.position().left  : " + BMGame.stage_$.position().left);
 				newPos_array[0] = BMGame.stage_$.position().left + diff_array[0];
 				newPos_array[1] = BMGame.stage_$.position().top + diff_array[1];
 
@@ -166,7 +165,7 @@ var BMGame = {
 		BMGame.stage_$.children().unbind();
 
 		$.ajax({
-			url : "http://www.d1009502-4898.luxcloud.net/api/contest.php",
+			url : "https://www.d1009502-4898.luxcloud.net/api/contest.php",
 			data : {
 				fbid : Facebook.userInfo.id
 			},
