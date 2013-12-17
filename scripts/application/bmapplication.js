@@ -129,8 +129,8 @@ $(document).ready(function() {"use strict";
 				var atpos = email_str.indexOf("@");
 				var dotpos = email_str.lastIndexOf(".");
 				if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email_str.length) {
-					alert("Not a valid e-mail address");
-					result = true;
+					//alert("Not a valid e-mail address");
+					result = false;
 				}
 				return (result)
 			}
