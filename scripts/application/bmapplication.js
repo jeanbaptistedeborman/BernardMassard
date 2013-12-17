@@ -82,7 +82,8 @@ $(document).ready(function() {"use strict";
 
 		//$('.fb-like').css('display', 'none');
 		$('.fb-like').hide();
-		$('.js_continue').show (); 
+		$('.js_continue').show ();
+		$('.js_continue').css ("display", "inline-block");  
 
 	};
 
