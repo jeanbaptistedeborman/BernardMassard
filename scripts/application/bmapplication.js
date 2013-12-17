@@ -18,6 +18,7 @@ $(document).ready(function() {"use strict";
 	}
 
 
+
 	Facebook.onUserInfo = function() {
 		//alert ('onuserinfo')
 		$('.fb-login-button').hide();
@@ -36,6 +37,7 @@ $(document).ready(function() {"use strict";
 	$('.js_continue').hide (); 
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
+	
 
 	if (String(window.location.href).indexOf("azurewebsites") !== -1) {
 

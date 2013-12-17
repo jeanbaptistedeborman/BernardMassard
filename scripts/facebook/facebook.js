@@ -24,11 +24,15 @@ Facebook = {
 
 				var uid = response.authResponse.userID;
 				var accessToken = response.authResponse.accessToken;
+				alert ("connected"); 
+				
 			} else if (response.status === 'not_authorized') {
+				alert ("not authorised"); 
 				Facebook.reload_bool = true; 
 
 			} else {
-				Facebook.reload_bool = true; 
+				Facebook.reload_bool = true;
+				alert ("not authorised 2"); 
 
 			}
 		});
