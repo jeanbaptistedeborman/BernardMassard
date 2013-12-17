@@ -6,7 +6,7 @@ $(document).ready(function() {"use strict";
 	$('#connect').bind('click', function() {
 
 	});
-	$('.fb-like').css ("top", -5000); 
+	$('.fb-like').hide (); 
 
 	function preloadImage(url) {
 		try {
@@ -20,7 +20,7 @@ $(document).ready(function() {"use strict";
 	Facebook.onUserInfo = function() {
 		//alert ('onuserinfo')
 		$('.fb-login-button').hide();
-			$('.fb-like').css ("top", ""); 
+			$('.fb-like').show (); 
 
 	};
 
