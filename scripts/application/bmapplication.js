@@ -44,6 +44,21 @@ $(document).ready(function() {"use strict";
 		Facebook.appId = '1384449105138296';
 
 	}
+	
+	
+	( function(d) {
+
+			var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement('script');
+			js.id = id;
+			js.async = true;
+			js.src = "http://connect.facebook.net/fr_FR/all.js";
+			ref.parentNode.insertBefore(js, ref);
+		}(document));
+
 
 	window.fbAsyncInit = function() {
 
@@ -68,9 +83,7 @@ $(document).ready(function() {"use strict";
 	};
 
 	Facebook.onLike = function() {
-		//trace ("application onlike"); 
 
-		//$('.fb-like').css('display', 'none');
 		$('.fb-like').hide();
 		$('.js_continue').show ();
 		$('.js_continue').css ("display", "inline-block");  
