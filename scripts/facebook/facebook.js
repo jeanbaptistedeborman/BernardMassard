@@ -25,10 +25,10 @@ Facebook = {
 				var uid = response.authResponse.userID;
 				var accessToken = response.authResponse.accessToken;
 			} else if (response.status === 'not_authorized') {
-				reload_bool = true; 
+				Facebook.reload_bool = true; 
 
 			} else {
-				reload_bool = true; 
+				Facebook.reload_bool = true; 
 
 			}
 		});
@@ -45,8 +45,8 @@ Facebook = {
 
 			FB.Event.subscribe('auth.authResponseChange', function(response) {
 				Facebook.attempts_num++;
-				//alert(Facebook.attempts_num);
-				if (reload_bool) {
+				alert(Facebook.reload_bool);
+				if (Facebook.reload_bool) {
 
 					window.location.reload();
 				}
