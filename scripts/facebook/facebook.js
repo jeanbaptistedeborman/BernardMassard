@@ -21,7 +21,7 @@ Facebook = {
 
 			FB.Event.subscribe('edge.create', function(href, widget) {
 				
-				Facebook.checkLike ();
+				Facebook.onLike();
 
 			});
 
