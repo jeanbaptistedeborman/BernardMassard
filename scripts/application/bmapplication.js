@@ -57,7 +57,7 @@ $(document).ready(function() {"use strict";
 			js = d.createElement('script');
 			js.id = id;
 			js.async = true;
-			js.src = "http://connect.facebook.net/fr_FR/all.js";
+			js.src = "https://connect.facebook.net/fr_FR/all.js";
 			ref.parentNode.insertBefore(js, ref);
 		}(document));
 
