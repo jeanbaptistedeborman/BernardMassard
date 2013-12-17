@@ -1,6 +1,7 @@
 /*global FB*/
 
 Facebook = {
+	attempts_num:0; 
 	appId : undefined,
 	userInfo : {},
 	authEventSubscribed_bool : false,
@@ -20,13 +21,20 @@ Facebook = {
 			this.authEventSubscribed_bool = true;
 
 			FB.Event.subscribe('edge.create', function(href, widget) {
-				trace ("event received"); 
+				//trace ("event received"); 
 				
 				Facebook.onLike();
 
 			});
 
 			FB.Event.subscribe('auth.authResponseChange', function(response) {
+				Facebook.attempts_num++;
+				alert (Facebook.attempts_num);
+				if (Facebook.attempts_num > 1) {
+					
+					window.location.reload (); 
+				} 
+				
 				if (response.status === 'connected') {
 					Facebook.getUserInfo();
 			

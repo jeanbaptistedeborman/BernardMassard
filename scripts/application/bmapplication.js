@@ -7,6 +7,7 @@ $(document).ready(function() {"use strict";
 
 	});
 	$('.fb-like').css ("top", -5000); 
+	
 
 	function preloadImage(url) {
 		try {
@@ -20,7 +21,7 @@ $(document).ready(function() {"use strict";
 	Facebook.onUserInfo = function() {
 		//alert ('onuserinfo')
 		$('.fb-login-button').hide();
-			$('.fb-like').css ("top", ""); 
+		$('.fb-like').css ("top", ""); 
 
 	};
 
@@ -42,18 +43,7 @@ $(document).ready(function() {"use strict";
 	} else {
 		Facebook.appId = '1384449105138296';
 
-	}( function(d) {
-
-			var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-			if (d.getElementById(id)) {
-				return;
-			}
-			js = d.createElement('script');
-			js.id = id;
-			js.async = true;
-			js.src = "http://connect.facebook.net/fr_FR/all.js";
-			ref.parentNode.insertBefore(js, ref);
-		}(document));
+	}
 
 	window.fbAsyncInit = function() {
 
@@ -117,7 +107,6 @@ $(document).ready(function() {"use strict";
 			for (n in data) {
 				var value = data[n];
 				if (value === undefined || value === null || value === "" || value == false) {
-					//alert("value is null, false,  or undefined");
 					send_bool = false;
 				}
 
@@ -137,7 +126,7 @@ $(document).ready(function() {"use strict";
 			}
 			mail_bool = validateForm(); 
 
-			trace("Facebook.userInfo.id : " + Facebook.userInfo.id);
+			//trace("Facebook.userInfo.id : " + Facebook.userInfo.id);
 			data.facebook_id = Facebook.userInfo.id;
 			
 		
