@@ -28,6 +28,7 @@ to {
 
 
 body {
+	position:relative; 
 	width: 800px;
 	background: url('../graphic/ui/bg1.jpg');
 	background-repeat: no-repeat;
