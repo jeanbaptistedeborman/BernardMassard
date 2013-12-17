@@ -1,7 +1,7 @@
 /*global FB*/
 
 Facebook = {
-	attempts_num:0; 
+	attempts_num:0, 
 	appId : undefined,
 	userInfo : {},
 	authEventSubscribed_bool : false,
