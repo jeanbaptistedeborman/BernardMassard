@@ -32,7 +32,7 @@ $(document).ready(function() {"use strict";
 
 	}
 
-	$('.js_continue').css('display', 'none');
+	$('.js_continue').hide (); 
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
 
@@ -73,16 +73,16 @@ $(document).ready(function() {"use strict";
 	PopupManager.popups_$ = popups_$;
 	PopupManager.display("intro");
 	Facebook.onDoesNotLike = function() {
-		//$("#warning").addClass("blink");
+		trace ("application on does not like"); 
 
 	};
 
 	Facebook.onLike = function() {
-		//alert ('onlike');
+		trace ("application onlike"); 
 
 		//$('.fb-like').css('display', 'none');
 		$('.fb-like').hide();
-		$('.js_continue').css('display', 'inline-block');
+		$('.js_continue').show (); 
 
 	};
 
