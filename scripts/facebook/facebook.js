@@ -20,6 +20,7 @@ Facebook = {
 			this.authEventSubscribed_bool = true;
 
 			FB.Event.subscribe('edge.create', function(href, widget) {
+				trace ("event received"); 
 				
 				Facebook.onLike();
 
