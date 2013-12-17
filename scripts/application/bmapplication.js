@@ -78,7 +78,7 @@ $(document).ready(function() {"use strict";
 	};
 
 	Facebook.onLike = function() {
-		trace ("application onlike"); 
+		//trace ("application onlike"); 
 
 		//$('.fb-like').css('display', 'none');
 		$('.fb-like').hide();
