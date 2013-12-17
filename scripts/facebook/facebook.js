@@ -47,8 +47,7 @@ Facebook = {
 
 		FB.api('/me/likes/65692241192', function(response) {
 			trace("Like : ");
-			trace(response);
-			if (response.data !== undefined) {
+			if (response.data[0] !== 0) {
 				trace (response.data); 
 				//alert ('page liked'); 
 				Facebook.onLike();
