@@ -155,7 +155,7 @@ var BMGame = {
 			$(window).bind("mouseup", function() {
 
 				//alert("mouseup");
-				window.clearInterval(BMGame.dragInterval);
+				//window.clearInterval(BMGame.dragInterval);
 
 			});
 
