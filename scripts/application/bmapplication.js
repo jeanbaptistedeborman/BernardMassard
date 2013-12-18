@@ -3,6 +3,7 @@
 
 $(document).ready(function() {"use strict";
 	//alert("with login - corrected 2");
+	
 	$('#connect').bind('click', function() {
 
 	});
@@ -34,7 +35,7 @@ $(document).ready(function() {"use strict";
 
 	}
 
-	$('.js_continue').hide (); 
+	//$('.js_continue').hide (); 
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
 	
@@ -80,7 +81,7 @@ $(document).ready(function() {"use strict";
 	PopupManager.popups_$ = popups_$;
 	PopupManager.display("intro");
 	Facebook.onDoesNotLike = function() {
-		trace ("application on does not like"); 
+		//trace ("application on does not like"); 
 
 	};
 
@@ -149,7 +150,7 @@ $(document).ready(function() {"use strict";
 			if (send_bool && mail_bool) {
 
 				$.ajax({
-					url : "../../api/subscription.php",
+					url : "api/subscription.php",
 					type : "POST",
 					data : data
 				}).done(function() {

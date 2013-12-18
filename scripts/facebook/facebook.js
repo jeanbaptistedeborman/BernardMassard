@@ -27,7 +27,7 @@ Facebook = {
 				//alert ("connected"); 
 				
 			} else if (response.status === 'not_authorized') {
-				alert ("not authorised"); 
+				//alert ("not authorised"); 
 				Facebook.reload_bool = true; 
 
 			} else {
@@ -73,17 +73,31 @@ Facebook = {
 
 	checkLike : function() {"use strict";
 		//alert("checkLike");
-
+		
 		FB.api('/me/likes/65692241192', function(response) {
-			trace("Like : ");
+			
+			
+		
+if (response.data) {
+			if (response.data.length !== 0) {
+				trace(response.data);
+				//alert ('page liked');
+				Facebook.onLike();
+			} 
+			}
+		});
+		
+
+		FB.api('/me/likes/1384449105138296', function(response) {
+			
+			if (response.data) {
+		
 
 			if (response.data.length !== 0) {
 				trace(response.data);
 				//alert ('page liked');
 				Facebook.onLike();
-			} else {
-				Facebook.onDoesNotLike();
-
+			} 
 			}
 		});
 

@@ -1,5 +1,5 @@
 /*jslint vars:true, white:true, nomen:true, plusplus:true */
-/*global $,PopupManager,Facebook,isTouch, SpriteAnimation */
+/*global $,PopupManager,UserAgent, Facebook,isTouch, SpriteAnimation */
 
 var BMGame = {
 	gameOver_bool : true,
@@ -9,18 +9,29 @@ var BMGame = {
 	dragInterval : null,
 	init : function() {"use strict";
 		$('#gameContainer').show();
+		
 
 		document.onmousemove = function(e) {
-
+			trace (UserAgent.msie ()); 
+		
+			if (UserAgent.msie () < 9 && UserAgent.msie () > 0) {
+				
+				trace (e.clientX); 
+			
+				
+			} else {
+				
+				//alert ("cursor pos"); 
+				
+				
 			BMGame.cursorPos[0] = e.pageX;
 			BMGame.cursorPos[1] = e.pageY;
-			
-			
-			
-			//Solution: use "event.clientX" for ie;  
-			
+				
+				
+				
+			}
 
-			//trace ("movement : " + e.movementX);
+			
 		};
 		//alert("init");
 
@@ -159,7 +170,7 @@ var BMGame = {
 		BMGame.stage_$.children().unbind();
 
 		$.ajax({
-			url : "http://www.d1009502-4898.luxcloud.net/api/contest.php",
+			url : "api/contest.php",
 			data : {
 				fbid : Facebook.userInfo.id
 			},
