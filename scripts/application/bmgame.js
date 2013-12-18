@@ -11,8 +11,8 @@ var BMGame = {
 		$('#gameContainer').show();
 			trace("test console");
 		$(document).bind ("mousemove onmousemove", function(e) {
-		alert("UserAgent.msie()" + UserAgent.msie());
-		alert("window.event.clientX)" + window.event.clientX);
+		//alert("UserAgent.msie()" + UserAgent.msie());
+		//alert("window.event.clientX)" + window.event.clientX);
 
 			if (UserAgent.msie() < 9 && UserAgent.msie() > 0) {
 
@@ -115,11 +115,10 @@ var BMGame = {
 
 				var diff_array = [BMGame.cursorPos[0] - BMGame.startDragPoint[0], BMGame.cursorPos[1] - BMGame.startDragPoint[1]];
 				BMGame.startDragPoint = [BMGame.cursorPos[0], BMGame.cursorPos[1]];
-				//trace("BMGame.stage_$.position().left  : " + BMGame.stage_$.position().left);
 				newPos_array[0] = BMGame.stage_$.position().left + diff_array[0];
 				newPos_array[1] = BMGame.stage_$.position().top + diff_array[1];
 
-				//trace(minX);
+				trace (diff_array[0]); 
 
 				if (newPos_array[0] < minX) {
 
