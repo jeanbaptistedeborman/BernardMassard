@@ -9,33 +9,27 @@ var BMGame = {
 	dragInterval : null,
 	init : function() {"use strict";
 		$('#gameContainer').show();
-		
+trace("test console");
+		$(document).bind ("mousemove", function(e) {
+			trace("mouse move");
 
-		document.onmousemove = function(e) {
-			trace (UserAgent.msie ()); 
-		
-			if (UserAgent.msie () < 9 && UserAgent.msie () > 0) {
-				
-				trace (window.event.clientX); 
-				
+			if (UserAgent.msie() < 9 && UserAgent.msie() > 0) {
+
+				trace(window.event.clientX);
+
 				BMGame.cursorPos[0] = window.event.clientX;
-			BMGame.cursorPos[1] = window.event.clientY;
-			
-				
+				BMGame.cursorPos[1] = window.event.clientY;
+
 			} else {
-				
-				//alert ("cursor pos"); 
-				
-				
-			BMGame.cursorPos[0] = e.pageX;
-			BMGame.cursorPos[1] = e.pageY;
-				
-				
-				
+
+				//alert ("cursor pos");
+
+				BMGame.cursorPos[0] = e.pageX;
+				BMGame.cursorPos[1] = e.pageY;
+
 			}
 
-			
-		};
+		}); 
 		//alert("init");
 
 		$.ajax({
