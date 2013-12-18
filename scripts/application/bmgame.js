@@ -9,9 +9,9 @@ var BMGame = {
 	dragInterval : null,
 	init : function() {"use strict";
 		$('#gameContainer').show();
-trace("test console");
-		$(document).bind ("mousemove", function(e) {
-			trace("mouse move");
+			trace("test console");
+		$(document).bind ("mousemove onmousemove", function(e) {
+			//trace("mouse move");
 
 			if (UserAgent.msie() < 9 && UserAgent.msie() > 0) {
 
