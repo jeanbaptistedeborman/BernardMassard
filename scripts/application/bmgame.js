@@ -112,7 +112,7 @@ var BMGame = {
 			var maxY = 0;
 			BMGame.startDragPoint = [BMGame.cursorPos[0], BMGame.cursorPos[1]];
 
-			BMGame.dragInterval = window.setInterval(function() {
+			BMGame.dragInterval = setInterval(function() {
 				alert ("interal");
 				var diff_array = [BMGame.cursorPos[0] - BMGame.startDragPoint[0], BMGame.cursorPos[1] - BMGame.startDragPoint[1]];
 				BMGame.startDragPoint = [BMGame.cursorPos[0], BMGame.cursorPos[1]];
