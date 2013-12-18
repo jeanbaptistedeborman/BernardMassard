@@ -14,6 +14,11 @@ var BMGame = {
 
 			BMGame.cursorPos[0] = e.pageX;
 			BMGame.cursorPos[1] = e.pageY;
+			
+			
+			
+			//Solution: use "event.clientX" for ie;  
+			
 
 			//trace ("movement : " + e.movementX);
 		};
@@ -49,19 +54,7 @@ var BMGame = {
 			var playAnim = function() {
 
 				//var impactTag_$ = BMGame.impactAnimation.tag_$;
-				if (isTouch ()) {
-					var speed_num = 30; 
-					
-					
-				} else {
-					
-						speed_num = 10; 
-					
-					
-					
-				}
-				
-				this.play(speed_num);
+				this.play(10);
 				/* KEEP KEEP KEEP
 				//BMGame.stage_$.append(BMGame.impactAnimation.tag_$);
 				//impactTag_$.css ("top", BMGame.cursorPos[1] -  impactTag_$.height ());
@@ -113,6 +106,7 @@ var BMGame = {
 
 				var diff_array = [BMGame.cursorPos[0] - BMGame.startDragPoint[0], BMGame.cursorPos[1] - BMGame.startDragPoint[1]];
 				BMGame.startDragPoint = [BMGame.cursorPos[0], BMGame.cursorPos[1]];
+				//trace("BMGame.stage_$.position().left  : " + BMGame.stage_$.position().left);
 				newPos_array[0] = BMGame.stage_$.position().left + diff_array[0];
 				newPos_array[1] = BMGame.stage_$.position().top + diff_array[1];
 
@@ -165,7 +159,7 @@ var BMGame = {
 		BMGame.stage_$.children().unbind();
 
 		$.ajax({
-			url : "https://www.d1009502-4898.luxcloud.net/api/contest.php",
+			url : "http://www.d1009502-4898.luxcloud.net/api/contest.php",
 			data : {
 				fbid : Facebook.userInfo.id
 			},

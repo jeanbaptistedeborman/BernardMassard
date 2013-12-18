@@ -149,7 +149,7 @@ $(document).ready(function() {"use strict";
 			if (send_bool && mail_bool) {
 
 				$.ajax({
-					url : "https://www.d1009502-4898.luxcloud.net/api/subscription.php",
+					url : "../../api/subscription.php",
 					type : "POST",
 					data : data
 				}).done(function() {
