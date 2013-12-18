@@ -124,7 +124,7 @@ var UserAgent = {
         _getInternetExplorerVersion : function()
         {
                 "use strict";
-                alert (navigator.appName ); 
+                //alert (navigator.appName ); 
                 var rv = -1; // Return value assumes failure.
                 if (navigator.appName === 'Microsoft Internet Explorer') {
                         var ua = navigator.userAgent;
