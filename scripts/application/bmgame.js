@@ -16,7 +16,7 @@ var BMGame = {
 		
 			if (UserAgent.msie () < 9 && UserAgent.msie () > 0) {
 				
-				trace (e.clientX); 
+				trace (window.event.clientX); 
 			
 				
 			} else {
