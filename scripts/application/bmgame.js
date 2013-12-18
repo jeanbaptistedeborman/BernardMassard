@@ -104,7 +104,7 @@ var BMGame = {
 	manageDrag : function() {"use strict";
 
 		this.stage_$.bind("mousedown", function() {
-			alert ("mousedown"); 
+			//alert ("mousedown"); 
 			var newPos_array = [];
 			var minX = BMGame.stage_$.parent().width() - BMGame.stage_$.width();
 			var maxX = 0;
@@ -113,7 +113,7 @@ var BMGame = {
 			BMGame.startDragPoint = [BMGame.cursorPos[0], BMGame.cursorPos[1]];
 
 			BMGame.dragInterval = window.setInterval(function() {
-
+				alert ("interal");
 				var diff_array = [BMGame.cursorPos[0] - BMGame.startDragPoint[0], BMGame.cursorPos[1] - BMGame.startDragPoint[1]];
 				BMGame.startDragPoint = [BMGame.cursorPos[0], BMGame.cursorPos[1]];
 				newPos_array[0] = BMGame.stage_$.position().left + diff_array[0];
