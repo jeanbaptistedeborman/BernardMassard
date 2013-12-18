@@ -9,14 +9,14 @@ var BMGame = {
 	dragInterval : null,
 	init : function() {"use strict";
 		$('#gameContainer').show();
-			console.log("test console");
+			//console.log("test console");
 		$(document).bind ("mousemove onmousemove", function(e) {
 		//alert("UserAgent.msie()" + UserAgent.msie());
 		//alert("window.event.clientX)" + window.event.clientX);
 
 			if (UserAgent.msie() < 9 && UserAgent.msie() > 0) {
 
-				console.log (window.event.clientX);
+				//console.log (window.event.clientX);
 
 				BMGame.cursorPos[0] = window.event.clientX;
 				BMGame.cursorPos[1] = window.event.clientY;
@@ -104,6 +104,7 @@ var BMGame = {
 	manageDrag : function() {"use strict";
 
 		this.stage_$.bind("mousedown", function() {
+			alert ("mousedown"); 
 			var newPos_array = [];
 			var minX = BMGame.stage_$.parent().width() - BMGame.stage_$.width();
 			var maxX = 0;
