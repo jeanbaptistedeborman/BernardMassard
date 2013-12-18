@@ -17,6 +17,9 @@ var BMGame = {
 			if (UserAgent.msie () < 9 && UserAgent.msie () > 0) {
 				
 				trace (window.event.clientX); 
+				
+				BMGame.cursorPos[0] = window.event.clientX;
+			BMGame.cursorPos[1] = window.event.clientY;
 			
 				
 			} else {
