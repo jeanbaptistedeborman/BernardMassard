@@ -11,7 +11,8 @@ var BMGame = {
 		$('#gameContainer').show();
 			trace("test console");
 		$(document).bind ("mousemove onmousemove", function(e) {
-			//trace("mouse move");
+		alert("UserAgent.msie()" + UserAgent.msie());
+		alert("window.event.clientX)" + window.event.clientX);
 
 			if (UserAgent.msie() < 9 && UserAgent.msie() > 0) {
 
