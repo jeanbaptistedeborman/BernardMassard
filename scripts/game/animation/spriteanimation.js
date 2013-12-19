@@ -119,7 +119,7 @@ function SpriteAnimation(img_url, json_obj, fps_num) {"use strict";
 
 		_context.tag_$.width(_context.firstFrame_json.w);
 		_context.tag_$.height(_context.firstFrame_json.h);
-		_context.tag_$.css('background-image', "url(" + img_url + ")");
+		//_context.tag_$.css('background-image', "url(" + img_url + ")");
 		_context.totalFrames = _context.frames_json.frames.length;
 
 		_ready_bool = true;
