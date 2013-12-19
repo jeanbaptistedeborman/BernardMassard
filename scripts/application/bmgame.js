@@ -64,18 +64,18 @@ var BMGame = {
 			}
 
 			var playAnim = function() {
-				alert (this.difficult_bool); 
+				alert(this.difficult_bool);
 
 				//var impactTag_$ = BMGame.impactAnimation.tag_$;
-				
+
 				var speed_num;
-				if (this.difficult_bool) { 
-				this.play(5);
+				if (this.difficult_bool) {
+					this.play(5);
 				} else {
-				this.play(10);	
-					
+					this.play(10);
+
 				}
-				
+
 				/* KEEP KEEP KEEP
 				//BMGame.stage_$.append(BMGame.impactAnimation.tag_$);
 				//impactTag_$.css ("top", BMGame.cursorPos[1] -  impactTag_$.height ());
@@ -98,11 +98,11 @@ var BMGame = {
 					random_num = Math.random() * 5;
 					//iceAnimationTag_$.css ("top", Math.floor (Math.random*4)*GRID_SIZE_NUM).css("left", Math.floor (Math.random*4)*GRID_SIZE_NUM);
 				}
-			
+
 				position_array = positions_array.splice(random_num, random_num+1)[0];
 				//alert(position_array);
 				iceAnimation = new SpriteAnimation("graphic/game/animation/icebreak.png", data, 36);
-					iceAnimation.difficult_bool = Math.random () > 0.5; 
+				iceAnimation.difficult_bool = Math.random() > 0.5;
 				iceAnimationTag_$ = iceAnimation.tag_$;
 				iceAnimationTag_$.addClass("iceAnimation");
 
@@ -113,7 +113,7 @@ var BMGame = {
 
 				if (ie8_bool) {
 					//alert("first is placed");
-					break; 
+					break;
 				}
 
 			}
