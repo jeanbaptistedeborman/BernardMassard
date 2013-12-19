@@ -7,7 +7,8 @@ $(document).ready(function() {"use strict";
 	$('#connect').bind('click', function() {
 
 	});
-	$('.fb-like').css ("top", -5000); 
+	$('.fb-like').css ("top", -5000);
+	$('.fb-share-button').css ("top", -5000);
 	
 
 	function preloadImage(url) {
@@ -36,7 +37,7 @@ $(document).ready(function() {"use strict";
 	}
 	*/
 	
-	$('.fb-share-button').hide (); 
+	 
 
 	$('.js_continue').hide (); 
 	var ui_$ = $("#ui");
@@ -204,7 +205,8 @@ $(document).ready(function() {"use strict";
 			case "form":
 				PopupManager.display('thankYou');
 			
-				$('#thankYou').append (	$('.fb-share-button').show ()); 
+				$('#thankYou').append (	$('.fb-share-button').show ());
+				$('.fb-share-button').css ("top", ""); 
 
 				break;
 
