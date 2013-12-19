@@ -15,8 +15,20 @@ $(document).ready(function() {"use strict";
 		try {
 			var _img = new Image();
 			_img.src = url;
+			_img.onload = function (){
+				alert ("onload"); 
+				$("body").show();
+				
+				
+			}
 		} catch (e) {
 		}
+	}
+	if (UserAgent.iOS ()) {
+		$("body").hide (); 
+		
+		
+		
 	}
 
 
