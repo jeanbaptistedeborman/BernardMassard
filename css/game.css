@@ -20,7 +20,7 @@
 }
 #stage div {
 	position:absolute;
-	background:url (graphic/game/animation/icebreak.png); 
+	background:url ('../graphic/game/animation/icebreak.png'); 
 	cursor:pointer; 
 	
 }
