@@ -9,10 +9,10 @@ var BMGame = {
 	dragInterval : null,
 	init : function() {"use strict";
 		$('#gameContainer').show();
-			//console.log("test console");
-		$(document).bind ("mousemove onmousemove", function(e) {
-		//alert("UserAgent.msie()" + UserAgent.msie());
-		//alert("window.event.clientX)" + window.event.clientX);
+		//console.log("test console");
+		$(document).bind("mousemove onmousemove", function(e) {
+			//alert("UserAgent.msie()" + UserAgent.msie());
+			//alert("window.event.clientX)" + window.event.clientX);
 
 			if (UserAgent.msie() < 9 && UserAgent.msie() > 0) {
 
@@ -30,15 +30,15 @@ var BMGame = {
 
 			}
 
-		}); 
+		});
 		//alert("init");
 
 		$.ajax({
 			url : "graphic/game/animation/icebreak.txt",
 			dataType : "json"
 		}).done(function(data) {
-			
-			var ie8_bool = UserAgent.msie() < 9 && UserAgent.msie()>0; 
+
+			var ie8_bool = UserAgent.msie() < 9 && UserAgent.msie() > 0;
 
 			//alert("ajax loaded");
 
@@ -62,7 +62,7 @@ var BMGame = {
 				}
 
 			}
-			
+
 			var playAnim = function() {
 
 				//var impactTag_$ = BMGame.impactAnimation.tag_$;
@@ -83,7 +83,12 @@ var BMGame = {
 
 			for ( n = 0; n < 10; n++) {
 				var position_array;
+
 				random_num = Math.floor(Math.random() * positions_array.length);
+				if (n === 0 && ie8_bool) {
+					random_num = Math.random() * 16;
+					//iceAnimationTag_$.css ("top", Math.floor (Math.random*4)*GRID_SIZE_NUM).css("left", Math.floor (Math.random*4)*GRID_SIZE_NUM);
+				}
 				position_array = positions_array.splice(random_num, random_num+1)[0];
 				iceAnimation = new SpriteAnimation("graphic/game/animation/icebreak.png", data, 36);
 				iceAnimationTag_$ = iceAnimation.tag_$;
@@ -93,11 +98,7 @@ var BMGame = {
 				BMGame.stage_$.append(iceAnimation.tag_$);
 				iceAnimation.onClick = playAnim;
 				iceAnimation.onFinish = finishAnim;
-				
-				if (n === 0 && ie8_bool) {
-					alert ("replace animation"); 
-					iceAnimationTag_$.css ("top", Math.floor (Math.random*4)*GRID_SIZE_NUM).css("left", Math.floor (Math.random*4)*GRID_SIZE_NUM);
-				}
+				alert("first is placed");
 
 			}
 			if (!isTouch()) {
@@ -112,7 +113,7 @@ var BMGame = {
 	manageDrag : function() {"use strict";
 
 		this.stage_$.bind("mousedown", function() {
-			//alert ("mousedown"); 
+			//alert ("mousedown");
 			var newPos_array = [];
 			var minX = BMGame.stage_$.parent().width() - BMGame.stage_$.width();
 			var maxX = 0;
@@ -121,13 +122,13 @@ var BMGame = {
 			BMGame.startDragPoint = [BMGame.cursorPos[0], BMGame.cursorPos[1]];
 
 			BMGame.dragInterval = setInterval(function() {
-				alert ("interal");
+				alert("interal");
 				var diff_array = [BMGame.cursorPos[0] - BMGame.startDragPoint[0], BMGame.cursorPos[1] - BMGame.startDragPoint[1]];
 				BMGame.startDragPoint = [BMGame.cursorPos[0], BMGame.cursorPos[1]];
 				newPos_array[0] = BMGame.stage_$.position().left + diff_array[0];
 				newPos_array[1] = BMGame.stage_$.position().top + diff_array[1];
 
-				trace (diff_array[0]); 
+				trace(diff_array[0]);
 
 				if (newPos_array[0] < minX) {
 
