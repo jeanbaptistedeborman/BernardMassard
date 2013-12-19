@@ -38,7 +38,7 @@ var BMGame = {
 			dataType : "json"
 		}).done(function(data) {
 			
-			var ie8_bool = UserAgent.msie() < 9 && UserAgent.msie(); 
+			var ie8_bool = UserAgent.msie() < 9 && UserAgent.msie()>0; 
 
 			//alert("ajax loaded");
 
@@ -95,7 +95,7 @@ var BMGame = {
 				iceAnimation.onFinish = finishAnim;
 				
 				if (n === 0 && ie8_bool) {
-					alert ("replace animation")
+					alert ("replace animation"); 
 					iceAnimationTag_$.css ("top", Math.floor (Math.random*4)*GRID_SIZE_NUM).css("left", Math.floor (Math.random*4)*GRID_SIZE_NUM);
 				}
 

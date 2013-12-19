@@ -35,7 +35,7 @@ $(document).ready(function() {"use strict";
 
 	}
 
-	//$('.js_continue').hide (); 
+	$('.js_continue').hide (); 
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
 	
