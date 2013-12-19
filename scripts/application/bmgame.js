@@ -90,6 +90,7 @@ var BMGame = {
 					//iceAnimationTag_$.css ("top", Math.floor (Math.random*4)*GRID_SIZE_NUM).css("left", Math.floor (Math.random*4)*GRID_SIZE_NUM);
 				}
 				position_array = positions_array.splice(random_num, random_num+1)[0];
+				alert(position_array);
 				iceAnimation = new SpriteAnimation("graphic/game/animation/icebreak.png", data, 36);
 				iceAnimationTag_$ = iceAnimation.tag_$;
 				iceAnimationTag_$.addClass("iceAnimation");
@@ -98,7 +99,11 @@ var BMGame = {
 				BMGame.stage_$.append(iceAnimation.tag_$);
 				iceAnimation.onClick = playAnim;
 				iceAnimation.onFinish = finishAnim;
-				alert("first is placed");
+
+				if (ie8_bool) {
+					alert("first is placed");
+					break; 
+				}
 
 			}
 			if (!isTouch()) {
