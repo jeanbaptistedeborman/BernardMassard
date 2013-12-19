@@ -190,7 +190,7 @@ var BMGame = {
 	},
 
 	displayResult : function(difficult_bool) {"use strict";
-
+//alert ("difficult_bool : " + difficult_bool); 
 		BMGame.stage_$.children().unbind();
 		if (difficult_bool) { 
 
