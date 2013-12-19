@@ -90,7 +90,7 @@ var BMGame = {
 					//iceAnimationTag_$.css ("top", Math.floor (Math.random*4)*GRID_SIZE_NUM).css("left", Math.floor (Math.random*4)*GRID_SIZE_NUM);
 				}
 				position_array = positions_array.splice(random_num, random_num+1)[0];
-				alert(position_array);
+				//alert(position_array);
 				iceAnimation = new SpriteAnimation("graphic/game/animation/icebreak.png", data, 36);
 				iceAnimationTag_$ = iceAnimation.tag_$;
 				iceAnimationTag_$.addClass("iceAnimation");
@@ -101,7 +101,7 @@ var BMGame = {
 				iceAnimation.onFinish = finishAnim;
 
 				if (ie8_bool) {
-					alert("first is placed");
+					//alert("first is placed");
 					break; 
 				}
 
@@ -127,13 +127,13 @@ var BMGame = {
 			BMGame.startDragPoint = [BMGame.cursorPos[0], BMGame.cursorPos[1]];
 
 			BMGame.dragInterval = setInterval(function() {
-				alert("interal");
+				//alert("interal");
 				var diff_array = [BMGame.cursorPos[0] - BMGame.startDragPoint[0], BMGame.cursorPos[1] - BMGame.startDragPoint[1]];
 				BMGame.startDragPoint = [BMGame.cursorPos[0], BMGame.cursorPos[1]];
 				newPos_array[0] = BMGame.stage_$.position().left + diff_array[0];
 				newPos_array[1] = BMGame.stage_$.position().top + diff_array[1];
 
-				trace(diff_array[0]);
+				//trace(diff_array[0]);
 
 				if (newPos_array[0] < minX) {
 
