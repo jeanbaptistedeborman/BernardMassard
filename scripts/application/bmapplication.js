@@ -28,12 +28,15 @@ $(document).ready(function() {"use strict";
 	};
 
 	preloadImage("graphic/game/animation/icebreak.png");
-	if (UserAgent.anyMobile() && false) {
+	/*if (UserAgent.anyMobile() && false) {
 
 
 	} else {
 
 	}
+	*/
+	
+	$('.fb-share-button').hide (); 
 
 	$('.js_continue').hide (); 
 	var ui_$ = $("#ui");
@@ -200,6 +203,8 @@ $(document).ready(function() {"use strict";
 
 			case "form":
 				PopupManager.display('thankYou');
+			
+				$('#thankYou').append (	$('.fb-share-button').show ()); 
 
 				break;
 
