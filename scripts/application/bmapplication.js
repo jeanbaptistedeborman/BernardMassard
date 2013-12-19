@@ -25,11 +25,12 @@ $(document).ready(function() {"use strict";
 		}
 	}
 	if (UserAgent.iOS ()) {
-		$("body").hide (); 
+		
 		
 		
 		
 	}
+	$("body").hide (); 
 
 
 
