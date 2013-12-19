@@ -86,7 +86,7 @@ var BMGame = {
 
 				random_num = Math.floor(Math.random() * positions_array.length);
 				if (n === 0 && ie8_bool) {
-					random_num = Math.random() * 16;
+					random_num = Math.random() * 5;
 					//iceAnimationTag_$.css ("top", Math.floor (Math.random*4)*GRID_SIZE_NUM).css("left", Math.floor (Math.random*4)*GRID_SIZE_NUM);
 				}
 				position_array = positions_array.splice(random_num, random_num+1)[0];
