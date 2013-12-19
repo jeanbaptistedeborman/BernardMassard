@@ -64,7 +64,7 @@ var BMGame = {
 			}
 
 			var playAnim = function() {
-				alert(this.difficult_bool);
+				//alert(this.difficult_bool);
 
 				//var impactTag_$ = BMGame.impactAnimation.tag_$;
 
@@ -86,8 +86,9 @@ var BMGame = {
 
 			};
 			var finishAnim = function() {
+				//alert (this.difficult_bool);
 
-				BMGame.displayResult();
+				BMGame.displayResult(this.difficult_bool);
 			};
 
 			for ( n = 0; n < 10; n++) {
@@ -188,9 +189,10 @@ var BMGame = {
 
 	},
 
-	displayResult : function() {"use strict";
+	displayResult : function(difficult_bool) {"use strict";
 
 		BMGame.stage_$.children().unbind();
+		if (difficult_bool) { 
 
 		$.ajax({
 			url : "api/contest.php",
@@ -210,6 +212,10 @@ var BMGame = {
 			}
 
 		});
+		} else {
+			PopupManager.display("negativeResult");
+			
+		}
 
 	},
 	setup : function() {"use strict";
