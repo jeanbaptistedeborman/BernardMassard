@@ -18,7 +18,7 @@ function trace(string) {
 
         if ( typeof (console) !== "undefined" && console.log !== undefined) {
                 try {
-                        console.log.apply(console, arguments);
+                        //console.log.apply(console, arguments);
                 } catch (e) {
                 }
         }
