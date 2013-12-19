@@ -37,6 +37,8 @@ var BMGame = {
 			url : "graphic/game/animation/icebreak.txt",
 			dataType : "json"
 		}).done(function(data) {
+			
+			var ie8_bool = UserAgent.msie() < 9 && UserAgent.msie(); 
 
 			//alert("ajax loaded");
 
@@ -48,7 +50,7 @@ var BMGame = {
 			var positions_array = [];
 			BMGame.stage_$ = $("#stage");
 			BMGame.stage_$.addClass("stage");
-			if (!isTouch()) {
+			if (!isTouch() && !ie8_bool) {
 				BMGame.stage_$.css('top', -(BMGame.stage_$.height() - BMGame.stage_$.parent().height()) / 2);
 				BMGame.stage_$.css('left', -(BMGame.stage_$.width() - BMGame.stage_$.parent().width()) / 2);
 			}
@@ -60,6 +62,7 @@ var BMGame = {
 				}
 
 			}
+			
 			var playAnim = function() {
 
 				//var impactTag_$ = BMGame.impactAnimation.tag_$;
@@ -90,6 +93,11 @@ var BMGame = {
 				BMGame.stage_$.append(iceAnimation.tag_$);
 				iceAnimation.onClick = playAnim;
 				iceAnimation.onFinish = finishAnim;
+				
+				if (n === 0 && ie8_bool) {
+					alert ("replace animation")
+					iceAnimationTag_$.css ("top", Math.floor (Math.random*4)*GRID_SIZE_NUM).css("left", Math.floor (Math.random*4)*GRID_SIZE_NUM);
+				}
 
 			}
 			if (!isTouch()) {
@@ -155,7 +163,7 @@ var BMGame = {
 			$(window).bind("mouseup", function() {
 
 				//alert("mouseup");
-				//window.clearInterval(BMGame.dragInterval);
+				clearInterval(BMGame.dragInterval);
 
 			});
 
