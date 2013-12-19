@@ -15,12 +15,7 @@ $(document).ready(function() {"use strict";
 		try {
 			var _img = new Image();
 			_img.src = url;
-			_img.onload = function (){
-				alert ("onload"); 
-				$("body").show();
-				
-				
-			}
+			
 		} catch (e) {
 		}
 	}
@@ -30,7 +25,7 @@ $(document).ready(function() {"use strict";
 		
 		
 	}
-	$("body").hide (); 
+	//$("body").hide (); 
 
 
 
@@ -218,9 +213,8 @@ $(document).ready(function() {"use strict";
 			case "form":
 				PopupManager.display('thankYou');
 			
-				$('#thankYou').append (	$('.fb-share-button').show ());
-				$('.fb-share-button').css ("top", ""); 
-
+				$('#thankYou').append (	$('.fb-share-button').show ().css ("top", ""));
+	
 				break;
 
 		}
