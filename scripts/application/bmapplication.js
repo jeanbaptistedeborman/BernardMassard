@@ -2,223 +2,216 @@
 /*global SpriteAnimation, BMGame, UserAgent, Facebook,  PopupManager */
 
 $(document).ready(function() {"use strict";
-	//alert("with login - corrected 2");
-	
-	$('#connect').bind('click', function() {
+    //alert("with login - corrected 2");
+var endOfAction_bool = true; 
+    $('#connect').bind('click', function() {
 
-	});
-	$('.fb-like').css ("top", -5000);
-	$('.fb-share-button').css ("top", -5000);
-	
+    });
+    $('.fb-like').css("top", -5000);
+    $('.fb-share-button').css("top", -5000);
 
-	function preloadImage(url) {
-		try {
-			var _img = new Image();
-			_img.src = url;
-			
-		} catch (e) {
-		}
-	}
-	if (UserAgent.iOS ()) {
-		
-		
-		
-		
-	}
-	//$("body").hide (); 
+    function preloadImage(url) {
+        try {
+            var _img = new Image();
+            _img.src = url;
 
+        } catch (e) {
+        }
+    }
 
+    if (UserAgent.iOS()) {
 
-	Facebook.onUserInfo = function() {
-		//alert ('onuserinfo')
-		$('.fb-login-button').hide();
-		$('.fb-like').css ("top", ""); 
+    }
+    //$("body").hide ();
 
-	};
+    Facebook.onUserInfo = function() {
+        //alert ('onuserinfo')
+        $('.fb-login-button').hide();
+        $('.fb-like').css("top", "");
 
-	preloadImage("graphic/game/animation/icebreak.png");
-	/*if (UserAgent.anyMobile() && false) {
+    };
 
+    preloadImage("graphic/game/animation/icebreak.png");
+    /*if (UserAgent.anyMobile() && false) {
 
-	} else {
+     } else {
 
-	}
-	*/
-	
-	 
+     }
+     */
 
-	$('.js_continue').hide (); 
-	var ui_$ = $("#ui");
-	var popups_$ = ui_$.find('#popups');
-	
+    $('.js_continue').hide();
+    var ui_$ = $("#ui");
+    var popups_$ = ui_$.find('#popups');
 
-	if (String(window.location.href).indexOf("azurewebsites") !== -1) {
+    if (String(window.location.href).indexOf("azurewebsites") !== -1) {
 
-		Facebook.appId = '669311946433468';
-		$('.js_continue').show (); 
-	} else {
-		Facebook.appId = '1384449105138296';
+        Facebook.appId = '669311946433468';
+        $('.js_continue').show();
+    } else {
+        Facebook.appId = '1384449105138296';
 
-	}
-	
-	
-	( function(d) {
+    }( function(d) {
 
-			var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-			if (d.getElementById(id)) {
-				return;
-			}
-			js = d.createElement('script');
-			js.id = id;
-			js.async = true;
-			js.src = "https://connect.facebook.net/fr_FR/all.js";
-			ref.parentNode.insertBefore(js, ref);
-		}(document));
+            var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement('script');
+            js.id = id;
+            js.async = true;
+            js.src = "https://connect.facebook.net/fr_FR/all.js";
+            ref.parentNode.insertBefore(js, ref);
+        }(document));
 
+    window.fbAsyncInit = function() {
 
-	window.fbAsyncInit = function() {
+        //Facebook.launchInitSequence(Facebook.checkLike());
 
-		Facebook.launchInitSequence(Facebook.checkLike());
+    };
 
-	};
+    $("#gameContainer").hide();
+    $(".js_continue").bind("click", function() {
 
-	$("#gameContainer").hide();
-	$(".js_continue").bind("click", function() {
+        PopupManager.close($('#intro'));
 
-		PopupManager.close($('#intro'));
+    });
 
-	});
+    popups_$.detach();
+    PopupManager.container_$ = ui_$;
+    PopupManager.popups_$ = popups_$;
+    if (!endOfAction_bool) {
+    PopupManager.display("intro");
+    
+  } else {
+       PopupManager.display("endOfAction");
+      
+      
+  }
+    Facebook.onDoesNotLike = function() {
+        //trace ("application on does not like");
 
-	popups_$.detach();
-	PopupManager.container_$ = ui_$;
-	PopupManager.popups_$ = popups_$;
-	PopupManager.display("intro");
-	Facebook.onDoesNotLike = function() {
-		//trace ("application on does not like"); 
+    };
 
-	};
+    Facebook.onLike = function() {
+        if (false) {
+            $('.fb-like').hide();
+            $('.js_continue').show();
+            $('.js_continue').css("display", "inline-block");
+        }
+    };
 
-	Facebook.onLike = function() {
+    function manageForm() {
 
-		$('.fb-like').hide();
-		$('.js_continue').show ();
-		$('.js_continue').css ("display", "inline-block");  
+        //alert("manageForm");
 
-	};
+        $("#form").find(".button").bind("click tap touch", function() {
 
-	function manageForm() {
+            var form_$ = $("form"), data = {
 
-		//alert("manageForm");
+            }, send_bool = true, n, mail_bool = true;
 
-		$("#form").find(".button").bind("click tap touch", function() {
+            form_$.find('input').each(function(index, element) {
+                //alert ("each");
 
-			var form_$ = $("form"), data = {
+                var element_$ = $(element);
+                var value = element_$.val();
+                if (value === "on") {
+                    value = element_$.prop('checked');
 
-			}, send_bool = true, n, mail_bool=true;
+                }
 
-			form_$.find('input').each(function(index, element) {
-				//alert ("each");
+                data[element_$.attr("name")] = value;
 
-				var element_$ = $(element);
-				var value = element_$.val();
-				if (value === "on") {
-					value = element_$.prop('checked');
+            });
+            data.answer = form_$.find("input[type='radio']:checked").val();
 
-				}
+            //trace(data);
 
-				data[element_$.attr("name")] = value;
+            for (n in data) {
+                var value = data[n];
+                if (value === undefined || value === null || value === "" || value == false) {
+                    send_bool = false;
+                }
 
-			});
-			data.answer = form_$.find("input[type='radio']:checked").val();
+            }
 
-			//trace(data);
+            function validateForm() {
+                var result = true;
+                var email_str = form_$.find("input[type='email']").val();
+                var atpos = email_str.indexOf("@");
+                var dotpos = email_str.lastIndexOf(".");
+                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email_str.length) {
+                    //alert("Not a valid e-mail address");
+                    result = false;
+                }
+                return (result)
+            }
 
-			for (n in data) {
-				var value = data[n];
-				if (value === undefined || value === null || value === "" || value == false) {
-					send_bool = false;
-				}
+            mail_bool = validateForm();
 
-			}
-			
+            //trace("Facebook.userInfo.id : " + Facebook.userInfo.id);
+            data.facebook_id = Facebook.userInfo.id;
 
-			function validateForm() {
-				var result = true; 
-				var email_str = form_$.find("input[type='email']").val();
-				var atpos = email_str.indexOf("@");
-				var dotpos = email_str.lastIndexOf(".");
-				if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email_str.length) {
-					//alert("Not a valid e-mail address");
-					result = false;
-				}
-				return (result)
-			}
-			mail_bool = validateForm(); 
+            if (send_bool && mail_bool) {
 
-			//trace("Facebook.userInfo.id : " + Facebook.userInfo.id);
-			data.facebook_id = Facebook.userInfo.id;
-			
-		
+                $.ajax({
+                    url : "api/subscription.php",
+                    type : "POST",
+                    data : data
+                }).done(function() {
+                    PopupManager.close($("#form"));
 
-			if (send_bool && mail_bool) {
+                });
 
-				$.ajax({
-					url : "api/subscription.php",
-					type : "POST",
-					data : data
-				}).done(function() {
-					PopupManager.close($("#form"));
+            } else {
+                if (!mail_bool) {
+                    alert("L'adresse e-mail n'est pas valide.");
 
-				});
+                } else {
+                    alert("Tous les champs doivent être remplis.");
 
-			} else {
-				if (!mail_bool) {
-					alert("L'adresse e-mail n'est pas valide.");
-					
-				} else {
-					alert("Tous les champs doivent être remplis.");
-					
-				}
-				
-				
+                }
 
-			}
+            }
 
-		});
+        });
 
-	}
+    }
 
 
-	PopupManager.onClosePopup = function() {
-		switch (PopupManager.lastIdName) {
-			case "intro":
+    PopupManager.onClosePopup = function() {
+        switch (PopupManager.lastIdName) {
+            case "endOfAction":
 
-				PopupManager.display('howToPlay');
+                break;
+            case "intro":
 
-				break;
+                PopupManager.display('howToPlay');
 
-			case "howToPlay" :
+                break;
 
-				BMGame.init();
-				$('body').addClass('bg2');
+            case "howToPlay" :
 
-				break;
+                BMGame.init();
+                $('body').addClass('bg2');
 
-			case "negativeResult":
-			case "positiveResult":
-				PopupManager.display('form');
-				manageForm();
-				break;
+                break;
 
-			case "form":
-				PopupManager.display('thankYou');
-			
-				$('#thankYou').append (	$('.fb-share-button').show ().css ("top", ""));
-	
-				break;
+            case "negativeResult":
+            case "positiveResult":
+                PopupManager.display('form');
+                manageForm();
+                break;
 
-		}
+            case "form":
+                PopupManager.display('thankYou');
 
-	};
+                $('#thankYou').append($('.fb-share-button').show().css("top", ""));
+
+                break;
+
+        }
+
+    };
 
 });
