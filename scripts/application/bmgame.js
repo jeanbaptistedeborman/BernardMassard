@@ -11,8 +11,7 @@ var BMGame = {
 		$('#gameContainer').show();
 		//console.log("test console");
 		$(document).bind("mousemove onmousemove", function(e) {
-			//alert("UserAgent.msie()" + UserAgent.msie());
-			//alert("window.event.clientX)" + window.event.clientX);
+
 
 			if (UserAgent.msie() < 9 && UserAgent.msie() > 0) {
 
@@ -190,7 +189,11 @@ var BMGame = {
 	},
 
 	displayResult : function(difficult_bool) {"use strict";
-//alert ("difficult_bool : " + difficult_bool); 
+
+
+//FOR DEMO VERSION :
+difficult_bool = false; 
+
 		BMGame.stage_$.children().unbind();
 		if (difficult_bool) { 
 

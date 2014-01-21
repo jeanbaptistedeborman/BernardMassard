@@ -1,9 +1,17 @@
 /*jslint vars:true, white:true, nomen: true, plusplus:true */
 /*global SpriteAnimation, BMGame, UserAgent, Facebook,  PopupManager */
 
+$(document).ready (function () {
+    
+    "use strict"; 
+    $('body').hide (); 
+    
+    
+}); 
+
 $(window).load(function() {"use strict";
 	//alert("with login - corrected 2");
-	
+	$('body').show (.5); 
 	$('#connect').bind('click', function() {
 
 	});
