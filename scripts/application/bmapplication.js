@@ -1,7 +1,7 @@
 /*jslint vars:true, white:true, nomen: true, plusplus:true */
 /*global SpriteAnimation, BMGame, UserAgent, Facebook,  PopupManager */
 
-$(window).load(function() {"use strict";
+$(document).ready(function() {"use strict";
 	//alert("with login - corrected 2");
 	
 	$('#connect').bind('click', function() {
@@ -19,7 +19,13 @@ $(window).load(function() {"use strict";
 		} catch (e) {
 		}
 	}
-	
+	if (UserAgent.iOS ()) {
+		
+		
+		
+		
+	}
+	//$("body").hide (); 
 
 
 
