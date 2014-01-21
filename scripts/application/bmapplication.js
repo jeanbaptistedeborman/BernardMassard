@@ -49,7 +49,7 @@ $(window).load(function() {"use strict";
 	if (String(window.location.href).indexOf("azurewebsites") !== -1) {
 
 		Facebook.appId = '669311946433468';
-		$('.js_continue').show (); 
+		//$('.js_continue').show (); 
 	} else {
 		Facebook.appId = '1384449105138296';
 
