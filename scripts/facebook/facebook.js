@@ -74,7 +74,7 @@ Facebook = {
 	checkLike : function() {"use strict";
 		//alert("checkLike");
 
-		FB.api('/me/likes/669311946433468', function(response) {
+		FB.api('/me/likes/65692241192', function(response) {
 
 			if (response.data) {
 				if (response.data.length !== 0) {
