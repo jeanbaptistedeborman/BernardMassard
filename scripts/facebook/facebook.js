@@ -1,7 +1,7 @@
 /*global FB*/
 
 Facebook = {
-	reload_bool:false,  
+	reload_bool : false,
 	attempts_num : 0,
 	appId : undefined,
 	userInfo : {},
@@ -24,15 +24,15 @@ Facebook = {
 
 				var uid = response.authResponse.userID;
 				var accessToken = response.authResponse.accessToken;
-				//alert ("connected"); 
-				
+				//alert ("connected");
+
 			} else if (response.status === 'not_authorized') {
-				//alert ("not authorised"); 
-				Facebook.reload_bool = true; 
+				//alert ("not authorised");
+				Facebook.reload_bool = true;
 
 			} else {
 				Facebook.reload_bool = true;
-				//alert ("not authorised 2"); 
+				//alert ("not authorised 2");
 
 			}
 		});
@@ -73,33 +73,28 @@ Facebook = {
 
 	checkLike : function() {"use strict";
 		//alert("checkLike");
-		
-		FB.api('/me/likes/65692241192', function(response) {
-			
-			
-		
-if (response.data) {
-			if (response.data.length !== 0) {
-				trace(response.data);
-				//alert ('page liked');
-				Facebook.onLike();
-			} 
-			}
-		});
-		
 
-		FB.api('/me/likes/1384449105138296', function(response) {
-			
+		FB.api('/me/likes/613236585378960', function(response) {
+
 			if (response.data) {
-		
-
-			if (response.data.length !== 0) {
-				trace(response.data);
-				//alert ('page liked');
-				Facebook.onLike();
-			} 
+				if (response.data.length !== 0) {
+							Facebook.onLike();
+				}
 			}
 		});
+
+		/* FB.api('/me/likes/1384449105138296', function(response) {
+
+			if (response.data) {
+
+				if (response.data.length !== 0) {
+					trace(response.data);
+					//alert ('page liked');
+					Facebook.onLike();
+				}
+			}
+		});
+		*/
 
 	},
 	getUserInfo : function() {"use strict";
