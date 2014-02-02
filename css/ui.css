@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+/*@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');*/
 
 @keyframes wipeDown
 {
@@ -66,8 +66,8 @@ body {
 	-webkit-animation: blink .5s linear 0s 3 alternate;
 }
 .popup {
-	animation: wipeDown 0.5s;
-	-webkit-animation: wipeDown 0.5s;
+	animation: wipeDown 1s;
+	-webkit-animation: wipeDown 1s;
 	left: 0;
 	right: 0;
 	position: absolute;
