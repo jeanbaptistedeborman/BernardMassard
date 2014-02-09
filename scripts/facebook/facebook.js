@@ -72,10 +72,10 @@ Facebook = {
 	},
 
 	checkLike : function() {"use strict";
-		alert("checkLike");
+		//alert("checkLike");
 		var like_bool = false;
 		FB.api('/me/likes/65692241192', function(response) {
-			alert ("response.data : " + response.data); 
+			//alert ("response.data : " + response.data); 
 
 			if (response.data) {
 				if (response.data.length !== 0) {
