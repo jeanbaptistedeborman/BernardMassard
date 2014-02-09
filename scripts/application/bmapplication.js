@@ -1,70 +1,50 @@
 /*jslint vars:true, white:true, nomen: true, plusplus:true */
 /*global SpriteAnimation, BMGame, UserAgent, Facebook,  PopupManager */
 
-$(document).ready (function () {
-    
-    "use strict"; 
-    $('body').hide (); 
-    
-    
-}); 
+$(document).ready(function() {"use strict";
+	$('body').hide();
+
+});
 
 $(window).load(function() {"use strict";
 	//alert("with login - corrected 2");
-	$('body').show (.5); 
+	$('body').show(.5);
 	$('#connect').bind('click', function() {
 
 	});
-	$('.fb-like').css ("top", -5000);
-	$('.fb-share-button').css ("top", -5000);
-	
+	$('.fb-like').css("top", -5000);
+	$('.fb-share-button')	.css("top", -5000);
 
 	function preloadImage(url) {
 		try {
 			var _img = new Image();
 			_img.src = url;
-			
+
 		} catch (e) {
 		}
 	}
-	
-
 
 
 	Facebook.onUserInfo = function() {
-		//alert ('onuserinfo')
 		$('.fb-login-button').hide();
-		$('.fb-like').css ("top", ""); 
+	
 
 	};
 
 	preloadImage("graphic/game/animation/icebreak.png");
-	/*if (UserAgent.anyMobile() && false) {
 
-
-	} else {
-
-	}
-	*/
-	
-	 
-
-	$('.js_continue').hide (); 
+	$('.js_continue').hide();
 	var ui_$ = $("#ui");
 	var popups_$ = ui_$.find('#popups');
-	
 
 	if (String(window.location.href).indexOf("azurewebsites") !== -1) {
 
 		Facebook.appId = '669311946433468';
-		//$('.js_continue').show (); 
+		//$('.js_continue').show ();
 	} else {
 		Facebook.appId = '1384449105138296';
 
-	}
-	
-	
-	( function(d) {
+	}( function(d) {
 
 			var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
 			if (d.getElementById(id)) {
@@ -76,7 +56,6 @@ $(window).load(function() {"use strict";
 			js.src = "https://connect.facebook.net/fr_FR/all.js";
 			ref.parentNode.insertBefore(js, ref);
 		}(document));
-
 
 	window.fbAsyncInit = function() {
 
@@ -96,15 +75,16 @@ $(window).load(function() {"use strict";
 	PopupManager.popups_$ = popups_$;
 	PopupManager.display("intro");
 	Facebook.onDoesNotLike = function() {
-		//trace ("application on does not like"); 
+		alert("application on does not like");
+			$('.fb-like').css("top", "");
 
 	};
 
 	Facebook.onLike = function() {
 
 		$('.fb-like').hide();
-		$('.js_continue').show ();
-		$('.js_continue').css ("display", "inline-block");  
+		$('.js_continue').show();
+		$('.js_continue').css("display", "inline-block");
 
 	};
 
@@ -116,7 +96,7 @@ $(window).load(function() {"use strict";
 
 			var form_$ = $("form"), data = {
 
-			}, send_bool = true, n, mail_bool=true;
+			}, send_bool = true, n, mail_bool = true;
 
 			form_$.find('input').each(function(index, element) {
 				//alert ("each");
@@ -137,30 +117,27 @@ $(window).load(function() {"use strict";
 
 			for (n in data) {
 				var value = data[n];
-				if (value === undefined || value === null || value === "" || value == false) {
+				if (value === undefined || value === null || value === "" || value === false) {
 					send_bool = false;
 				}
 
 			}
-			
 
 			function validateForm() {
-				var result = true; 
+				var result = true;
 				var email_str = form_$.find("input[type='email']").val();
 				var atpos = email_str.indexOf("@");
 				var dotpos = email_str.lastIndexOf(".");
 				if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email_str.length) {
-					//alert("Not a valid e-mail address");
+				
 					result = false;
 				}
-				return (result)
+				return result; 
 			}
-			mail_bool = validateForm(); 
 
-			//trace("Facebook.userInfo.id : " + Facebook.userInfo.id);
+			mail_bool = validateForm();
+
 			data.facebook_id = Facebook.userInfo.id;
-			
-		
 
 			if (send_bool && mail_bool) {
 
@@ -176,13 +153,11 @@ $(window).load(function() {"use strict";
 			} else {
 				if (!mail_bool) {
 					alert("L'adresse e-mail n'est pas valide.");
-					
+
 				} else {
 					alert("Tous les champs doivent être remplis.");
-					
+
 				}
-				
-				
 
 			}
 
@@ -214,9 +189,9 @@ $(window).load(function() {"use strict";
 
 			case "form":
 				PopupManager.display('thankYou');
-			
-				$('#thankYou').append (	$('.fb-share-button').show ().css ("top", ""));
-	
+
+				$('#thankYou').append($('.fb-share-button').show().css("top", ""));
+
 				break;
 
 		}

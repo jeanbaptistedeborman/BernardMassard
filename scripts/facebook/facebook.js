@@ -109,6 +109,8 @@ Facebook = {
 
 	},
 	onUserInfo : function() {"use strict";
+	//Event Placeholder;
+
 
 	},
 	onLike : function() {"use strict";

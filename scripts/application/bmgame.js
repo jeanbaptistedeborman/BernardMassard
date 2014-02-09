@@ -15,14 +15,12 @@ var BMGame = {
 
 			if (UserAgent.msie() < 9 && UserAgent.msie() > 0) {
 
-				//console.log (window.event.clientX);
 
 				BMGame.cursorPos[0] = window.event.clientX;
 				BMGame.cursorPos[1] = window.event.clientY;
 
 			} else {
 
-				//alert ("cursor pos");
 
 				BMGame.cursorPos[0] = e.pageX;
 				BMGame.cursorPos[1] = e.pageY;
@@ -69,9 +67,9 @@ var BMGame = {
 
 				var speed_num;
 				if (this.difficult_bool) {
-					this.play(5);
+					this.play(15);
 				} else {
-					this.play(10);
+					this.play(15);
 
 				}
 
