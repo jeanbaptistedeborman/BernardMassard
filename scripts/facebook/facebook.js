@@ -73,7 +73,7 @@ Facebook = {
 
 	checkLike : function() {"use strict";
 		//alert("checkLike");
-
+		var like_bool = false;
 		FB.api('/me/likes/65692241192', function(response) {
 
 			if (response.data) {
@@ -81,6 +81,11 @@ Facebook = {
 					Facebook.onLike();
 				}
 			}
+			if (!like_bool) {
+				Facebook.onDoesNotLike();
+
+			}
+
 		});
 
 		/* FB.api('/me/likes/1384449105138296', function(response) {
@@ -109,8 +114,7 @@ Facebook = {
 
 	},
 	onUserInfo : function() {"use strict";
-	//Event Placeholder;
-
+		//Event Placeholder;
 
 	},
 	onLike : function() {"use strict";
