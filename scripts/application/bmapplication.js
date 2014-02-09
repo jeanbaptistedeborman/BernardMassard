@@ -59,7 +59,7 @@ $(window).load(function() {"use strict";
 
 	window.fbAsyncInit = function() {
 
-		Facebook.launchInitSequence(Facebook.checkLike());
+		//Facebook.launchInitSequence(Facebook.checkLike());
 
 	};
 
