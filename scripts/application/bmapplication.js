@@ -27,7 +27,7 @@ $(window).load(function() {"use strict";
 
 	Facebook.onUserInfo = function() {
 		$('.fb-login-button').hide();
-		Facebook.chekLike();
+		Facebook.checkLike (); 
 
 	};
 
