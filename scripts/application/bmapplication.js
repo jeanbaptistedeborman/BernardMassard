@@ -13,7 +13,7 @@ $(window).load(function() {"use strict";
 
 	});
 	$('.fb-like').css("top", -5000);
-	$('.fb-share-button')	.css("top", -5000);
+	$('.fb-share-button').css("top", -5000);
 
 	function preloadImage(url) {
 		try {
@@ -27,7 +27,6 @@ $(window).load(function() {"use strict";
 
 	Facebook.onUserInfo = function() {
 		$('.fb-login-button').hide();
-	
 
 	};
 
@@ -59,7 +58,11 @@ $(window).load(function() {"use strict";
 
 	window.fbAsyncInit = function() {
 
-		Facebook.launchInitSequence(Facebook.checkLike());
+		Facebook.launchInitSequence();
+		Facebook.onUserInfo = function() {
+
+			Facebook.chekLike();
+		};
 
 	};
 
@@ -76,7 +79,7 @@ $(window).load(function() {"use strict";
 	PopupManager.display("intro");
 	Facebook.onDoesNotLike = function() {
 		alert("application on does not like");
-			$('.fb-like').css("top", "");
+		$('.fb-like').css("top", "");
 
 	};
 
@@ -129,10 +132,10 @@ $(window).load(function() {"use strict";
 				var atpos = email_str.indexOf("@");
 				var dotpos = email_str.lastIndexOf(".");
 				if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email_str.length) {
-				
+
 					result = false;
 				}
-				return result; 
+				return result;
 			}
 
 			mail_bool = validateForm();
