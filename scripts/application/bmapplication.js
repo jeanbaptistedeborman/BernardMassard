@@ -59,12 +59,15 @@ $(window).load(function() {"use strict";
 	window.fbAsyncInit = function() {
 
 		Facebook.launchInitSequence();
-		Facebook.onUserInfo = function() {
+		
+	};
+	Facebook.onUserInfo = function() {
+			alert ("Facebook.onUserInfo : " + Facebook.onUserInfo); 
 
 			Facebook.chekLike();
 		};
 
-	};
+	
 
 	$("#gameContainer").hide();
 	$(".js_continue").bind("click", function() {
