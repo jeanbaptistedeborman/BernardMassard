@@ -27,6 +27,7 @@ $(window).load(function() {"use strict";
 
 	Facebook.onUserInfo = function() {
 		$('.fb-login-button').hide();
+		Facebook.chekLike();
 
 	};
 
@@ -61,11 +62,7 @@ $(window).load(function() {"use strict";
 		Facebook.launchInitSequence();
 		
 	};
-	Facebook.onUserInfo = function() {
-			alert ("Facebook.onUserInfo : " + Facebook.onUserInfo); 
-
-			Facebook.chekLike();
-		};
+	
 
 	
 
