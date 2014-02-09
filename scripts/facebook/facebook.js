@@ -79,6 +79,7 @@ Facebook = {
 			if (response.data) {
 				if (response.data.length !== 0) {
 					Facebook.onLike();
+					like_bool = true; 
 				}
 			}
 			if (!like_bool) {
