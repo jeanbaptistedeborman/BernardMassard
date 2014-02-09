@@ -78,7 +78,7 @@ $(window).load(function() {"use strict";
 	PopupManager.popups_$ = popups_$;
 	PopupManager.display("intro");
 	Facebook.onDoesNotLike = function() {
-		alert("application on does not like");
+		//alert("application on does not like");
 		$('.fb-like').css("top", "");
 
 	};
