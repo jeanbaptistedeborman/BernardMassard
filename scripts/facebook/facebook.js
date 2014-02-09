@@ -109,7 +109,7 @@ Facebook = {
 
 		FB.api('/me', function(response) {
 			//alert (response);
-			Facebook.checkLike();
+		
 			Facebook.userInfo = response;
 			Facebook.onUserInfo();
 		});
